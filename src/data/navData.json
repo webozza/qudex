@@ -1,0 +1,42 @@
+{
+  "nav": [
+    {
+      "nav_name": "How It Works",
+      "link": "",
+      "type": "",
+      "full_width": false,
+      "sub_nav": []
+    },
+    {
+      "nav_name": "The Platform",
+      "link": "",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Use Cases",
+      "link": "",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Eco Score Card",
+      "link": "",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "What Is QUDE™",
+      "link": "",
+      "type": "",
+      "sub_nav": []
+    },
+    {
+      "nav_name": "Land Partner",
+      "link": "",
+      "type": "",
+      "sub_nav": []
+    }
+
+  ]
+}
