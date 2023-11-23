@@ -43,20 +43,15 @@ const DigitalMarketingAbout = () => {
 
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
-                <h2 className="sec-sub-title title-anim">Who We Are</h2>
+                <h2 className="sec-sub-title title-anim"></h2>
                 <h3 className="sec-title title-anim">
-                  We are leading digital marketing agency.
+                WHAT IS QUDE™ 
                 </h3>
               </div>
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
                   <p>
-                    We’re a team of strategic mdigital marketing working
-                    globally with largest brands, We believe that progress only
-                    happens when you refused to play things safe. We combine
-                    ideas and behaviors, and insights with design, technological
-                    data to produce brand experiences that customers love our
-                    services.
+                  QUDE, “Quantitative Environmental Data Evaluation”, is the core technology behind QUDEX’s offering. It represents a sophisticated method of collecting, analyzing, and presenting environmental data to provide actionable insights. QUDE technology transforms raw data into a valuable digital asset that can be used to assess environmental impact and provide meaningful, quantifiable metrics for sustainability.
                   </p>
                   <div className="btn_wrapper">
                     <Link
