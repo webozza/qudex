@@ -98,7 +98,7 @@
     margin-left: 210px;
     margin-top: 60px;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 240px auto;
     grid-gap: 20px;
 
     @media #{$md} {
@@ -125,14 +125,14 @@
         width: 90px;
         height: 1px;
         top: 14px;
-        left: 60px;
+        left: 45%;
         background-color: var(--black-2);
         padding-left: 9px;
       }
     }
 
     p {
-      max-width: 350px;
+      max-width: 460px;
       font-weight: 400;
       font-size: 18px;
       line-height: 1.5;

@@ -2,17 +2,59 @@ import Image from "next/image";
 import Shape1 from "../../../public/assets/imgs/home-7/shape-1.png";
 import Shape2 from "../../../public/assets/imgs/home-7/shape-2.png";
 import Shape3 from "../../../public/assets/imgs/home-7/shape-3.png";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { SplitText } from "@/plugins";
+  
+
 
 const ServiceV6Hero = () => {
+  const titleLeft = useRef();
+  const titleRight = useRef();
+  const heroTextAnim = useRef();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let split_creatives = new SplitText(titleLeft.current, { type: "chars" });
+      let split_solutions = new SplitText(titleRight.current, {
+        type: "chars",
+      });
+      let split_text_animation = new SplitText(heroTextAnim.current, {
+        type: "chars words",
+      });
+      let tHero = gsap.context(() => {
+        let HomeDigital = gsap.timeline();
+
+        HomeDigital.from(split_creatives.chars, {
+          duration: 2,
+          x: 100,
+          autoAlpha: 0,
+          stagger: 0.2,
+        });
+        HomeDigital.from(
+          split_solutions.chars,
+          { duration: 1, x: 100, autoAlpha: 0, stagger: 0.1 },
+          "-=1"
+        );
+        HomeDigital.from(
+          split_text_animation.words,
+          { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 },
+          "-=1"
+        );
+      });
+      return () => tHero.revert();
+    }
+  }, []);
+
   return (
     <>
-      <section className="hero__area-7">
+      <section className="hero__area-7 vh-100">
         <div className="container">
           <div className="row">
             <div className="col-xxl-12">
               <div className="hero__title-wrap-7">
-                <h1 className="hero__title-7">
-                  Award-winning{" "}
+                <h1 className="hero__title-7" ref={titleLeft}>
+                  How it works {" "}
                   <Image
                     priority
                     width={135}
@@ -20,23 +62,12 @@ const ServiceV6Hero = () => {
                     src={Shape1}
                     alt="shape"
                   />{" "}
-                  digital solution agency{" "}
-                  <Image
-                    priority
-                    width={125}
-                    style={{ height: "auto" }}
-                    src={Shape2}
-                    alt="shape"
-                  />
                 </h1>
               </div>
               <div className="hero__text-7">
-                <h2 className="about">service</h2>
-                <p>
-                  We question and try to see everything from every perspective.
-                  Our passion lies in making everything universal human values,
-                  to expand the possibility.
-                </p>
+                <h2 className="about" ref={titleRight}>Power ups</h2>
+                <p ref={heroTextAnim}>Digital worlds need a new standard to showcase the goodness and giveback of each business. QUDE helps implement this.</p>
+                
               </div>
             </div>
           </div>

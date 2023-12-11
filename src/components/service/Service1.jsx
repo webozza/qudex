@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Service11 from "../../../public/assets/imgs/service/1.jpg";
-import Service12 from "../../../public/assets/imgs/service/2.jpg";
-import Service13 from "../../../public/assets/imgs/service/3.jpg";
-import Service14 from "../../../public/assets/imgs/service/4.jpg";
-import Service15 from "../../../public/assets/imgs/service/5.jpg";
+import Service11 from "../../../public/assets/imgs/service/lake.jpg";
+import Service12 from "../../../public/assets/imgs/service/windmill.jpg";
+import Service13 from "../../../public/assets/imgs/service/eco-score.jpg";
+import Service14 from "../../../public/assets/imgs/service/optimize.jpg";
 import Image from "next/image";
+import ReadMore from "../readMore/readMore";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,6 +87,9 @@ const Service1 = () => {
       return () => tHero.revert();
     }
   }, []);
+  const initialContent = "The world is demanding accountability, transparency, and more eco-responsible businesses. Simply log in to the QUDEX Eco-Platform fill out your ECO SCORECARD...";
+  const expandedContent = "The world is demanding accountability, transparency, and more eco-responsible businesses. Simply log in to the QUDEX Eco-Platform fill out your ECO SCORECARD, and Choose a Power-Up solution to match your needs. In today's rapidly changing world, businesses face increasing demands for environmental responsibility and sustainability. Consumers, investors, and stakeholders are calling for greater transparency and a commitment to eco-friendly practices. The QUDEX Eco-Platform offers an innovative solution to meet these expectations and help businesses automate their eco-efforts while powerfully enhancing your brand.";
+
   return (
     <>
       <section className="service__area-6">
@@ -98,36 +101,26 @@ const Service1 = () => {
                   <ul className="service__list-6">
                     <li>
                       <a href="#service_1">
-                        Interaction <br />
-                        Design
+                        Power <br />
+                        Ups
                       </a>
                     </li>
                     <li>
                       <a href="#service_2">
-                        Web & Mobile <br />
-                        Development
+                        AI ESG <br />
+                        Automation
                       </a>
                     </li>
                     <li>
                       <a href="#service_3">
-                        Motion & Branding <br />
-                        Design
+                        Eco Score <br />
+                        Card
                       </a>
                     </li>
                     <li>
                       <a href="#service_4">
-                        Digital <br /> Maketing
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#service_5">
-                        Concept and <br />
-                        Strategy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#service_6">
-                        Illustrations & <br /> Prototype
+                        Optimize & <br />
+                        Customize
                       </a>
                     </li>
                   </ul>
@@ -166,7 +159,7 @@ const Service1 = () => {
                       alt="Service Image"
                     />
                   </div>
-                  <div className="service__image">
+                  {/* <div className="service__image">
                     <Image
                       priority
                       style={{ width: "auto", height: "auto" }}
@@ -181,7 +174,7 @@ const Service1 = () => {
                       src={Service14}
                       alt="Service Image"
                     />
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="right-content">
@@ -202,31 +195,25 @@ const Service1 = () => {
 
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          User paths or user flows functional models
-                        </h2>
-                        <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
-                        </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
+                            Connecting real world impact
+                          </h2>
+                          <p>
+                            Digital worlds need a new standard to showcase the goodness and giveback of each business. QUDE helps implement this.
+                          </p>
+                          <h2 className="service__title-6">
+                            QUDE™ ECO data
+                          </h2>
+                          <p>
+                            Verified data to ensure transparency
+                          </p>
                         <div className="btn_wrapper">
                           <Link
                             href="/service-details"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
+                            <span></span>Powered by
                             <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            QUDE <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
@@ -248,31 +235,17 @@ const Service1 = () => {
 
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          Web & Mobile Development
+                          Automate your ECO + Power-up your brand
                         </h2>
-                        <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
-                        </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
+                        <ReadMore initialContent={initialContent} expandedContent={expandedContent} />
                         <div className="btn_wrapper">
                           <Link
                             href="/service-details"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
+                            <span></span>Powered by
                             <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            QUDE <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
@@ -294,31 +267,19 @@ const Service1 = () => {
 
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          UMotion & Branding Design
-                        </h2>
-                        <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
-                        </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
+                            Customize ECO SCORE CARD & Send to customers
+                          </h2>
+                          <p>
+                            The world is demanding more eco-responsible businesses and we help businesses become that. Simply log in to the QUDEX Eco-Platform and access a library of thousands of BIO ASSETS and free eco calculators, customize and go live!
+                          </p>
                         <div className="btn_wrapper">
                           <Link
                             href="/service-details"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
+                            <span></span>Powered by
                             <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            QUDE <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
@@ -340,123 +301,19 @@ const Service1 = () => {
 
                       <div className="animation__service_page">
                         <h2 className="service__title-6">
-                          User paths or user flows functional models
+                          Nature offsets that Do the work
                         </h2>
                         <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
+                          We are ever-evolving and building out solutions that meet the needs of regenerating our earth. and we want to give you the tools to save it, so let us join you and we will combine efforts to help our planet and all the critters that need your help!
                         </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
                         <div className="btn_wrapper">
                           <Link
                             href="/service-details"
                             className="wc-btn-secondary btn-item btn-hover"
                           >
-                            <span></span>Get free
+                            <span></span>Powered by
                             <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      className="service__item-6"
-                      id="service_5"
-                      data-secid="5"
-                    >
-                      <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service15}
-                          alt="Service Image"
-                        />
-                      </div>
-
-                      <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          User paths or user flows functional models
-                        </h2>
-                        <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
-                        </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
-                        <div className="btn_wrapper">
-                          <Link
-                            href="/service-details"
-                            className="wc-btn-secondary btn-item btn-hover"
-                          >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div
-                      className="service__item-6"
-                      id="service_6"
-                      data-secid="6"
-                    >
-                      <div className="image-tab">
-                        <Image
-                          priority
-                          style={{ width: "auto", height: "auto" }}
-                          src={Service14}
-                          alt="Service Image"
-                        />
-                      </div>
-
-                      <div className="animation__service_page">
-                        <h2 className="service__title-6">
-                          Illustrations & Prototype
-                        </h2>
-                        <p>
-                          This is the second workshop of the UX design
-                          methodology. Given all the conclusions drawn in the
-                          personae workshop, we will project ourselves towards
-                          the production of ideal user journeys. In other words:
-                          how each persona can achieve their goal.
-                        </p>
-                        <ul>
-                          <li>+ API Development</li>
-                          <li>+ WordPress</li>
-                          <li>+ Cloud Migration</li>
-                          <li>+ Front End Development</li>
-                          <li>+ JavaScript</li>
-                          <li>+ Fluter Framework</li>
-                        </ul>
-                        <div className="btn_wrapper">
-                          <Link
-                            href="/service-details"
-                            className="wc-btn-secondary btn-item btn-hover"
-                          >
-                            <span></span>Get free
-                            <br />
-                            qoutes <i className="fa-solid fa-arrow-right"></i>
+                            QUDE <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>

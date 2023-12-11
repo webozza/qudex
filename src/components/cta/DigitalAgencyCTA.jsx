@@ -9,7 +9,7 @@ const DigitalAgencyCTA = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="cta__content">
-                <p className="cta__sub-title">Work with us</p>
+                <p className="cta__sub-title">Grow with us</p>
                 <h2 className="cta__title title-anim">
                   We would love to hear more about your project
                 </h2>

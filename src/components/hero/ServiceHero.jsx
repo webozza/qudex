@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Solution from "../../../public/assets/imgs/thumb/solution.png";
-import Solution2 from "../../../public/assets/imgs/thumb/solution-2.png";
-import Solution3 from "../../../public/assets/imgs/thumb/solution-3.png";
+import Solution from "../../../public/assets/imgs/thumb/forestbg.png";
+import Solution2 from "../../../public/assets/imgs/thumb/earth.png";
+import Solution3 from "../../../public/assets/imgs/thumb/solution-4.png";
 import Icon1 from "../../../public/assets/imgs/icon/1.png";
 import Icon2 from "../../../public/assets/imgs/icon/2.png";
 import Icon3 from "../../../public/assets/imgs/icon/3.png";
@@ -87,7 +87,7 @@ const ServiceHero = () => {
             <div className="solution__img-2">
               <Image
                 priority
-                width={220}
+                width={400}
                 style={{ height: "auto" }}
                 src={Solution2}
                 alt="Solution Image"
@@ -96,12 +96,11 @@ const ServiceHero = () => {
           </div>
 
           <div className="solution__mid">
-            <h1 className="solution__title animation__char_come" ref={charAnim}>
-              Digital Solution
+            <h1 className="solution__title animation__char_come" ref={charAnim}>             
+              How it works
             </h1>
             <p>
-              We’re designing digital experiences that enrich human lives and it
-              helps to grow your business globally trends.
+              Digital worlds need a new standard to showcase the goodness and giveback of each business. QUDE helps implement this.
             </p>
           </div>
 
@@ -123,9 +122,10 @@ const ServiceHero = () => {
             <div className="col-xxl-12">
               <div className="solution__btm">
                 <ul>
-                  <li>Approch</li>
-                  <li>Creativity</li>
-                  <li>Experienced</li>
+                  <li>Power ups</li>
+                  <li>AI ESG Automation</li>
+                  <li>Eco Score Card</li>
+                  <li>Optimize & Customize</li>
                 </ul>
               </div>
             </div>

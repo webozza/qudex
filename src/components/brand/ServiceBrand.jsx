@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import Brand1 from "../../../public/assets/imgs/brand/1.png";
-import Brand2 from "../../../public/assets/imgs/brand/2.png";
-import Brand3 from "../../../public/assets/imgs/brand/3.png";
-import Brand4 from "../../../public/assets/imgs/brand/4.png";
-import Brand5 from "../../../public/assets/imgs/brand/5.png";
-import Brand6 from "../../../public/assets/imgs/brand/6.png";
+import Brand1 from "../../../public/assets/imgs/brand/icon-take-2.png";
+import Brand2 from "../../../public/assets/imgs/brand/icon-take-soil.png";
+import Brand3 from "../../../public/assets/imgs/brand/icon-take-whale.png";
+import Brand4 from "../../../public/assets/imgs/brand/icon-take-elephant.png";
+import Brand5 from "../../../public/assets/imgs/brand/icon-take-3.png";
+import Brand6 from "../../../public/assets/imgs/brand/icon-take-bear.png";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -59,68 +59,74 @@ const ServiceBrand = () => {
       <section className="brand__area">
         <div
           className="container line pt-140 pb-100"
-          style={{ paddingBottom: "100px" }}
+          style={{ paddingBottom: "140px" }}
         >
           <span className="line-3"></span>
           <div className="row">
             <div className="col-xxl-12">
               <h2 className="brand__title-3 title-anim">
-                We are happy to work with global largest brands
+                Buying QUDE™ does all the work instantly saving 1000's Of BIO ASSETS
               </h2>
               <div className="brand__list brand-gap">
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
                     width={97}
-                    height={67}
+                    height={97}
                     src={Brand1}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Plant a Tree</p>
                 </div>
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
-                    width={85}
-                    height={67}
+                    width={97}
+                    height={97}
                     src={Brand2}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Regenerate Soil</p>
                 </div>
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
-                    width={114}
-                    height={64}
+                    width={97}
+                    height={97}
                     src={Brand3}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Save Whale</p>
                 </div>
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
-                    width={82}
-                    height={70}
+                    width={97}
+                    height={97}
                     src={Brand4}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Fund a Elephant</p>
                 </div>
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
-                    width={115}
-                    height={67}
+                    width={97}
+                    height={97}
                     src={Brand5}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Sponsor A bee Hive</p>
                 </div>
                 <div className="brand__item-2 fade_bottom">
                   <Image
                     priority
-                    width={121}
-                    height={63}
+                    width={97}
+                    height={97}
                     src={Brand6}
                     alt="Brand Logo"
                   />
+                  <p className="pt-2 text-capitalize">Save bear</p>
                 </div>
               </div>
             </div>
