@@ -8,7 +8,7 @@ import Shape5 from "../../../public/assets/imgs/home-7/shape-5.png";
 import A2 from "../../../public/assets/imgs/home-7/a2.jpg";
 import A3 from "../../../public/assets/imgs/home-7/a3.jpg";
 import Image from "next/image";
-//fasdfsdafsd
+//23234423fsdfd
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, ScrollToPlugin);
 
