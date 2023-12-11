@@ -8,15 +8,15 @@ const ServiceV6 = () => {
   return (
     <div>
       <Head>
-        <title>Service V6</title>
+        <title>The Platform</title>
         <meta name="description" content="Service V6 Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout header="header4" footer="footer2">
+        <RootLayout header="header1" footer="footer1">
           <ServiceV6Hero />
-          <CreativeAgencyService />
-          <CreativeAgencyCTA />
+          {/* <CreativeAgencyService />
+          <CreativeAgencyCTA /> */}
         </RootLayout>
       </main>
     </div>

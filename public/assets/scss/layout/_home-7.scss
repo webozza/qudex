@@ -9,7 +9,7 @@
     &-7 {
       padding-top: 180px;
       padding-bottom: 140px;
-      background-image: url(/assets/imgs/home-7/hero-bg.png);
+      background-image: url(/assets/imgs/imgs/home-7/planet.jpg);
       background-repeat: repeat;
       position: relative;
 
@@ -115,7 +115,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.4;
-      color: var(--black-2);
+      color: var(--white);
       position: relative;
       text-transform: capitalize;
 
@@ -125,8 +125,8 @@
         width: 90px;
         height: 1px;
         top: 14px;
-        left: 45%;
-        background-color: var(--black-2);
+        left: 58%;
+        background-color: var(--white);
         padding-left: 9px;
       }
     }
@@ -136,7 +136,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 1.5;
-      color: var(--black-3);
+      color: var(--white);
     }
   }
 

@@ -54,19 +54,19 @@ const ServiceV6Hero = () => {
             <div className="col-xxl-12">
               <div className="hero__title-wrap-7">
                 <h1 className="hero__title-7" ref={titleLeft}>
-                  How it works {" "}
+                    PEOPLE, PLANET, {" "}
                   <Image
                     priority
                     width={135}
                     style={{ height: "auto" }}
                     src={Shape1}
                     alt="shape"
-                  />{" "}
+                  />{" "}  PROFIT
                 </h1>
               </div>
               <div className="hero__text-7">
-                <h2 className="about" ref={titleRight}>Power ups</h2>
-                <p ref={heroTextAnim}>Digital worlds need a new standard to showcase the goodness and giveback of each business. QUDE helps implement this.</p>
+                <h2 className="about" ref={titleRight}>The Platform</h2>
+                <p ref={heroTextAnim}>All it will cost is 5% of your marketing budget to regenerate the earth</p>
                 
               </div>
             </div>
