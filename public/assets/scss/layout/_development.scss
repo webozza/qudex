@@ -69,6 +69,7 @@
     ul {
       @include feature(var(--black-2));
       grid-template-columns: 310px auto;
+      justify-content: space-between;
     }
   }
 

@@ -1,59 +1,75 @@
+import Image from 'next/image';
+import Brand1 from "../../../public/assets/imgs/brand/shield.png";
+import Brand2 from "../../../public/assets/imgs/brand/shield-2.png";
+import Brand3 from "../../../public/assets/imgs/brand/shield-3.png";
+import Brand4 from "../../../public/assets/imgs/brand/shield-4.png";
+import { useEffect, useRef } from 'react';
+import animationCharCome from '@/lib/utils/animationCharCome';
 const ServiceDetailsWorkflow = () => {
+  const charAnim = useRef();
+  useEffect(() => {
+    animationCharCome(charAnim.current);
+  }, []);
   return (
     <>
       <section className="workflow__area-6">
         <div className="container g-0 line pb-130">
+          <h2 className="sec-title animation__char_come pb-5" ref={charAnim}>What you can do <br />with QUDEX for business</h2>
           <div className="line-3"></div>
           <div className="workflow__wrapper-6">
             <div className="row">
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+                <div className='pb-5'>
+                  <Image width={60} height={60} src={Brand1} />
+                </div>
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Planning and <br />
-                    sketching
+                    Offset Carbon
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    QUDE™ lets you offset your carbon and nature based offsets
                   </p>
                 </div>
               </div>
 
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div className='pb-5'>
+                  <Image width={60} height={60} src={Brand2} />
+                </div>
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Team <br />
-                    working
+                    Automatic offset systems
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    Connect Nature based offsets seamlessly your business
                   </p>
                 </div>
               </div>
 
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div className='pb-5'>
+                  <Image width={60} height={60} src={Brand3} />
+                </div>
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    Flowchart and <br />
-                    wireframe
+                    Industry specific
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    We are always growing our tools to fit your needs.
                   </p>
                 </div>
               </div>
 
               <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
+              <div className='pb-5'>
+                  <Image width={60} height={60} src={Brand4} />
+                </div>
                 <div className="workflow__slide-6">
                   <h6 className="workflow__title-6">
-                    User experience <br />
-                    Testing
+                    Add Legacy to your business
                   </h6>
                   <p>
-                    Modern and unique design practically point of view, it risks
-                    not meeting the huge expectations
+                    Take your business to a level of being remembered and save the planet.
                   </p>
                 </div>
               </div>

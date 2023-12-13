@@ -1,4 +1,4 @@
-import ServiceDetail from "../../../public/assets/imgs/thumb/service-detail.png";
+import ServiceDetail from "../../../public/assets/imgs/thumb/planet-group.png";
 import Shape6 from "../../../public/assets/imgs/icon/shape-6.png";
 import Image from "next/image";
 
@@ -12,8 +12,7 @@ const ServiceDetailsService = () => {
             <div className="col-xxl-12">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title title-anim">
-                  We replace unreliable wirefreme and expensive agencies for one
-                  of the best organized layer.
+                  Powered by QUDE™
                 </h2>
               </div>
             </div>
@@ -26,7 +25,7 @@ const ServiceDetailsService = () => {
               <div className="service__detail-img">
                 <Image
                   priority
-                  width={960}
+                  width={560}
                   style={{ height: "auto" }}
                   src={ServiceDetail}
                   alt="Service detail image"
@@ -43,14 +42,13 @@ const ServiceDetailsService = () => {
               <div className="service__detail-content">
                 <p>
                   {
-                    "Receive your design within a few business days, and be updated on the process. Everything you need for a digitally driven brand. Defined proposition. Conceptual realisation. Logo, type, look, feel, tone, movement, content - we've got it covered."
+                    "We find the problems and do the work you take the credit it’s like sponsoring your own giveback program.QUDE™ is verified proof of 1 square meter of Earth regenerated."
                   }
                 </p>
                 <p>
-                  Getting your brand message out there. We create dynamic
-                  campaign creative that engages audiences, wherever they are
-                  most talented. Bring your brand to life, communicate your
-                  value proposition with agile setup across creativity.
+                   We quantify the data in every m2 and break down real work to help understand what where and why and serve it up for innovative solutions to keep on supporting nature. QUDE™ is the future of CSR and helping biodiversity, From soil, to water, to trees and all animals, QUDE™ mapping shows you exactly how your support impacts the natural world.
+
+
                 </p>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import ThumbDev1 from "../../../public/assets/imgs/thumb/dev-1.jpg";
-import ThumbDev2 from "../../../public/assets/imgs/thumb/dev-2.jpg";
+import ThumbDev1 from "../../../public/assets/imgs/bg/customar-data.png";
+import ThumbDev2 from "../../../public/assets/imgs/thumb/solution.jpg";
 import Image from "next/image";
 import animationCharCome from "@/lib/utils/animationCharCome";
 
@@ -18,31 +18,19 @@ const ServiceDetailsDevelopment = () => {
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title animation__char_come" ref={charAnim}>
-                  Web and mobile development
+                  Platform solutions
                 </h2>
               </div>
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
               <div className="development__wrapper">
-                <div className="development__content">
-                  <p>
-                    Every decision we make needs to answer the million-dollar
-                    question: how will this benefit our partner’s goal best? We
-                    work to develop solutions
-                  </p>
-                  <p>
-                    We like to be different, in the same way that every mission
-                    is different. Every project is an opportunity to create
-                    result that will help you
-                  </p>
-                </div>
                 <ul>
-                  <li>+ API Development</li>
-                  <li>+ WordPress</li>
-                  <li>+ Cloud Migration</li>
-                  <li>+ Front End Development</li>
-                  <li>+ JavaScript</li>
-                  <li>+ Fluter Framework</li>
+                  <li>+ ECO Score Card adds transparency and user trust.</li>
+                  <li>+ Easy all in one regeneration credits QUDE™</li>
+                  <li>+ Carbon accounting</li>
+                  <li>+ Plant trees in amazing new ways</li>
+                  <li>+ Automatic Eco tools & plugins  "power ups"</li>
+                  <li>+ Customer data</li>
                 </ul>
               </div>
             </div>
@@ -50,7 +38,7 @@ const ServiceDetailsDevelopment = () => {
               <div className="development__img">
                 <Image
                   priority
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "800", height: "auto" }}
                   src={ThumbDev1}
                   alt="Development Image"
                   data-speed="auto"
