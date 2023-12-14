@@ -19,6 +19,11 @@
     }
   }
 
+  &__top__2 {
+    padding-bottom: 0;
+    border-bottom: 1px solid var(--black);
+  }
+  
   &__btm {
     @media #{$sm} {
       padding-bottom: 15px;

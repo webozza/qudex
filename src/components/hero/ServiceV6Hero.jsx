@@ -54,14 +54,14 @@ const ServiceV6Hero = () => {
             <div className="col-xxl-12">
               <div className="hero__title-wrap-7">
                 <h1 className="hero__title-7" ref={titleLeft}>
-                    PEOPLE, PLANET, {" "}
+                    People, Planet, {" "}
                   <Image
                     priority
                     width={135}
                     style={{ height: "auto" }}
                     src={Shape1}
                     alt="shape"
-                  />{" "}  PROFIT
+                  />{" "}  Profit
                 </h1>
               </div>
               <div className="hero__text-7">

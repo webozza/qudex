@@ -5,7 +5,7 @@ import Image from "next/image";
 const ServiceDetailsFaq = () => {
   return (
     <>
-      <section className="faq__area">
+      <section className="faq__area pt-150">
         <div className="container g-0 line pb-140">
           <div className="line-3"></div>
           <div className="row">
@@ -23,7 +23,7 @@ const ServiceDetailsFaq = () => {
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="faq__content">
                 <h2 className="faq__title title-anim">
-                  Product making for friendly users
+                  QUDE X Solutions
                 </h2>
 
                 <div className="faq__list">

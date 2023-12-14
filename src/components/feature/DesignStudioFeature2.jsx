@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import FeatureIcon1 from "../../../public/assets/imgs/awards/audi.jpg";
-import FeatureIcon2 from "../../../public/assets/imgs/awards/image-22.png";
-import FeatureIcon3 from "../../../public/assets/imgs/awards/film.jpg";
+import FeatureIcon1 from "../../../public/assets/imgs/awards/forsale.jpg";
+import FeatureIcon2 from "../../../public/assets/imgs/awards/esports.jpg";
+import FeatureIcon3 from "../../../public/assets/imgs/awards/image-25.png";
 import FeatureIcon4 from "../../../public/assets/imgs/awards/qudex-in-game.jpg";
 import Image from "next/image";
 
@@ -58,17 +58,17 @@ const DesignStudioFeature = () => {
   }, []);
   return (
     <>
-      <section className="pt-130">
-        <div className="feature__top">
+      <section>
+        <div className="feature__top__2">
           <div className="container">
             <div className="row">
-              <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
+              {/* <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
                 <div className="sec-title-wrapper">
                   <h2 className="sec-title title-anim">
                   Your business + QUDE™ = ECO
                   </h2>
                 </div>
-              </div>
+              </div> */}
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
                 {/* <div className="text-anim">
                   <h4>Client History :</h4>
@@ -94,7 +94,7 @@ const DesignStudioFeature = () => {
                       src={FeatureIcon1}
                       alt="Feature Icon"
                     />
-                    <h4 className="feature__title">Clean Energy</h4>
+                    <h4 className="feature__title">Real Estate</h4>
                     {/* <p>
                       Having these marketplace to your branded skilled team of
                       designers and developers who embracement perfection.
@@ -108,7 +108,7 @@ const DesignStudioFeature = () => {
                       src={FeatureIcon2}
                       alt="Feature Icon"
                     />
-                    <h4 className="feature__title">Hair, Beauty Salons and Health Wealness</h4>
+                    <h4 className="feature__title">E sports</h4>
                     {/* <p>
                       Brand identity design a the key to success whether you
                       breath rebranding an existing business or creating a
@@ -124,7 +124,7 @@ const DesignStudioFeature = () => {
                       src={FeatureIcon3}
                       alt="Feature Icon"
                     />
-                    <h4 className="feature__title">TV & Film production</h4>
+                    <h4 className="feature__title">Marketing Agency</h4>
                     {/* <p>
                       Creative typography plays the big role to pull off this
                       trending more effectively with the thinking use a thicker
@@ -132,7 +132,7 @@ const DesignStudioFeature = () => {
                     </p> */}
                   </div>
                   <div className="feature__item">
-                    <Image
+                    {/* <Image
                       priority
                       width={200}
                       // height={108}
@@ -140,7 +140,7 @@ const DesignStudioFeature = () => {
                       alt="Feature Icon"
                     />
                     <h4 className="feature__title">Online Rewards & Gaming</h4>
-                    {/* <p>
+                     <p>
                       Stricky with multiple shades of the colours. However, this
                       type of alone can look awesome forever an online business
                     </p> */}

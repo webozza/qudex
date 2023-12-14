@@ -2,11 +2,12 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Award1 from "../../../public/assets/imgs/awards/awards-01.png";
-import Award2 from "../../../public/assets/imgs/awards/awards-02.png";
-import Award3 from "../../../public/assets/imgs/awards/awards-03.png";
-import Award4 from "../../../public/assets/imgs/awards/awards-04.png";
-import Award5 from "../../../public/assets/imgs/awards/awards-05.png";
+import Award1 from "../../../public/assets/imgs/awards/film.jpg";
+import Award2 from "../../../public/assets/imgs/awards/forsale.jpg";
+import Award3 from "../../../public/assets/imgs/awards/qudex-in-game.jpg";
+import Award4 from "../../../public/assets/imgs/awards/esports.jpg";
+import Award5 from "../../../public/assets/imgs/awards/image-22.png";
+import Award6 from "../../../public/assets/imgs/awards/image-25.png";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -57,122 +58,126 @@ const ModernAgencyWork2 = () => {
   return (
     <>
       <div className="awards__area-8 pb-130 sp-x">
-        <h6 className="text-end about-sub-right">awards</h6>
+        <h6 className="text-end about-sub-right"></h6>
         <div className="section_wrapper b-100">
           <h4 className="react_border">
-            <span>04</span>
+            <span></span>
           </h4>
         </div>
         <div className="row">
           <div className="col-lg-5">
             <div className="awards__content">
               <h2 className="awards__content__title fade_bottom">
-                It’s our <br />
-                glory for <br />
-                <Link href="/portfolio" className="hover_wrap">
-                  awards
-                  <span
-                    className="hover_img"
-                    style={{
-                      backgroundImage:
-                        "url(assets/imgs/portfolio/detail/7.jpg)",
-                    }}
-                  ></span>
-                </Link>
+                 Your <br />
+                  business + QUDE™ = ECO
               </h2>
-              <p>
+              {/* <p>
                 {
-                  "We're passionate about doing the best digital innovation and we achieve results we're proud of."
+                  "We are a medical company and wanted to help give back to nature the same way we do for people , so QUDE helped us save multiple animals simply from buying QUDE"
                 }
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="col-lg-7">
             <div className="awards__wrapper">
               <div className="awards__border">
                 <div className="awards__items fade_bottom">
-                  <span className="number">x2</span>
+                  <span className="number"></span>
                   <h4 className="title">
-                    Awwwards Interior <br /> Excellence
+                      Clean Energy
                   </h4>
                   <Image
                     priority
-                    width={67}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award2}
                     alt=""
                   />
-                  <h5 className="date">2017</h5>
+                  <h5 className="date"></h5>
                 </div>
                 <div className="awards__items fade_bottom">
-                  <span className="number">x1</span>
+                <span className="number"></span>
                   <h4 className="title">
-                    FWA, <br /> Site of the Day
+                      Hair, Beauty Salons and <br/> Health  Wealness
                   </h4>
                   <Image
                     priority
-                    width={93}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award5}
                     alt=""
                   />
-                  <h5 className="date">2015</h5>
+                  <h5 className="date"></h5>
                 </div>
                 <div className="awards__items fade_bottom">
-                  <span className="number">x3</span>
+                  <span className="number"></span>
                   <h4 className="title">
-                    Architect Design <br /> Awards
+                  TV & Film production
                   </h4>
                   <Image
                     priority
-                    width={131}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award1}
                     alt=""
                   />
-                  <h5 className="date">2020</h5>
+                  <h5 className="date"></h5>
                 </div>
                 <div className="awards__items fade_bottom">
-                  <span className="number">x2</span>
+                  <span className="number"></span>
                   <h4 className="title">
-                    Advance High <br /> Technology
+                    Online Rewards & Gaming
                   </h4>
                   <Image
                     priority
-                    width={89}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award3}
                     alt=""
                   />
-                  <h5 className="date">2021</h5>
+                  <h5 className="date"></h5>
                 </div>
                 <div className="awards__items fade_bottom">
-                  <span className="number">x2</span>
+                  <span className="number"></span>
                   <h4 className="title">
-                    Awwwards Interior <br /> Excellence
+                    Real Estate 
                   </h4>
                   <Image
                     priority
-                    width={67}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award2}
                     alt=""
                   />
-                  <h5 className="date">2017</h5>
+                  <h5 className="date"></h5>
                 </div>
                 <div className="awards__items fade_bottom">
-                  <span className="number">x1</span>
+                  <span className="number"></span>
                   <h4 className="title">
-                    Digital Agencies <br /> Worldwide
+                      E sports
                   </h4>
                   <Image
                     priority
-                    width={93}
+                    width={200}
                     style={{ height: "auto" }}
                     src={Award4}
                     alt=""
                   />
-                  <h5 className="date">2015</h5>
+                  <h5 className="date"></h5>
+                </div>
+                <div className="awards__items fade_bottom">
+                  <span className="number"></span>
+                  <h4 className="title">
+                      Marketing Agency 
+                  </h4>
+                  <Image
+                    priority
+                    width={200}
+                    style={{ height: "auto" }}
+                    src={Award6}
+                    alt=""
+                  />
+                  <h5 className="date"></h5>
                 </div>
               </div>
             </div>

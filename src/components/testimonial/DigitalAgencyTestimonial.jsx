@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import Testimonial11 from "../../../public/assets/imgs/testimonial/1/1.png";
-import Testimonial12 from "../../../public/assets/imgs/testimonial/1/2.png";
-import Testimonial13 from "../../../public/assets/imgs/testimonial/1/3.png";
+import Testimonial11 from "../../../public/assets/imgs/testimonial/1/1.webp";
+import Testimonial12 from "../../../public/assets/imgs/testimonial/1/2.webp";
+import Testimonial13 from "../../../public/assets/imgs/testimonial/1/3.webp";
 import Image from "next/image";
 
 const DigitalAgencyTestimonial = ({
@@ -146,12 +146,11 @@ const DigitalAgencyTestimonial = ({
                 <div className="sec-title-wrapper text-anim">
                   <h4 className="sec-sub-title">Testimonials</h4>
                   <h5 className="sec-title title-anim">
-                    Clients <br />
-                    feedback
+                    Client <br />
+                    History :
                   </h5>
                   <p>
-                    Our happy customers give us impactfull and positive feedback
-                    on our services, customer supports & etc.
+                  “We are a medical company and wanted to help give back to nature the same way we do for people , so QUDE helped us save multiple animals simply from buying QUDE”
                   </p>
                 </div>
               </div>

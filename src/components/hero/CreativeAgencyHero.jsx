@@ -1,10 +1,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "@/plugins";
-import Home7sh1 from "../../../public/assets/imgs/home-7/sh-1.jpg";
-import Home7sh2 from "../../../public/assets/imgs/home-7/sh-2.jpg";
-import Home7sh3 from "../../../public/assets/imgs/home-7/sh-3.jpg";
-import Home7sh4 from "../../../public/assets/imgs/home-7/sh-4.jpg";
+import Home7sh1 from "../../../public/assets/imgs/home-7/case-1.jpg";
+import Home7sh2 from "../../../public/assets/imgs/home-7/case-2.jpg";
+import Home7sh3 from "../../../public/assets/imgs/home-7/case-3.jpg";
+import Home7sh4 from "../../../public/assets/imgs/home-7/case-4.jpg";
 import Home7scroll from "../../../public/assets/imgs/home-7/scroll.png";
 import Home7shape6 from "../../../public/assets/imgs/home-7/shape-6.png";
 import Image from "next/image.js";
@@ -126,16 +126,14 @@ const CreativeAgencyHero = () => {
                   ref={heroThumAnim}
                 >
                   <h1 className="title creative" ref={creativeSection}>
-                    Creative{" "}
+                    Use {" "}
                     <span className="solution" ref={solutionSection}>
-                      Solution
+                      cases
                     </span>{" "}
                   </h1>
                   <p className="animate_content" ref={heroContentSection}>
                     {" "}
-                    We take a similar approach to design commercial we do
-                    impactfully approches over the flowchart of user friendly
-                    wireframe.
+                      QUDEX simplifies the tasks of social responsibility
                   </p>
                   <Image
                     priority

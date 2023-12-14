@@ -188,7 +188,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href={""}>Use Cases</Link>
+                      <Link href={"/use-cases"}>Use Cases</Link>
                     </div>
                   </li>
                   <li>

@@ -833,8 +833,8 @@
 
     @media (max-width: 1023px) {
       position: unset;
-      width: 100%;
-      height: auto;
+      width: 100% !important;
+      height: auto !important;
     }
 
     &:nth-child(1) {

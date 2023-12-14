@@ -3,6 +3,14 @@ import { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
+import Image from "next/image";
+import Image1 from "../../../public/assets/imgs/awards/audi.jpg";
+import Image2 from "../../../public/assets/imgs/awards/image-22.png";
+import Image3 from "../../../public/assets/imgs/awards/film.jpg";
+import Image4 from "../../../public/assets/imgs/awards/qudex-in-game.jpg";
+import Image5 from "../../../public/assets/imgs/awards/forsale.jpg";
+import Image6 from "../../../public/assets/imgs/awards/esports.jpg";
+import Image7 from "../../../public/assets/imgs/awards/image-25.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,8 +48,8 @@ const DigitalAgencyWorkflow = () => {
           <div className="row">
             <div className="col-xxl-12">
               <div className="sec-title-wrapper">
-                <h2 className="sec-sub-title title-anim">Workflow</h2>
-                <h3 className="sec-title title-anim">How we work</h3>
+                {/* <h2 className="sec-sub-title title-anim">Workflow</h2> */}
+                <h3 className="sec-title title-anim">Your business + QUDE™ = ECO</h3>
               </div>
             </div>
 
@@ -68,68 +76,108 @@ const DigitalAgencyWorkflow = () => {
                   },
                 }}
               >
-                <div className="swiper-wrapper">
+                <div className="swiper-wrapper swiper-wrapper-2">
                   <SwiperSlide>
                     <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 01</h4>
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">01</h5>
-                      <h6 className="workflow__title">Audience</h6>
-                      <p>Having these the marketplace to your business</p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image1}
+                        alt=""
+                      />
+                      <p className="pt-3">Clean Energy</p>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 02</h4>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">02</h5>
-                      <h6 className="workflow__title">Plan & Sketch</h6>
-                      <p>
-                        Delicate and long-lasting with vitamins and nutritions
-                      </p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image2}
+                        alt=""
+                      />
+                      <p className="pt-3">Hair, Beauty Salons and Health  Wealness</p>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 03</h4>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">03</h5>
-                      <h6 className="workflow__title">Customize</h6>
-                      <p>
-                        Creating brand identities for the digital experiences
-                      </p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image3}
+                        alt=""
+                      />
+                      <p className="pt-3">TV & Film production</p>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 04</h4>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">04</h5>
-                      <h6 className="workflow__title">User Testing</h6>
-                      <p>
-                        We look forward to engage with beyond the conventional
-                      </p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image4}
+                        alt=""
+                      />
+                      <p className="pt-3">Online Rewards & Gaming</p>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 05</h4>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">05</h5>
-                      <h6 className="workflow__title">User Testing</h6>
-                      <p>
-                        We look forward to engage with beyond the conventional
-                      </p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image5}
+                        alt=""
+                      />
+                      <p className="pt-3">Real Estate </p>
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
-                    <div className="workflow__slide fade_left">
-                      <h4 className="workflow__step">step 06</h4>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
                       <h5 className="workflow__number">06</h5>
-                      <h6 className="workflow__title">User Testing</h6>
-                      <p>
-                        We look forward to engage with beyond the conventional
-                      </p>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image6}
+                        alt=""
+                      />
+                      <p className="pt-3">E sports</p>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                  <div className="workflow__slide fade_left">
+                      <h4 className="workflow__step"></h4>
+                      <h5 className="workflow__number">07</h5>
+                      <Image
+                        priority
+                        width={200}
+                        style={{ height: "auto" }}
+                        src={Image7}
+                        alt=""
+                      />
+                      <p className="pt-3">Marketing Agency </p>
                     </div>
                   </SwiperSlide>
                 </div>
