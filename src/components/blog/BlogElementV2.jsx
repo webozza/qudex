@@ -98,7 +98,7 @@ const BlogElementV2 = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
@@ -139,7 +139,7 @@ const BlogElementV2 = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
@@ -179,7 +179,7 @@ const BlogElementV2 = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
@@ -220,7 +220,7 @@ const BlogElementV2 = () => {
                 </div>
                 <div className="blog__info-3">
                   <h4 className="blog__meta">
-                    <Link href="/category">UI Design</Link> . 02 May 2019
+                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">

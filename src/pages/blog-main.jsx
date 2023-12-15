@@ -2,7 +2,6 @@ import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import Blog1 from "@/components/blog/Blog1";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
-import BlogElementV2 from "@/components/blog/BlogElementV2";
 
 const Blog = () => {
   return (
@@ -13,8 +12,9 @@ const Blog = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <RootLayout header="header1" footer="footer1">
-          <BlogElementV2 />
+        <RootLayout header="header3" footer="footer3">
+          <Blog1 />
+          <DigitalAgencyCTA />
         </RootLayout>
       </main>
     </>
