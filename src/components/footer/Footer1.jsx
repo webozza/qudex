@@ -150,7 +150,7 @@ export default function Footer1() {
                   <a href="#">Linkedin</a>
                 </li>
                 <li>
-                  <a href="#">Instagram</a>
+                  <a href="https://www.instagram.com/qudexai/">Instagram</a>
                 </li>
               </ul>
             </div>
@@ -176,13 +176,13 @@ export default function Footer1() {
                 <div className="footer__nav-2">
                   <ul className="footer-menu-2 menu-anim" ref={menuAnim}>
                     <li>
-                      <Link href="/about">Register</Link>
+                      <Link href="/#">Register</Link>
                     </li>
                     <li>
-                      <Link href="/contact">About Us</Link>
+                      <Link href="/about">About Us</Link>
                     </li>
                     <li>
-                      <Link href="/career">Q BLOG</Link>
+                      <Link href="/blog">Q BLOG</Link>
                     </li>
                     <li>
                       <Link href="/faq">Impact Directory</Link>

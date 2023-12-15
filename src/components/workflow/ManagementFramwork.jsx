@@ -22,7 +22,7 @@ const ManagementFramwork = () => {
                 <p>Once the roadmap is developed and agreed upon, QUDEX can <br />help you implement the necessary steps to regenerate your land.<br /> This can include things like planting native species, restoring wetlands, <br />implementing sustainable farming practices, Forest fire mitigation, Clean energy.</p>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 pb-4">
-                <Image width={648} height={300} src={Manage1} alt='Image' className='img-fluid' />
+                <Image width={648} src={Manage1} alt='Image'  className='img-fluid' />
             </div>
           </div>
           <div className="line-3"></div>

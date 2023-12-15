@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link.js";
-import Award from "../../../public/assets/imgs/about/award.png";
+import Planet from "../../../public/assets/imgs/thumb/earth.png";
+import HeroImg from "../../../public/assets/imgs/thumb/green.jpg";
 import Image from "next/image.js";
 import animationWordCome from "@/lib/utils/animationWordCome";
 
@@ -18,35 +19,25 @@ const AboutHero = () => {
             <div className="col-xxl-12">
               <div className="hero__about-content">
                 <h1 className="hero-title animation__word_come" ref={wordAnim}>
-                  We’re a full service creative and digital agency, working
-                  globally with leargest brands.
+                    QUDEX is a system approach to fixing the PLANET
                 </h1>
                 <div className="hero__about-info">
                   <div className="hero__about-btn">
-                    <div className="btn_wrapper">
-                      <Link
-                        href="/service"
-                        className="wc-btn-primary btn-hover btn-item"
-                      >
-                        <span></span> Trends & <br />
-                        technology
-                        <i className="fa-solid fa-arrow-right"></i>
-                      </Link>
-                    </div>
                   </div>
                   <div className="hero__about-text title-anim">
                     <p>
                       {
-                        "Think of the world's most iconica and successful brands easily findable, impactful. Interactional and exceptional designs. Our story takes beginning in 2013"
+                        "QUDEX provides businesses the means to actively contribute to the restoration and preservation of our natural environment."
                       }
                     </p>
                   </div>
                   <div className="hero__about-award">
                     <Image
+                    className="img-fluid"
                       priority
-                      width={126}
-                      height={82}
-                      src={Award}
+                      width={100}
+                      height={100}
+                      src={Planet}
                       alt="Best Studio Award"
                     />
                   </div>
@@ -57,9 +48,14 @@ const AboutHero = () => {
           <div className="row hero__about-row">
             <div className="col-xxl-12">
               <div className="hero__about-video">
-                <video loop muted autoPlay playsInline>
-                  <source src="assets/video/video.mp4" type="video/mp4" />
-                </video>
+                <Image 
+                  className="img-fluid"
+                  priority
+                  style={{width: '100%', objectFit: 'fill'}}
+                  src={HeroImg}
+                  alt="Image"
+                />
+                  
               </div>
             </div>
           </div>

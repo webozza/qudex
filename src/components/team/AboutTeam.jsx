@@ -1,9 +1,9 @@
 import { FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
-import Team1 from "../../../public/assets/imgs/team/1.jpg";
-import Team2 from "../../../public/assets/imgs/team/2.jpg";
-import Team3 from "../../../public/assets/imgs/team/3.jpg";
+import Team1 from "../../../public/assets/imgs/team/lion-1.jpg";
+import Team2 from "../../../public/assets/imgs/team/owl.jpg";
+import Team3 from "../../../public/assets/imgs/team/wolf.jpg";
 import Team4 from "../../../public/assets/imgs/team/4.jpg";
 
 // Import Swiper styles
@@ -64,8 +64,8 @@ const AboutTeam = () => {
     <>
       <section className="team__area pt-140 pb-140">
         <div className="sec-title-wrapper">
-          <h2 className="sec-sub-title title-anim">Our Team</h2>
-          <h3 className="sec-title title-anim">How we work</h3>
+          <h2 className="sec-sub-title title-anim">Qudex</h2>
+          <h3 className="sec-title title-anim">One Team One Vision</h3>
         </div>
 
         <div className="team__slider">
@@ -84,7 +84,7 @@ const AboutTeam = () => {
                 slidesPerView: 3,
               },
               1200: {
-                slidesPerView: 4,
+                slidesPerView: 3,
               },
             }}
           >
@@ -98,8 +98,8 @@ const AboutTeam = () => {
                     alt="Team Member"
                   />
                   <div className="team__info">
-                    <h4 className="team__member-name">Saymon D. Halk</h4>
-                    <h5 className="team__member-role">Founder & CEO</h5>
+                    <h4 className="team__member-name">Jesse Harris</h4>
+                    <h5 className="team__member-role"> Qude vision  </h5>
                   </div>
                 </Link>
               </div>
@@ -115,8 +115,8 @@ const AboutTeam = () => {
                     alt="Team Member"
                   />
                   <div className="team__info">
-                    <h4 className="team__member-name">Jassica Oliver</h4>
-                    <h5 className="team__member-role">Researcher</h5>
+                    <h4 className="team__member-name">Tom Hobby </h4>
+                    <h5 className="team__member-role"> The lorex </h5>
                   </div>
                 </Link>
               </div>
@@ -132,14 +132,64 @@ const AboutTeam = () => {
                     alt="Team Member"
                   />
                   <div className="team__info">
-                    <h4 className="team__member-name">Daniyel Adamson</h4>
-                    <h5 className="team__member-role">Digital Marketer</h5>
+                    <h4 className="team__member-name">Vinh </h4>
+                    <h5 className="team__member-role"> Planet tech Master </h5>
+                  </div>
+                </Link>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="team__slide">
+                <Link href="/team-details">
+                  <Image
+                    priority
+                    style={{ width: "100%", height: "auto" }}
+                    src={Team1}
+                    alt="Team Member"
+                  />
+                  <div className="team__info">
+                    <h4 className="team__member-name">Jesse Harris</h4>
+                    <h5 className="team__member-role"> Qude vision  </h5>
                   </div>
                 </Link>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
+              <div className="team__slide">
+                <Link href="/team-details">
+                  <Image
+                    priority
+                    style={{ width: "100%", height: "auto" }}
+                    src={Team2}
+                    alt="Team Member"
+                  />
+                  <div className="team__info">
+                    <h4 className="team__member-name">Tom Hobby </h4>
+                    <h5 className="team__member-role"> The lorex </h5>
+                  </div>
+                </Link>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="team__slide">
+                <Link href="/team-details">
+                  <Image
+                    priority
+                    style={{ width: "100%", height: "auto" }}
+                    src={Team3}
+                    alt="Team Member"
+                  />
+                  <div className="team__info">
+                    <h4 className="team__member-name">Vinh </h4>
+                    <h5 className="team__member-role"> Planet tech Master </h5>
+                  </div>
+                </Link>
+              </div>
+            </SwiperSlide>
+
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -154,9 +204,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -171,9 +221,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -188,9 +238,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -205,9 +255,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -222,9 +272,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -239,9 +289,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -256,9 +306,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -273,9 +323,9 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="team__slide">
                 <Link href="/team-details">
                   <Image
@@ -290,7 +340,7 @@ const AboutTeam = () => {
                   </div>
                 </Link>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </section>

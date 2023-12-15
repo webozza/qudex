@@ -46,7 +46,7 @@ const LandPartnerOne = () => {
               <div className="development__img">
                 <Image
                   priority
-                  style={{ width: "auto", height: "auto" }}
+                  style={{ width: "100%", height: "auto" }}
                   src={ThumbDev2}
                   alt="Development Image"
                 />

@@ -12,15 +12,19 @@ const About = () => {
   return (
     <div>
       <Head>
-        <title>About Us</title>
+        <title>About</title>
         <meta name="description" content="About Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-      <RootLayout header="header1" footer="footer1">
+        <RootLayout>
           <AboutHero />
           <AboutStory />
+          <AboutCounter />
           <AboutTeam />
+          <DigitalAgencyBrand />
+          <AboutTestimonial />
+          <DigitalAgencyCTA />
         </RootLayout>
       </main>
     </div>

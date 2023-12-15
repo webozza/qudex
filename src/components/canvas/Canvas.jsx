@@ -203,7 +203,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href={""}>Land Partner</Link>
+                      <Link href={"/land-partner"}>Land Partner</Link>
                     </div>
                   </li>
 
