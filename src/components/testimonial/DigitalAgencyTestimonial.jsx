@@ -139,12 +139,12 @@ const DigitalAgencyTestimonial = ({
                       />
                     </div>
 
-                    <h2 className="testimonial__title">Jessica Sherlock</h2>
-                    <h3 className="testimonial__role">Manager, Oitaka</h3>
+                    {/* <h2 className="testimonial__title">Jessica Sherlock</h2>
+                    <h3 className="testimonial__role">Manager, Oitaka</h3> */}
                   </div>
                 </div>
                 <div className="sec-title-wrapper text-anim">
-                  <h4 className="sec-sub-title">Testimonials</h4>
+                  {/* <h4 className="sec-sub-title">Testimonials</h4> */}
                   <h5 className="sec-title title-anim">
                     Client <br />
                     History :
@@ -167,8 +167,8 @@ const DigitalAgencyTestimonial = ({
                     />
                   </div>
 
-                  <h2 className="testimonial__title">Jessica Sherlock</h2>
-                  <h3 className="testimonial__role">Manager, Oitaka</h3>
+                  {/* <h2 className="testimonial__title">Jessica Sherlock</h2>
+                  <h3 className="testimonial__role">Manager, Oitaka</h3> */}
                 </div>
               </div>
             </div>
@@ -185,8 +185,8 @@ const DigitalAgencyTestimonial = ({
                     />
                   </div>
 
-                  <h2 className="testimonial__title">adam Smith</h2>
-                  <h3 className="testimonial__role">Manager, Oitaka</h3>
+                  {/* <h2 className="testimonial__title">adam Smith</h2>
+                  <h3 className="testimonial__role">Manager, Oitaka</h3> */}
                 </div>
               </div>
             </div>
