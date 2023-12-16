@@ -14,7 +14,7 @@ export default function DigitalMarketing() {
   return (
     <div>
       <Head>
-        <title>Digital Marketing</title>
+        <title>Qudex</title>
         <meta name="description" content="Digital Marketing Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
