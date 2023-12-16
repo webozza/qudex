@@ -9,7 +9,7 @@ import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketi
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
 import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";
 import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
-// testing deployment
+// testing auto deployment
 
 const Index = () => {
   return (
