@@ -18,17 +18,17 @@ export default function Footer1() {
     let rootParent = menuAnim.current.children;
     for (let i = 0; i < rootParent.length; i++) {
       let firstParent = rootParent[i].children;
-      let arr = firstParent[0].textContent.split("")
-      let spanData = ''
+      let arr = firstParent[0].textContent.split("");
+      let spanData = "";
       for (let j = 0; j < arr.length; j++) {
-        if(arr[j] == ' ') {
+        if (arr[j] == " ") {
           spanData += `<span style='width:6px;'>${arr[j]}</span>`;
         } else {
           spanData += `<span>${arr[j]}</span>`;
         }
       }
-      let result = '<div class="menu-text">' + spanData + '</div>';
-      firstParent[0].innerHTML = result
+      let result = '<div class="menu-text">' + spanData + "</div>";
+      firstParent[0].innerHTML = result;
     }
   };
 
@@ -135,7 +135,8 @@ export default function Footer1() {
                 alt="Footer Logo"
               />
               <p>
-              Empowering a Sustainable Tomorrow | Innovating for Nature's Harmony
+                {`Empowering a Sustainable Tomorrow | Innovating for Nature's
+                Harmony`}
               </p>
             </div>
             <div className="footer__social-3">
@@ -167,9 +168,7 @@ export default function Footer1() {
             <div className="row">
               <div className="col-xxl-4 col-xl-4 col-lg-4">
                 <div className="footer__copyright-3">
-                  <p>
-                    © 2022 - 2025 | Alrights reserved by {"Qudex"}
-                  </p>
+                  <p>© 2022 - 2025 | Alrights reserved by {"Qudex"}</p>
                 </div>
               </div>
               <div className="col-xxl-8 col-xl-8 col-lg-8">

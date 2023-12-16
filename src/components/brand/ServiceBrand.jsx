@@ -65,7 +65,7 @@ const ServiceBrand = () => {
           <div className="row">
             <div className="col-xxl-12">
               <h2 className="brand__title-3 title-anim">
-                Buying QUDE™ does all the work instantly saving 1000's Of BIO ASSETS
+                {`Buying QUDE™ does all the work instantly saving 1000's Of BIO ASSETS`}
               </h2>
               <div className="brand__list brand-gap">
                 <div className="brand__item-2 fade_bottom">

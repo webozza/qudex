@@ -62,8 +62,8 @@ const BlogCase = () => {
             <div className="col-xxl-12">
               <div className="sec-title-wrapper text-anim pt-130">
                 <h3 className="sec-title title-anim">
-                    Most popular <br />
-                    Use-cases
+                  Most popular <br />
+                  Use-cases
                 </h3>
                 {/* <p>
                   Read our blog and try to see everything from every
@@ -103,7 +103,8 @@ const BlogCase = () => {
                   </h4> */}
                   <h5>
                     <Link href="/#" className="blog__title-3">
-                       Corporate Social Responsibility Sustainable business practices. 
+                      Corporate Social Responsibility Sustainable business
+                      practices.
                     </Link>
                   </h5>
                   {/* <Link href="/blog-details" className="blog__btn">
@@ -112,7 +113,11 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p> Get an edge over your competition by showing how you contribute positive impacts on society and the planet. </p>
+                  <p>
+                    {" "}
+                    Get an edge over your competition by showing how you
+                    contribute positive impacts on society and the planet.{" "}
+                  </p>
                 </div>
               </article>
             </div>
@@ -145,16 +150,19 @@ const BlogCase = () => {
                   </h4> */}
                   <h5>
                     <Link href="/#" className="blog__title-3">
-                        OFFSET's Plant a tree for every item sold. 
+                      {`OFFSET's Plant a tree for every item sold.`}
                     </Link>
                   </h5>
                   {/* <Link href="/blog-details" className="blog__btn">
-                    Read More{" "}
+                    Read More{"lala"}
                     <span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p> Adding a tree to the cost of entry is an easy way to make your products support the earth's largest issues. </p>
+                  <p>
+                    {`Adding a tree to the cost of entry is an easy way to make
+                    your products support the earth's largest issues.`}
+                  </p>
                 </div>
               </article>
             </div>
@@ -186,7 +194,7 @@ const BlogCase = () => {
                   </h4> */}
                   <h5>
                     <Link href="/#" className="blog__title-3">
-                    Email Marketing Power up with eco-impact data. 
+                      Email Marketing Power up with eco-impact data.
                     </Link>
                   </h5>
                   {/* <Link href="/blog-details" className="blog__btn">
@@ -195,7 +203,12 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p> People love transparency. People love numbers. Now you can do both by adding living impact data to your email campaigns. </p>
+                  <p>
+                    {" "}
+                    People love transparency. People love numbers. Now you can
+                    do both by adding living impact data to your email
+                    campaigns.{" "}
+                  </p>
                 </div>
               </article>
             </div>
@@ -228,7 +241,7 @@ const BlogCase = () => {
                   </h4> */}
                   <h5>
                     <Link href="/#" className="blog__title-3">
-                        Users , customers , content creators 
+                      Users , customers , content creators
                     </Link>
                   </h5>
                   {/* <Link href="/blog-details" className="blog__btn">
@@ -237,7 +250,11 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p> Take your digital content to another level by engaging directly with their values. </p>
+                  <p>
+                    {" "}
+                    Take your digital content to another level by engaging
+                    directly with their values.{" "}
+                  </p>
                 </div>
               </article>
             </div>

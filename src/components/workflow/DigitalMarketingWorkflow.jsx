@@ -4,9 +4,9 @@ import { ScrollTrigger } from "@/plugins";
 import Link from "next/link.js";
 import Counter3 from "../../../public/assets/imgs/thumb/counter-3.png";
 import Image from "next/image.js";
-import serviceImage1 from "../../../public/assets/imgs/service/3/1.jpg"
-import serviceImage2 from "../../../public/assets/imgs/service/3/serviceImage2.jpg"
-import serviceImage3 from "../../../public/assets/imgs/service/3/serviceImage3.png"
+import serviceImage1 from "../../../public/assets/imgs/service/3/1.jpg";
+import serviceImage2 from "../../../public/assets/imgs/service/3/serviceImage2.jpg";
+import serviceImage3 from "../../../public/assets/imgs/service/3/serviceImage3.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -131,27 +131,25 @@ const DigitalMarketingWorkflow = () => {
             </div>
           </div>
 
-
-{/*
+          {/*
            ~~~~~~~~~~    FIrst slide    ~~~~~~~~~~
 */}
 
           <div className="research__area area-bg-white wf_panel pt-150">
             <div className="container inner_content">
               <div className="row">
-
-
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
-                    Lead with Qudex: <br />
-                    Comprehensive offset reports + offset tools.
+                      Lead with Qudex: <br />
+                      Comprehensive offset reports + offset tools.
                     </h2>
-                    <h3 className="sec-title">
-                    ECO-IMPACT BUSINESS PLATFORM
-                    </h3>
+                    <h3 className="sec-title">ECO-IMPACT BUSINESS PLATFORM</h3>
                     <p>
-                    Unlock the power of environmental stewardship without compromising on business growth. With Qudex, witness an evolution in how companies can harmonize profits with the planet.
+                      Unlock the power of environmental stewardship without
+                      compromising on business growth. With Qudex, witness an
+                      evolution in how companies can harmonize profits with the
+                      planet.
                     </p>
                   </div>
                   {/* <ul className="research__tools">
@@ -213,103 +211,98 @@ const DigitalMarketingWorkflow = () => {
                   </div>
                 </div> */}
 
-              <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
-                    <div className="counter__img-3">
-                          <Image
-                            priority
-                            style={{ width: "100%", height: "auto" }}
-                            src={serviceImage1}
-                            alt="Counter Image"
-                          />
-                    </div>
+                <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
+                  <div className="counter__img-3">
+                    <Image
+                      priority
+                      style={{ width: "100%", height: "auto" }}
+                      src={serviceImage1}
+                      alt="Counter Image"
+                    />
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
 
-{/*
+          {/*
            ~~~~~~~~~~    Second slide    ~~~~~~~~~~
 */}
 
           <div className="research__area wf_panel pt-150 no-bg">
             <div className="container inner_content">
               <div className="row">
-
-
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
-                          We are here to ensure it is easy for businesses to take eco action with social responsibility, QUDE™ funds, and verify global impacts.
+                      We are here to ensure it is easy for businesses to take
+                      eco action with social responsibility, QUDE™ funds, and
+                      verify global impacts.
                     </h2>
                     <h3 className="sec-title">
-                        Ecological PROJECTS VERIFIED BY QUDE <sup>tm</sup>
+                      Ecological PROJECTS VERIFIED BY QUDE <sup>tm</sup>
                     </h3>
                     <p>
-                      Ecological Projects Verified by QUDE™
-                      Connecting Vital Ecosystems with Cutting-Edge Verification. 
-                     <a href="http://Natureoffsets.com"> Natureoffsets.com </a>
+                      Ecological Projects Verified by QUDE™ Connecting Vital
+                      Ecosystems with Cutting-Edge Verification.
+                      <a href="http://Natureoffsets.com"> Natureoffsets.com </a>
                     </p>
-
                   </div>
-                  <p> At Qudex, we're not just stewards of our planet's vast oceans and expansive lands – we're innovators. Using the latest satellite, drone, and sensor technology, we ensure real-time updates and robust verification for every project. Our commitment is unwavering: to safeguard nature's sanctuaries, one verified QUDE™ at a time.</p>
+                  <p>{`At Qudex, we're not just stewards of our planet's vast oceans and expansive lands - we're innovators. Using the latest satellite, drone, and sensor technology, we ensure real-time updates and robust verification for every project. Our commitment is unwavering: to safeguard nature's sanctuaries, one verified QUDE™ at a time.`}</p>
                 </div>
-              <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
-                    <div className="counter__img-3">
-                          <Image
-                            priority
-                            style={{ width: "100%", height: "auto" }}
-                            src={serviceImage2}
-                            alt="Counter Image"
-                          />
-                    </div>
+                <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
+                  <div className="counter__img-3">
+                    <Image
+                      priority
+                      style={{ width: "100%", height: "auto" }}
+                      src={serviceImage2}
+                      alt="Counter Image"
+                    />
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
 
-{/*
+          {/*
            ~~~~~~~~~~    Third slide    ~~~~~~~~~~
 */}
 
-        <div className="research__area area-bg-white wf_panel pt-150">
+          <div className="research__area area-bg-white wf_panel pt-150">
             <div className="container inner_content">
               <div className="row">
-
-
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">
-                    Pioneering Next-Gen Eco Solutions
+                      Pioneering Next-Gen Eco Solutions
                     </h2>
                     <h3 className="sec-title">
-                    PLANET TECHNOLOGIES: beyond carbon.
+                      PLANET TECHNOLOGIES: beyond carbon.
                     </h3>
                     <p>
-                    Venture beyond traditional carbon metrics. Embrace Planet Technologies that offer holistic ecological insights, pushing the boundaries of what's possible in environmental preservation.
+                      {`Venture beyond traditional carbon metrics. Embrace Planet
+                      Technologies that offer holistic ecological insights,
+                      pushing the boundaries of what's possible in environmental
+                      preservation.`}
                     </p>
                   </div>
                 </div>
 
-              <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
-                    <div className="counter__img-3">
-                          <Image
-                            priority
-                            style={{ width: "100%", height: "auto" }}
-                            src={serviceImage3}
-                            alt="Counter Image"
-                          />
-                    </div>
+                <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
+                  <div className="counter__img-3">
+                    <Image
+                      priority
+                      style={{ width: "100%", height: "auto" }}
+                      src={serviceImage3}
+                      alt="Counter Image"
+                    />
+                  </div>
                 </div>
-
               </div>
             </div>
           </div>
-  
 
-
-{/*
+          {/*
            ~~~~~~~~~~    Forth slide    ~~~~~~~~~~
 */}
 

@@ -19,7 +19,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
           let firstParent = rootParent[i].children;
           for (let j = 0; j < firstParent.length; j++) {
             if (firstParent[j].className.includes("header_title")) {
-
               let arr = firstParent[j].children[0].textContent.split("");
               let spanData = "";
               for (let k = 0; k < arr.length; k++) {
@@ -57,7 +56,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
         <div className="offcanvas__body">
           <div className="offcanvas__left">
             <div className="offcanvas__logo">
-              <Link href="/digital-marketing">
+              <Link href="/">
                 <Image
                   priority
                   style={{ width: "auto", height: "auto" }}
@@ -69,7 +68,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
             <div className="offcanvas__social">
               <h3 className="social-title">Follow Us</h3>
               <ul>
-
                 <li>
                   <a href="#">Instagram</a>
                 </li>
@@ -98,7 +96,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 <ul className="menu-anim title" ref={headerTitle}>
                   {/* <li>
                     <div className="header_title">
-                      <Link href={"/digital-marketing"}>HOME</Link>
+                      <Link href={"/"}>HOME</Link>
                       <div className="accordian-btn">
                         {accordion === 1 ? (
                           <a onClick={() => openData(0)}>-</a>
@@ -114,12 +112,12 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                       }
                     >
                       <li>
-                        <Link href={"/digital-marketing"}>
+                        <Link href={"/"}>
                           Digital Maketing
                         </Link>
                       </li>
                       <li>
-                        <Link href={"/digital-marketing-dark"}>
+                        <Link href={"/-dark"}>
                           Digital Maketing dark
                         </Link>
                       </li>
@@ -627,8 +625,6 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                       <Link href={"/contact"}>CONTACT</Link>
                     </div>
                   </li> */}
-
-
                 </ul>
               </nav>
             </div>

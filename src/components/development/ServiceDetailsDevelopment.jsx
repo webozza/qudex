@@ -29,7 +29,7 @@ const ServiceDetailsDevelopment = () => {
                   <li>+ Easy all in one regeneration credits QUDE™</li>
                   <li>+ Carbon accounting</li>
                   <li>+ Plant trees in amazing new ways</li>
-                  <li>+ Automatic Eco tools & plugins  "power ups"</li>
+                  <li>{`+ Automatic Eco tools & plugins "power ups"`}</li>
                   <li>+ Customer data</li>
                 </ul>
               </div>
