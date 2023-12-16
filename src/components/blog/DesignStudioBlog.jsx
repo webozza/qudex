@@ -64,10 +64,7 @@ const DesignStudioBlog = () => {
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-5 col-md-4">
               <div className="sec-text text-anim">
-                <p>
-                  We help brands stand out through aweful, elegant visual
-                  design. Our design mainly philosophy.
-                </p>
+                <p>We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.</p>
               </div>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-3 col-md-4">
@@ -86,20 +83,8 @@ const DesignStudioBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt="BLog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="BLog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -119,20 +104,8 @@ const DesignStudioBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog12}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog12}
-                        alt="BLog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog12} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog12} alt="BLog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -152,20 +125,8 @@ const DesignStudioBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog13}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog13}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog13} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog13} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -174,7 +135,7 @@ const DesignStudioBlog = () => {
                 </h4>
                 <h5>
                   <Link href="/blog-details" className="blog__title-2">
-                    How to bring fold to your startup company with Axtra
+                    How to bring fold to your startup company with qudex
                   </Link>
                 </h5>
               </article>

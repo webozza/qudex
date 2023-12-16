@@ -67,20 +67,8 @@ const CreativeAgencyBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt=""
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog11}
-                        alt=""
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="" />
                     </div>
                   </Link>
                 </div>
@@ -106,20 +94,8 @@ const CreativeAgencyBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog12}
-                        alt=""
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog12}
-                        alt=""
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog12} alt="" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog12} alt="" />
                     </div>
                   </Link>
                 </div>
@@ -145,20 +121,8 @@ const CreativeAgencyBlog = () => {
                 <div className="blog__img-wrapper">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog13}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog13}
-                        alt="BLog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog13} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog13} alt="BLog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -167,7 +131,7 @@ const CreativeAgencyBlog = () => {
                 </h4>
                 <h5>
                   <Link href="/blog-details" className="blog__title">
-                    How to bring fold to your startup company with Axtra
+                    How to bring fold to your startup company with qudex
                   </Link>
                 </h5>
                 <Link href="/blog-details" className="blog__btn">

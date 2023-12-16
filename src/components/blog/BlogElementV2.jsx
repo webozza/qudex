@@ -102,7 +102,7 @@ const BlogElementV2 = () => {
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                      How to bring fold to your startup company with Axtra
+                      How to bring fold to your startup company with qudex
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">
@@ -183,7 +183,7 @@ const BlogElementV2 = () => {
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                      How to bring fold to your startup company with Axtra
+                      How to bring fold to your startup company with qudex
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">

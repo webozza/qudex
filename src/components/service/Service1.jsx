@@ -2,10 +2,10 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
-import Service11 from "../../../public/assets/imgs/service/lake.jpg";
-import Service12 from "../../../public/assets/imgs/service/windmill.jpg";
-import Service13 from "../../../public/assets/imgs/service/eco-score.jpg";
-import Service14 from "../../../public/assets/imgs/service/optimize.jpg";
+import Service11 from "../../../public/assets/imgs/service/lake.webp";
+import Service12 from "../../../public/assets/imgs/service/windmill.webp";
+import Service13 from "../../../public/assets/imgs/service/eco-score.webp";
+import Service14 from "../../../public/assets/imgs/service/optimize.webp";
 import Image from "next/image";
 import ReadMore from "../readMore/readMore";
 

@@ -116,7 +116,7 @@
   }
 
   &__slider-11 {
-    // update v0.2 
+    // update v0.2
     img {
       height: 100vh !important;
       width: 100% !important;
@@ -223,8 +223,6 @@
         font-size: 36px;
       }
     }
-
-
   }
 
   &__sub-title-11 {
@@ -350,7 +348,6 @@
     color: var(--black-3);
   }
 
-
   // Home 11 New CSS
   &__nitems {
     display: block;
@@ -365,14 +362,10 @@
     &::-webkit-scrollbar {
       width: 0px;
     }
-
-
   }
 
   &__nitem {
-
     &.active {
-
       .portfolio__title-11 {
         font-size: 150px;
 
@@ -463,7 +456,6 @@
   }
 }
 
-
 // Home 8
 .hover_8 {
   &_wrap {
@@ -510,8 +502,6 @@
     }
   }
 }
-
-
 
 // scroll top
 .scroll {
@@ -581,7 +571,7 @@
       p {
         display: none;
       }
-      // update v0.2 
+      // update v0.2
       img {
         max-width: 100%;
         height: 30px !important;
@@ -589,8 +579,6 @@
     }
   }
 }
-
-
 
 // Home 9
 
@@ -699,11 +687,9 @@
   }
 }
 
-
-
-// 
+//
 // Home 13
-// 
+//
 .showcase {
   &__area {
     &-4 {
@@ -774,8 +760,6 @@
   }
 
   &__item {
-
-
     &-4 {
       overflow: hidden;
 
@@ -801,9 +785,11 @@
       padding-top: 30px;
       margin-bottom: 30px;
 
-      @media #{$lg} {}
+      @media #{$lg} {
+      }
 
-      @media #{$md} {}
+      @media #{$md} {
+      }
 
       @media #{$sm} {
         display: inline-block;
@@ -838,7 +824,6 @@
   animation: wcSpinner 5s infinite linear;
 }
 
-
 // home 16
 .showcase_16_hover {
   width: 300px;
@@ -864,7 +849,6 @@
 }
 
 .mixtup_btn {
-
   &#btn_wrapper,
   &.btn_wrapper {
     margin: 0 auto;
@@ -874,7 +858,7 @@
     display: inline-block;
     width: 170px;
     height: 170px;
-    border: 1px solid #C2C2C2;
+    border: 1px solid #c2c2c2;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -920,12 +904,6 @@
   }
 }
 
-
-
-
-
-
-
 // Dark Version
 .dark {
   .portfolio__area-12 .sec-title-wrapper {
@@ -933,7 +911,7 @@
       color: var(--white);
 
       span {
-        -webkit-text-stroke: 2px var(--white)
+        -webkit-text-stroke: 2px var(--white);
       }
     }
 
@@ -1013,7 +991,7 @@
 body {
   position: relative;
 }
-// update v0.2 
+// update v0.2
 .body-bg {
   position: fixed;
   z-index: 99999;
@@ -1025,11 +1003,8 @@ body {
   height: 100vh;
   background-repeat: repeat;
   background-position: top left;
-  background-image: url(/assets/imgs/essential-img/bg-axtra.png);
+  background-image: url(/assets/imgs/essential-img/bg-qudex.png);
 }
-
-
-
 
 // ////////////////////////////////
 
@@ -1055,11 +1030,10 @@ body {
     width: 100%;
     height: 100vh;
     float: left;
-    transition: opacity .6s ease, transform .3s ease;
+    transition: opacity 0.6s ease, transform 0.3s ease;
   }
 
   .main-slider11 {
-
     .swiper-image {
       width: 100%;
       height: 100%;
@@ -1116,7 +1090,6 @@ body {
         margin-top: 80px;
       }
 
-
       .swiper-slide {
         cursor: pointer;
 
@@ -1154,5 +1127,4 @@ body {
       flex-direction: column;
     }
   }
-
 }

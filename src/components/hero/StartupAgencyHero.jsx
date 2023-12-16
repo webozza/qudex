@@ -41,21 +41,9 @@ const StartupAgencyHero = () => {
           autoAlpha: 0,
           stagger: 0.1,
         });
-        gsap.from(
-          split_hero6_desc.words,
-          { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 },
-          "-=1"
-        );
-        gsap.to(
-          heroAnchor.current,
-          { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
-          "-=1.5"
-        );
-        gsap.to(
-          heroImg.current,
-          { opacity: 1, y: 0, duration: 1, ease: "power2.out" },
-          "-=1"
-        );
+        gsap.from(split_hero6_desc.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
+        gsap.to(heroAnchor.current, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=1.5");
+        gsap.to(heroImg.current, { opacity: 1, y: 0, duration: 1, ease: "power2.out" }, "-=1");
       });
       return () => tHero.revert();
     }
@@ -74,74 +62,29 @@ const StartupAgencyHero = () => {
           <div className="row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="hero__content-6 hero__six_anim">
-                <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
-                  className="hero__arrow-icon"
-                  src={ArrowIcon}
-                  alt="Arrow Icon"
-                />
+                <Image priority style={{ width: "auto", height: "auto" }} className="hero__arrow-icon" src={ArrowIcon} alt="Arrow Icon" />
                 <h1 className="hero__title-6 " ref={heroTitle}>
-                  Magical <br /> Axtra Startup Solution{" "}
+                  Magical <br /> qudex Startup Solution{" "}
                 </h1>
                 <p ref={heroText}>
-                  Our team always reviews all previous methods with <br />{" "}
-                  models, and processes to determined
+                  Our team always reviews all previous methods with <br /> models, and processes to determined
                 </p>
-                <Link
-                  className="btn-started btn-hover"
-                  href="/contact"
-                  ref={heroAnchor}
-                >
+                <Link className="btn-started btn-hover" href="/contact" ref={heroAnchor}>
                   Get Started
                 </Link>
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="hero__right-6">
-                <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
-                  src={Hero4}
-                  alt="Hero Image"
-                  ref={heroImg}
-                />
+                <Image priority style={{ width: "auto", height: "auto" }} src={Hero4} alt="Hero Image" ref={heroImg} />
               </div>
             </div>
           </div>
         </div>
-        <Image
-          priority
-          width={80}
-          height={158}
-          className="hero__shape"
-          src={HeroShape}
-          alt="Shape Image"
-        />
-        <Image
-          priority
-          width={48}
-          height={48}
-          className="hero__shape-2"
-          src={HeroShape2}
-          alt="Layout"
-        />
-        <Image
-          priority
-          width={38}
-          height={49}
-          className="hero__shape-3"
-          src={HeroShape3}
-          alt="Star Icon"
-        />
-        <Image
-          priority
-          width={489}
-          height={382}
-          className="shape-4"
-          src={Shape20}
-          alt="Star Icon"
-        />
+        <Image priority width={80} height={158} className="hero__shape" src={HeroShape} alt="Shape Image" />
+        <Image priority width={48} height={48} className="hero__shape-2" src={HeroShape2} alt="Layout" />
+        <Image priority width={38} height={49} className="hero__shape-3" src={HeroShape3} alt="Star Icon" />
+        <Image priority width={489} height={382} className="shape-4" src={Shape20} alt="Star Icon" />
       </section>
     </>
   );

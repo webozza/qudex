@@ -82,8 +82,7 @@ const ModernAgencyPortfolio = () => {
                   <span
                     className="hover_img"
                     style={{
-                      backgroundImage:
-                        "url(assets/imgs/portfolio/detail/7.jpg)",
+                      backgroundImage: "url(assets/imgs/portfolio/detail/7.jpg)",
                     }}
                   ></span>
                 </Link>
@@ -92,18 +91,7 @@ const ModernAgencyPortfolio = () => {
           </div>
           <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
             <div className="about8__content fade_bottom_2">
-              <p>
-                {" "}
-                We’re a design and technology partner for digital age. We help
-                businesses into innovation and remain highly relevant to their
-                customers by developing cutting edge digital products and
-                executing smart and valuable service by Axtra template on
-                themeforest at the begining stage. Our exceptional digital
-                products, offers, services and brand communication solution from
-                idea to a product creating successful digital services for
-                innovative startups and established businesses with trendy UX/UI
-                design front and back-end development.
-              </p>
+              <p> We’re a design and technology partner for digital age. We help businesses into innovation and remain highly relevant to their customers by developing cutting edge digital products and executing smart and valuable service by qudex template on themeforest at the begining stage. Our exceptional digital products, offers, services and brand communication solution from idea to a product creating successful digital services for innovative startups and established businesses with trendy UX/UI design front and back-end development.</p>
               <Link href="/about" className="blog__btn about_btn">
                 Read More{" "}
                 <span>

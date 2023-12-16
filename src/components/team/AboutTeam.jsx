@@ -90,7 +90,7 @@ const AboutTeam = () => {
           >
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
+
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -101,13 +101,12 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Jesse Harris</h4>
                     <h5 className="team__member-role"> Qude vision  </h5>
                   </div>
-                </Link>
+
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -118,13 +117,11 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Tom Hobby </h4>
                     <h5 className="team__member-role"> The lorex </h5>
                   </div>
-                </Link>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -135,12 +132,10 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Vinh </h4>
                     <h5 className="team__member-role"> Planet tech Master </h5>
                   </div>
-                </Link>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -151,13 +146,11 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Jesse Harris</h4>
                     <h5 className="team__member-role"> Qude vision  </h5>
                   </div>
-                </Link>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -168,13 +161,11 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Tom Hobby </h4>
                     <h5 className="team__member-role"> The lorex </h5>
                   </div>
-                </Link>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                <Link href="/team-details">
                   <Image
                     priority
                     style={{ width: "100%", height: "auto" }}
@@ -185,7 +176,6 @@ const AboutTeam = () => {
                     <h4 className="team__member-name">Vinh </h4>
                     <h5 className="team__member-role"> Planet tech Master </h5>
                   </div>
-                </Link>
               </div>
             </SwiperSlide>
 
