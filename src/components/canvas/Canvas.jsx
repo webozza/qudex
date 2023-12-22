@@ -176,7 +176,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                    */}
                   <li>
                     <div className="header_title">
-                      <Link href={"/service"}>How It Works</Link>
+                      <Link href={"/how-it-works"}>How It Works</Link>
                     </div>
                   </li>
                   <li>
@@ -196,7 +196,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href={""}>What Is QUDE™</Link>
+                      <Link href={"/what-is-qudex"}>What Is QUDE™</Link>
                     </div>
                   </li>
                   <li>
