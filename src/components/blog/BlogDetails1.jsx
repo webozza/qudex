@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Author from "../../../public/assets/imgs/blog/detail/author.png";
-import Detail1 from "../../../public/assets/imgs/blog/detail/1.jpg";
+import Detail1 from "../../../public/assets/imgs/blog/detail/q-blog-detail-1.jpg";
 import Detail2 from "../../../public/assets/imgs/blog/detail/2.jpg";
 import Detail3 from "../../../public/assets/imgs/blog/detail/3.jpg";
 import { useEffect, useRef } from "react";
@@ -27,15 +27,15 @@ const BlogDetails1 = () => {
                   className="blog__detail-date animation__word_come"
                   ref={wordAnim}
                 >
-                  Design, Marketing <span>25 Jan 2019</span>
+                  Qdex <span>2 Aug 2023</span>
                 </h2>
                 <h3
                   className="blog__detail-title animation__word_come"
                   ref={wordAnim2}
                 >
-                  Donate your design for newest designers to try better
+                  Introduction to Qudex: Revolutionizing ESG Management
                 </h3>
-                <div className="blog__detail-metalist">
+                {/* <div className="blog__detail-metalist">
                   <div className="blog__detail-meta">
                     <Image
                       priority
@@ -52,7 +52,7 @@ const BlogDetails1 = () => {
                       Viewed <span>3 min read</span>
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xxl-12">
@@ -68,78 +68,26 @@ const BlogDetails1 = () => {
             </div>
             <div className="col-xxl-8 col-xl-10 offset-xxl-2 offset-xl-1">
               <div className="blog__detail-content">
+                <h2>Introduction:</h2>
                 <p>
-                  We love to bring designs to life as a developer, and I aim to
-                  do this using whatever front end tools are necessary. My
-                  preferred tools are more modern javascript libraries like
-                  React.js but I like to use whatever is best for the websites
-                  needs. There are several reasons why a business would consider
-                  a rebrand and it doesn’t necessarily mean the business has
-                  been unsuccessful.{" "}
+                Welcome to the future of sustainable business! Today, we’re thrilled to introduce you to Qudex, the game-changer in Environmental, Social, and Governance (ESG) management. In a world where responsible business practices are more critical than ever, Qudex is here to simplify and elevate the way companies approach ESG.{" "}
                 </p>
+                <h2>The Challenge of Managing ESG: </h2>
                 <p>
-                  But in order that you may see whence all this born error of
-                  those who accuse pleasure and praise pain, I will open the
-                  whole matter, and explain the very things which were said by
-                  that discoverer of truth and, as it were, the architect of a
-                  happy life.
+                Traditionally, managing ESG has been a complex and time-consuming endeavor for businesses. Gathering data, analyzing it, and ensuring compliance with various regulations can be overwhelming. Not to mention, communicating ESG efforts effectively to stakeholders is no walk in the park. Many businesses struggle to keep up with the demands of sustainable reporting while juggling their core operations.{" "}
                 </p>
-                <Image
-                  priority
-                  width={850}
-                  style={{ height: "auto" }}
-                  src={Detail2}
-                  alt="Blog Image"
-                />
-                <h2>JavaScript</h2>
+                <h2>The Qudex Solution:  </h2>
                 <p>
-                  We love to bring designs to life as a developer, and I aim to
-                  do this using whatever front end tools are necessary. My
-                  preferred tools are more modern javascript libraries like
-                  React.js but I like to use whatever is best for the websites
-                  needs. There are several reasons why a business would consider
-                  a rebrand and it doesn’t necessarily mean the business has
-                  been unsuccessful.
+                But fear not, because Qudex is here to save the day! Our revolutionary platform streamlines ESG management, making it accessible and efficient for businesses of all sizes. With cutting-edge AI technology and user-friendly interfaces, we’ve simplified the entire process. Gone are the days of drowning in spreadsheets and struggling to make sense of vast amounts of data.{" "}
                 </p>
-                <h2>Fremework</h2>
+                <p>With Qudex, businesses can easily track their environmental impact, monitor social initiatives, and optimize governance practices. Our platform centralizes all the necessary information and automates data collection, allowing you to focus on what matters most – driving positive change.</p>
+                <p>We’ve packed Qudex with powerful features, including real-time reporting, predictive analytics, and custom dashboards. This means you can make informed decisions on the fly and communicate your sustainability efforts confidently to investors, customers, and other stakeholders.</p>
+                <h2>Conclusion: </h2>
                 <p>
-                  Always ready to push the boundaries, especially when it comes
-                  to our own platform, Our analytical eye to create a site that
-                  was visually engaging and also optimised for maximum
-                  performance. It also perfectly reflects the journey to help it
-                  tell a story to increase its understanding and drive action.
-                  To create a site that was visually engaging for maximum
-                  performance.
+                At Qudex, we firmly believe that sustainable practices are not only good for the planet but also essential for long-term business success. Our mission is to empower businesses like yours to thrive in the new era of ESG consciousness.{" "}
                 </p>
-                <ul>
-                  <li>Brand Development</li>
-                  <li>UX/UI Design</li>
-                  <li>Front-end Development</li>
-                  <li>Copywriting</li>
-                  <li>Shopify Development</li>
-                </ul>
-                <h2>Visual Studio</h2>
-                <p>
-                  Just like other pseudo-elements and pseudo-class selectors,
-                  :not() can be chained with other pseudo-classes and
-                  pseudo-elements. For example, the following will add a “New!”
-                  word to list items that do not have a .old class name, using
-                  the ::after pseudo-element:
-                </p>
-                <Image
-                  priority
-                  width={850}
-                  style={{ height: "auto" }}
-                  src={Detail3}
-                  alt="Code"
-                />
-              </div>
-              <div className="blog__detail-tags">
-                <p className="sub-title-anim">
-                  tags: <Link href="/blog">design</Link>,{" "}
-                  <Link href="/blog">figma</Link>,
-                  <Link href="/tag">update</Link>
-                </p>
+                <p>Qudex is not just a platform – it’s your partner in making a meaningful contribution to a sustainable future. Our goal is to streamline ESG management so that every business, big or small, can commit to responsible practices without getting overwhelmed.</p>
+                <p>Ready to revolutionize your ESG approach? Join the growing number of businesses switching to Qudex today. Let’s make sustainability not just a goal, but an achievable reality. Start your journey with Qudex now!</p>
               </div>
             </div>
           </div>

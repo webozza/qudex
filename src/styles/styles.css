@@ -299,6 +299,12 @@
     padding: 10px;
 }
 
+/* Blog Details */
+
+.detail-top {
+    margin-bottom: 85px;
+}
+
 
 
 
@@ -478,6 +484,13 @@
     .business-img img {
         width: 135px;
         height: auto;
+    }
+    /* Blog details */
+    .detail-top {
+        margin-bottom: 0px;
+    }
+    .blog__detail-thumb {
+        height: 40vh !important;
     }
    
 }

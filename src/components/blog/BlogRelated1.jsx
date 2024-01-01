@@ -9,7 +9,7 @@ import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const BlogRelated = () => {
+const BlogRelated1 = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
@@ -69,7 +69,7 @@ const BlogRelated = () => {
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item">
                 <div className="blog__img-wrapper">
-                  <Link href="/#">
+                  <Link href="/embrace-bio-assets-with-QUDEX">
                     <div className="img-box">
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog22} alt="Blog Thumbnail" />
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog22} alt="BLog Thumbnail" />
@@ -80,11 +80,11 @@ const BlogRelated = () => {
                      August 2, 2023
                 </h4>
                 <h5>
-                  <Link href="/#" className="blog__title">
+                  <Link href="/embrace-bio-assets-with-QUDEX" className="blog__title">
                       Embrace Bio Assets with QUDEX
                   </Link>
                 </h5>
-                <Link href="/#" className="blog__btn">
+                <Link href="/embrace-bio-assets-with-QUDEX" className="blog__btn">
                   Read More{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>
@@ -96,7 +96,7 @@ const BlogRelated = () => {
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item">
                 <div className="blog__img-wrapper">
-                  <Link href="/#">
+                  <Link href="/QUDEX-alpha-launch">
                     <div className="img-box">
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog33} alt="Blog Thumbnail" />
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog33} alt="BLog Thumbnail" />
@@ -107,11 +107,11 @@ const BlogRelated = () => {
                     August 2, 2023
                 </h4>
                 <h5>
-                  <Link href="/#" className="blog__title">
+                  <Link href="/QUDEX-alpha-launch" className="blog__title">
                       QUDEX Alpha Launch: A Scientific Odyssey into AI-Driven Biodiversity Conservation
                   </Link>
                 </h5>
-                <Link href="/#" className="blog__btn">
+                <Link href="/QUDEX-alpha-launch" className="blog__btn">
                   Read More{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>
@@ -153,4 +153,4 @@ const BlogRelated = () => {
   );
 };
 
-export default BlogRelated;
+export default BlogRelated1;
