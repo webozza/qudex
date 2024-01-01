@@ -182,7 +182,7 @@ export default function Footer1() {
                     </li>
                     <li>
                       {/* <Link href="/blog">Q BLOG</Link> */}
-                      <Link href="">Q BLOG</Link>
+                      <Link href="/blog">Q BLOG</Link>
                     </li>
                     <li>
                       {/* <Link href="/faq">Impact Directory</Link> */}
