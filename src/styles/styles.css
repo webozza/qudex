@@ -305,6 +305,84 @@
     margin-bottom: 85px;
 }
 
+/* Impact Directory */
+.impact-img img {
+    margin-left: 60px;
+}
+
+/* Featured Business */
+.featured-business-title {
+    font-size: 60px !important;
+}
+.featured-business-item {
+    background-color: #fdfdfd;
+    min-height: 544px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.top-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.featured-business-item .star {
+    position: absolute;
+    width: 25px;
+    top: 45px;
+    right: 45px;
+}
+.featured-business-item .image {
+    width: 140px;
+    margin: 0 auto 55px;
+}
+.fea-business {
+    margin-left: 35px;
+}
+.bg-lock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(18,29,68,0.2);
+    z-index: 99;
+    border-radius: 10px;
+}
+.background-black {
+    background-color: #272727;
+    padding: 60px 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.background-black .text:nth-child(2) {
+    height: 70px;
+    padding: 8px 10px;
+    margin: 0 20px;
+    border-left: solid 1px rgba(255,255,255,0.5);
+    border-right: solid 1px rgba(255,255,255,0.5);
+}
+.background-black-lock .image {
+    width: 21px;
+    margin: 0;
+}
+.background-black-lock {
+    padding: 82px 30px;
+}
+.background-black .text p {
+    color: #fff !important;
+    opacity: .5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.background-black .text h3 {
+    color: #fff !important;
+    text-align: center;
+    font-size: 16px;
+}
+
 
 
 
@@ -491,6 +569,22 @@
     }
     .blog__detail-thumb {
         height: 40vh !important;
+    }
+    /* Impact Directory */
+    .impact-img img {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+    /* Featured Business */
+    .featured-business-title {
+        font-size: 32px !important;
+        padding-top: 0 !important;
+    }
+    .fea-business {
+        margin-left: 0px;
+    }
+    .featured-business-item {
+        margin: 0 17px;
     }
    
 }

@@ -186,7 +186,7 @@ export default function Footer1() {
                     </li>
                     <li>
                       {/* <Link href="/faq">Impact Directory</Link> */}
-                      <Link href="">Impact Directory</Link>
+                      <Link href="/impact-directory">Impact Directory</Link>
                     </li>
                   </ul>
                 </div>
