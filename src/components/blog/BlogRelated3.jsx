@@ -123,7 +123,7 @@ const BlogRelated3 = () => {
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item">
                 <div className="blog__img-wrapper">
-                  <Link href="/#">
+                  <Link href="/embracing-QUDEX">
                     <div className="img-box">
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog44} alt="Blog Thumbnail" />
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog44} alt="BLog Thumbnail" />
@@ -134,11 +134,11 @@ const BlogRelated3 = () => {
                     August 2, 2023
                 </h4>
                 <h5>
-                  <Link href="/#" className="blog__title">
+                  <Link href="/embracing-QUDEX" className="blog__title">
                       Embracing QUDEX: Unveiling a New Approach to Sustainable Investments
                   </Link>
                 </h5>
-                <Link href="/#" className="blog__btn">
+                <Link href="/embracing-QUDEX" className="blog__btn">
                   Read More{" "}
                   <span>
                     <i className="fa-solid fa-arrow-right"></i>

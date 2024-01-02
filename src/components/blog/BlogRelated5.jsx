@@ -2,14 +2,14 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import Link from "next/link";
+import Blog11 from "../../../public/assets/imgs/blog/q-blog-1.jpg";
 import Blog22 from "../../../public/assets/imgs/blog/q-blog-2.jpg";
 import Blog33 from "../../../public/assets/imgs/blog/q-blog-3.jpg";
-import Blog44 from "../../../public/assets/imgs/blog/q-blog-4.jpg";
 import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const BlogRelated1 = () => {
+const BlogRelated5 = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
@@ -69,6 +69,33 @@ const BlogRelated1 = () => {
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <article className="blog__item">
                 <div className="blog__img-wrapper">
+                  <Link href="/revolutionizing-esg-management">
+                    <div className="img-box">
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog11} alt="BLog Thumbnail" />
+                    </div>
+                  </Link>
+                </div>
+                <h4 className="blog__meta">
+                    August 2, 2023
+                </h4>
+                <h5>
+                  <Link href="/revolutionizing-esg-management" className="blog__title">
+                    Qudex: Revolutionizing ESG Management
+                  </Link>
+                </h5>
+                <Link href="/revolutionizing-esg-management" className="blog__btn">
+                  Read More{" "}
+                  <span>
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </Link>
+              </article>
+            </div>
+
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
+              <article className="blog__item">
+                <div className="blog__img-wrapper">
                   <Link href="/embrace-bio-assets-with-QUDEX">
                     <div className="img-box">
                       <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog22} alt="Blog Thumbnail" />
@@ -119,33 +146,6 @@ const BlogRelated1 = () => {
                 </Link>
               </article>
             </div>
-
-            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
-              <article className="blog__item">
-                <div className="blog__img-wrapper">
-                  <Link href="/embracing-QUDEX">
-                    <div className="img-box">
-                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog44} alt="Blog Thumbnail" />
-                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog44} alt="BLog Thumbnail" />
-                    </div>
-                  </Link>
-                </div>
-                <h4 className="blog__meta">
-                    August 2, 2023
-                </h4>
-                <h5>
-                  <Link href="/embracing-QUDEX" className="blog__title">
-                      Embracing QUDEX: Unveiling a New Approach to Sustainable Investments
-                  </Link>
-                </h5>
-                <Link href="/embracing-QUDEX" className="blog__btn">
-                  Read More{" "}
-                  <span>
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </span>
-                </Link>
-              </article>
-            </div>
           </div>
         </div>
       </section>
@@ -153,4 +153,4 @@ const BlogRelated1 = () => {
   );
 };
 
-export default BlogRelated1;
+export default BlogRelated5;
