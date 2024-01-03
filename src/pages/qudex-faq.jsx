@@ -1,22 +1,25 @@
 import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
-import Contact1 from "@/components/contact/Contact1";
+import Faq1 from "@/components/faq/Faq1";
+import FaqCTA from "@/components/cta/FaqCTA";
+import FaqQ from "@/components/faq/FaqQ";
 
-const Contact = () => {
+const Faq = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
-        <meta name="description" content="Contact Description" />
+        <title>Faq</title>
+        <meta name="description" content="Faq Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <Contact1 />
+          <FaqQ />
+          <FaqCTA />
         </RootLayout>
       </main>
     </>
   );
 };
 
-export default Contact;
+export default Faq;
