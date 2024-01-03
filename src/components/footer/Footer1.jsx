@@ -124,10 +124,10 @@ export default function Footer1() {
   }, []);
   return (
     <>
-      <footer className="footer__area-3">
+      <footer className="footer__area-3 qudex-footer">
         <div className="footer__top-3">
           <div className="footer__top-wrapper-3">
-            <div className="footer__logo-3 pt-120">
+            <div className="footer__logo-3 pt-5">
               <Image
                 priority
                 style={{ width: "auto", height: "auto" }}
@@ -166,10 +166,25 @@ export default function Footer1() {
         <div className="footer__btm-3">
           <div className="container-fluid">
             <div className="row">
-              <div className="col-xxl-4 col-xl-4 col-lg-4">
+              <div className="col-xxl-2 col-xl-2 col-lg-2 qudex-copyright">
                 <div className="footer__copyright-3">
                   <p>© 2022 - 2025 | Alrights reserved by {"Qudex"}</p>
                 </div>
+              </div>
+              <div className="col-xxl-2 col-xl-2 col-lg-2 qudex-newslater">
+                <div className="footer__subscribe">
+                  <p className="pb-4 text-white">Newsletter Signup</p>
+                      <form action="#">
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Enter your email"
+                        />
+                        <button type="submit" className="subs-btn">
+                          <i className="fa-solid fa-paper-plane"></i>
+                        </button>
+                      </form>
+                    </div>
               </div>
               <div className="col-xxl-8 col-xl-8 col-lg-8">
                 <div className="footer__nav-2">

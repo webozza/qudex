@@ -397,6 +397,21 @@
     font-size: 16px;
 }
 
+/* Footer */
+.qudex-copyright {
+    display: flex;
+    align-items: center;
+}
+.qudex-newslater .footer__subscribe {
+    border: 0;
+}
+.qudex-newslater p {
+    margin-top: 60px;
+}
+.qudex-footer .footer__btm-3 {
+    padding: 10px;
+}
+
 
 
 
