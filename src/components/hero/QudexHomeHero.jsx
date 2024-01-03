@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { SplitText } from "@/plugins";
 import Link from "next/link.js";
 import ArrowIcon from "../../../public/assets/imgs/hero/4/arrow-icon.png";
-import Hero4 from "../../../public/assets/imgs/hero/1/hero-bg.jpg";
+import Hero4 from "../../../public/assets/imgs/hero/1/hero-bg-q.png";
 import HeroShape from "../../../public/assets/imgs/hero/4/hero-shape.png";
 import HeroShape2 from "../../../public/assets/imgs/hero/4/hero-shape-2.png";
 import HeroShape3 from "../../../public/assets/imgs/hero/4/hero-shape-3.png";
