@@ -75,17 +75,24 @@ const DigitalMarketingHero = () => {
             <div className="col-xxl-12">
               <div className="hero__inner-3">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-sub-title">O1. Climate Business Solutions</h2>
+                  <h2 className="sec-sub-title">
+                    O1. Climate Business Solutions - XXX
+                  </h2>
                   <h3 className="sec-title title-left" ref={titleLeft}>
-                  Nature <span>Based</span>
+                    Nature <span>Based</span>
                   </h3>
                   <h3 className="sec-title title-right" ref={titleRight}>
-                  Offsets  
+                    Offsets
                   </h3>
                 </div>
                 <div className="hero__text-3">
                   <p className="hero__text-animation" ref={heroTextAnim}>
-                  Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
+                    Dive into a world where business and sustainability merge
+                    seamlessly. From enhancing carbon footprints going Beyond
+                    Carbon to unrivaled ecological analysis with QUDE™, elevate
+                    your corporate responsibility. Discover intuitive tools like
+                    EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for
+                    impactful land management and funding.
                   </p>
                 </div>
                 <div className="scroll-down">
