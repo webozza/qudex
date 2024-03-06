@@ -11,6 +11,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
   const [accordion, setAccordion] = useState(0);
   const [subAccordion, setSubAccordion] = useState(0);
   const headerTitle = useRef();
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTimeout(() => {
@@ -36,12 +37,15 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
       }, 10);
     }
   }, []);
+
   const openData = (data) => {
     setAccordion(data);
   };
+
   const openSubData = (data) => {
     setSubAccordion(data);
   };
+
   const closeCanvas = () => {
     ofCanvasArea.current.style.opacity = "0";
     ofCanvasArea.current.style.visibility = "hidden";
@@ -50,6 +54,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
       header_bg.style.setProperty("mix-blend-mode", "exclusion");
     }
   };
+
   return (
     <>
       <div className="offcanvas__area" ref={ofCanvasArea}>
@@ -57,12 +62,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
           <div className="offcanvas__left">
             <div className="offcanvas__logo">
               <Link href="/">
-                <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
-                  src={logoWhite2}
-                  alt="Offcanvas Logo"
-                />
+                <Image priority style={{ width: "auto", height: "auto" }} src={logoWhite2} alt="Offcanvas Logo" />
               </Link>
             </div>
             <div className="offcanvas__social">
@@ -650,20 +650,8 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                 <li>230 Norman Street New York, QC (USA) H8R 1A1</li>
               </ul> */}
             </div>
-            <Image
-              priority
-              style={{ width: "auto", height: "auto" }}
-              src={Shape11}
-              alt="shape"
-              className="shape-1"
-            />
-            <Image
-              priority
-              style={{ width: "auto", height: "auto" }}
-              src={Shape12}
-              alt="shape"
-              className="shape-2"
-            />
+            <Image priority style={{ width: "auto", height: "auto" }} src={Shape11} alt="shape" className="shape-1" />
+            <Image priority style={{ width: "auto", height: "auto" }} src={Shape12} alt="shape" className="shape-2" />
           </div>
           <div className="offcanvas__close">
             <button type="button" onClick={closeCanvas}>

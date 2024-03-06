@@ -13,6 +13,7 @@ const QudexHero = () => {
   const charAnim = useRef();
   const charAnim2 = useRef();
   const heroTextAnim = useRef();
+
   useEffect(() => {
     animationCharCome(charAnim.current);
     animationCharCome(charAnim2.current);
@@ -22,11 +23,7 @@ const QudexHero = () => {
         let split_text_animation = new SplitText(hero__text_animation, {
           type: "chars words",
         });
-        gsap.from(
-          split_text_animation.words,
-          { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 },
-          "-=1"
-        );
+        gsap.from(split_text_animation.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
         let imageTl_8 = gsap.timeline({
           scrollTrigger: {
             trigger: ".portfolio__big",
@@ -45,15 +42,13 @@ const QudexHero = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="hero__area-4 sp-x">
         <div className="hero__content-8">
-          <h2
-            className="sec-title-4 sec-title-5 animation__char_come"
-            ref={charAnim}
-          >
-            WHAT  IS <span>QUDE™</span> {" "}
+          <h2 className="sec-title-4 sec-title-5 animation__char_come" ref={charAnim}>
+            WHAT IS <span>QUDE™</span>{" "}
             {/* <Image
               priority
               width={108}
@@ -62,9 +57,7 @@ const QudexHero = () => {
               alt="shape"
             /> */}
           </h2>
-          <h2 className="sec-title-4 animation__char_come" ref={charAnim2}>
-              
-          </h2>
+          <h2 className="sec-title-4 animation__char_come" ref={charAnim2}></h2>
           <div className="scroll-wrapper">
             <div className="scroll-down">
               {/* <span>scroll</span> */}
@@ -76,7 +69,7 @@ const QudexHero = () => {
               /> */}
             </div>
             <p className="discription hero__text-animation" ref={heroTextAnim}>
-                 QUDE, “Quantitative Environmental Data Evaluation”, is the core technology behind QUDEX’s offering. It represents a sophisticated method of collecting, analyzing, and presenting environmental data to provide actionable insights.
+              QUDE, “Quantitative Environmental Data Evaluation”, is the core technology behind QUDEX’s offering. It represents a sophisticated method of collecting, analyzing, and presenting environmental data to provide actionable insights.
             </p>
             {/* <div className="row pt-5">
               <div className="col-lg-6">
@@ -113,19 +106,12 @@ const QudexHero = () => {
             </div> */}
           </div>
           <div className="hero-earth">
-            <Image
-                width={300}
-                src={Earth}
-              alt="Earth"
-            />
+            <Image width={300} src={Earth} alt="Earth" />
           </div>
         </div>
       </section>
       <div className="portfolio__big">
-        <div
-          className="portfolio__big-inner"
-          style={{ backgroundImage: "url(assets/imgs/portfolio/detail/eco.png)" }}
-        >
+        <div className="portfolio__big-inner" style={{ backgroundImage: "url(assets/imgs/portfolio/detail/eco.png)" }}>
           {" "}
         </div>
       </div>

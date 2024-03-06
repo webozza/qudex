@@ -2,7 +2,6 @@
 /*  14. HERO CSS START
 /*----------------------------------------*/
 
-
 .hero {
   &__area {
     background-color: var(--black);
@@ -28,7 +27,7 @@
       height: auto;
       animation: wcRotate 18s infinite linear;
     }
-    // update v0.2 
+    // update v0.2
     &-2 {
       background-image: url(/assets/imgs/bg/lines.png);
       background-repeat: no-repeat;
@@ -122,7 +121,7 @@
           @media #{$sm} {
             flex-direction: column;
           }
-          // update v0.2 
+          // update v0.2
           .bg-shape {
             background-image: url(/assets/imgs/shape/10.png);
             background-repeat: no-repeat;
@@ -160,7 +159,7 @@
         padding-top: 130px;
         padding-bottom: 0;
       }
-      // update v0.2 
+      // update v0.2
       &::before {
         position: absolute;
         content: "";
@@ -173,7 +172,7 @@
         background-position: left;
         z-index: -1;
       }
-      // update v0.2 
+      // update v0.2
       &::after {
         position: absolute;
         content: "";
@@ -264,34 +263,33 @@
         }
 
         @media #{$lg} {
-          font-size: 180px;
+          font-size: 173px;
         }
 
         @media #{$md} {
-          font-size: 130px;
+          font-size: 114px;
         }
 
         @media #{$sm} {
-          font-size: 90px;
+          font-size: 74px;
         }
       }
       .sec-title > span {
         font-size: 74px;
         padding: 0px !important;
         margin: 0px !important;
-    }
+      }
 
       .title-right {
         position: absolute;
         right: 0;
       }
 
-
       .wrapper {
         --clip-path: circle(65px at left);
         --clip-path-hover: circle(70px at left);
         --clip-path-clicked: circle(100vw at left);
-        --duration: .4s;
+        --duration: 0.4s;
         --timing-function: ease;
         display: flex;
         justify-content: center;
@@ -314,10 +312,10 @@
 
       .video-info {
         width: 300px;
-        position: relative;
-        left: 800px;
-        top: 143px;
         height: 200px;
+        position: relative;
+        right: -40%;
+        top: 10%;
 
         @media #{$lg} {
           left: 200px;
@@ -342,7 +340,7 @@
         top: 55px;
         left: 100px;
 
-        // update v0.2 
+        // update v0.2
         &::before {
           position: absolute;
           top: -20px;
@@ -407,11 +405,11 @@
         }
 
         &:hover {
-          ~.video {
+          ~ .video {
             clip-path: var(--clip-path-hover);
           }
 
-          ~.text {
+          ~ .text {
             &::before {
               --r: 25px;
               --opacity: 1;
@@ -421,7 +419,7 @@
               clip-path: var(--clip-path-hover);
             }
 
-            >span {
+            > span {
               &::after {
                 clip-path: var(--clip-path-hover);
               }
@@ -437,19 +435,19 @@
           left: 0;
           bottom: 0;
 
-          ~.video {
+          ~ .video {
             clip-path: var(--clip-path-clicked);
           }
 
-          ~.text {
+          ~ .text {
             --opacity: 0;
-            transition: opacity .3s var(--timing-function);
+            transition: opacity 0.3s var(--timing-function);
 
             &::after {
               clip-path: var(--clip-path-clicked);
             }
 
-            >span {
+            > span {
               &::after {
                 clip-path: var(--clip-path-clicked);
               }
@@ -459,7 +457,6 @@
       }
 
       &.start-video {
-
         .hero3-img {
           opacity: 0;
         }
@@ -600,7 +597,7 @@
   }
 
   &__text {
-    // update v0.2 
+    // update v0.2
     &-2 {
       background-image: url(/assets/imgs/icon/7.png);
       background-repeat: no-repeat;
@@ -660,7 +657,7 @@
 
     &-3 {
       max-width: 265px;
-      padding-top: 90px;
+      padding-top: 170px;
       position: relative;
       z-index: 9;
 
@@ -682,6 +679,7 @@
       }
 
       @media #{$sm} {
+        padding-top: 80px;
         padding-bottom: 30px;
       }
 
@@ -770,7 +768,6 @@
     }
 
     img {
-
       // animation: wcSlideBottom 3s infinite;
       @media #{$xl} {
         max-width: 120px;
@@ -865,7 +862,7 @@
         right: 60px;
         top: 35px;
       }
-      // update v0.2 
+      // update v0.2
       @media #{$md} {
         right: 0;
         top: -25px;
@@ -937,7 +934,7 @@
   }
 
   // About Hero
-  // update v0.2 
+  // update v0.2
   &__about {
     background-image: url(/assets/imgs/about/about-bg.png);
     background-repeat: no-repeat;
@@ -1093,7 +1090,7 @@
       }
 
       @media #{$sm} {
-        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-right: calc(-0.5 * var(--bs-gutter-x));
       }
     }
   }
@@ -1148,7 +1145,6 @@
       }
     }
   }
-
 }
 
 #hero {
@@ -1165,7 +1161,7 @@
   }
 }
 
-// hero portfolio 
+// hero portfolio
 .hero {
   &__content-8 {
     padding-top: 80px;
@@ -1251,7 +1247,6 @@
   }
 }
 
-
 .portfolio__big {
   text-align: center;
   padding-bottom: 395px;
@@ -1335,9 +1330,6 @@
     padding: 30px 15px;
   }
 }
-
-
-
 
 // Dark Version
 .dark {

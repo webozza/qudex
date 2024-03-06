@@ -34,16 +34,8 @@ const DigitalMarketingHero = () => {
           autoAlpha: 0,
           stagger: 0.2,
         });
-        HomeDigital.from(
-          split_solutions.chars,
-          { duration: 1, x: 100, autoAlpha: 0, stagger: 0.1 },
-          "-=1"
-        );
-        HomeDigital.from(
-          split_text_animation.words,
-          { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 },
-          "-=1"
-        );
+        HomeDigital.from(split_solutions.chars, { duration: 1, x: 100, autoAlpha: 0, stagger: 0.1 }, "-=1");
+        HomeDigital.from(split_text_animation.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
       });
       return () => tHero.revert();
     }
@@ -67,6 +59,7 @@ const DigitalMarketingHero = () => {
       headerArea.classList.remove("bg-white");
     }
   };
+
   return (
     <>
       <section className="hero__area-3" ref={heroArea}>
@@ -77,25 +70,20 @@ const DigitalMarketingHero = () => {
                 <div className="sec-title-wrapper">
                   <h2 className="sec-sub-title">O1. Climate Business Solutions</h2>
                   <h3 className="sec-title title-left" ref={titleLeft}>
-                  Nature <span>Based</span>
+                    Nature <span>Based</span>
                   </h3>
                   <h3 className="sec-title title-right" ref={titleRight}>
-                  Offsets  
+                    Offsets
                   </h3>
                 </div>
                 <div className="hero__text-3">
                   <p className="hero__text-animation" ref={heroTextAnim}>
-                  Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
+                    Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
                   </p>
                 </div>
                 <div className="scroll-down">
                   <button>
-                    <Image
-                      priority
-                      style={{ width: "auto", height: "auto" }}
-                      src={ArrowDownSm}
-                      alt="arrow icon"
-                    />
+                    <Image priority style={{ width: "auto", height: "auto" }} src={ArrowDownSm} alt="arrow icon" />
                   </button>
                 </div>
               </div>
@@ -105,45 +93,24 @@ const DigitalMarketingHero = () => {
         <div className="wrapper" ref={wrapper}>
           <div className="video-info">
             <div className="video-intro">
-              <input
-                id="video_check"
-                type="checkbox"
-                ref={videoCheck}
-                onClick={openVideo}
-              />
+              <input id="video_check" type="checkbox" ref={videoCheck} onClick={openVideo} />
               <div className="intro-title">
                 <h4 className="video-title" ref={videoTitle}>
                   Watch <span>video intro</span>
                 </h4>
-                <h4
-                  className="video-title close-video-title"
-                  ref={videoCloseSection}
-                >
+                <h4 className="video-title close-video-title" ref={videoCloseSection}>
                   Close <span>video intro</span>
                 </h4>
               </div>
               <div className="video">
-                <video
-                  src="assets/video/hero-3.mp4"
-                  loop
-                  muted
-                  autoPlay
-                  playsInline
-                ></video>
+                <video src="assets/video/hero-3.mp4" loop muted autoPlay playsInline></video>
               </div>
             </div>
           </div>
         </div>
 
         <div className="hero3-img-ani">
-          <Image
-            priority
-            width={1195}
-            style={{ height: "auto" }}
-            src={Hero31}
-            alt="Hero Image"
-            className="hero3-img"
-          />
+          <Image priority width={1195} style={{ height: "auto" }} src={Hero31} alt="Hero Image" className="hero3-img" />
         </div>
       </section>
     </>
