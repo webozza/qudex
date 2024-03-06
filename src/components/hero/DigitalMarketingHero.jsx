@@ -68,7 +68,7 @@ const DigitalMarketingHero = () => {
             <div className="col-xxl-12">
               <div className="hero__inner-3">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-sub-title">O1. Climate Business Solutions</h2>
+                  <h2 className="sec-sub-title">O1. Climate Business Solutions - XXX</h2>
                   <h3 className="sec-title title-left" ref={titleLeft}>
                     Nature <span>Based</span>
                   </h3>
