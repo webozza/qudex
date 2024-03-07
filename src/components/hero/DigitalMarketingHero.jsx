@@ -4,6 +4,7 @@ import { SplitText } from "@/plugins";
 import ArrowDownSm from "../../../public/assets/imgs/icon/arrow-down-sm.png";
 import Hero31 from "../../../public/assets/imgs/hero/3/1.jpg";
 import Image from "next/image.js";
+import Link from "next/link";
 
 const DigitalMarketingHero = () => {
   const titleLeft = useRef();
@@ -80,6 +81,19 @@ const DigitalMarketingHero = () => {
                   <p className="hero__text-animation" ref={heroTextAnim}>
                     Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
                   </p>
+                </div>
+                <div>
+                  <button className="hero-cta">
+                    <Link className="hero-cta-url" href="/the-platform">
+                      Discover Land Management Solutions
+                    </Link>
+                  </button>
+                  <br />
+                  <button className="hero-cta">
+                    <Link className="hero-cta-url" href="/the-platform">
+                      Explore Power Ups & Eco Score Card
+                    </Link>
+                  </button>
                 </div>
                 <div className="scroll-down">
                   <button>

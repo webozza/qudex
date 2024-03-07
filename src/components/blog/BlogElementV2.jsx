@@ -64,11 +64,7 @@ const BlogElementV2 = () => {
                   Read Updated <br />
                   Journal
                 </h3>
-                <p>
-                  Read our blog and try to see everything from every
-                  perspective. Our passion lies in making everything accessible
-                  and aesthetic for everyone.{" "}
-                </p>
+                <p>Read our blog and try to see everything from every perspective. Our passion lies in making everything accessible and aesthetic for everyone. </p>
               </div>
             </div>
           </div>
@@ -79,27 +75,13 @@ const BlogElementV2 = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
                 <div className="blog__info-3">
-                  <h4 className="blog__meta">
-                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
-                  </h4>
+                  <h4 className="blog__meta">{/* <Link href="/category">UI Design</Link> . 02 May 2019 */}</h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
                       How to bring fold to your startup company with qudex
@@ -120,27 +102,13 @@ const BlogElementV2 = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
                 <div className="blog__info-3">
-                  <h4 className="blog__meta">
-                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
-                  </h4>
+                  <h4 className="blog__meta">{/* <Link href="/category">UI Design</Link> . 02 May 2019 */}</h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
                       How to manage a talented and successful design team
@@ -160,27 +128,13 @@ const BlogElementV2 = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
                 <div className="blog__info-3">
-                  <h4 className="blog__meta">
-                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
-                  </h4>
+                  <h4 className="blog__meta">{/* <Link href="/category">UI Design</Link> . 02 May 2019 */}</h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
                       How to bring fold to your startup company with qudex
@@ -201,34 +155,20 @@ const BlogElementV2 = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
                 <div className="blog__info-3">
-                  <h4 className="blog__meta">
-                    {/* <Link href="/category">UI Design</Link> . 02 May 2019 */}
-                  </h4>
+                  <h4 className="blog__meta">{/* <Link href="/category">UI Design</Link> . 02 May 2019 */}</h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
                       How to manage a talented and successful design team
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">
-                    Read More{" "}
+                    Read More
                     <span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>

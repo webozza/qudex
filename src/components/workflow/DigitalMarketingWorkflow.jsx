@@ -96,6 +96,7 @@ const DigitalMarketingWorkflow = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="workflow__area-3">
@@ -103,7 +104,7 @@ const DigitalMarketingWorkflow = () => {
           <div className="choose-wrapper wf_panel">
             <div className="container">
               <div className="row">
-                <div className="col-xxl-12">
+                <div className="col-xxl-">
                   <div className="choose-title-wrapper">
                     <h2 className="choose-title title-anim">
                       OUR <br /> Services
@@ -114,9 +115,7 @@ const DigitalMarketingWorkflow = () => {
             </div>
           </div>
 
-          {/*
-           ~~~~~~~~~~    FIrst slide    ~~~~~~~~~~
-*/}
+          {/*~~~~~~~~~~    FIrst slide    ~~~~~~~~~~*/}
 
           <div className="research__area area-bg-white wf_panel pt-150">
             <div className="container inner_content">

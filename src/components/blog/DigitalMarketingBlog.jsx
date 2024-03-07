@@ -8,7 +8,6 @@ import Image from "next/image.js";
 import Blog1 from "../../../public/assets/imgs/blog/home-page-blog/1.jpg";
 import Blog2 from "../../../public/assets/imgs/blog/home-page-blog/2.jpg";
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const DigitalMarketingBlog = () => {
@@ -54,6 +53,7 @@ const DigitalMarketingBlog = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="blog__area-3 pb-140 blog__animation">
@@ -66,34 +66,19 @@ const DigitalMarketingBlog = () => {
                   Read Updated <br />
                   Journal
                 </h3>
-                <p>
-                Discover the latest in eco-conscious business practices, sustainability trends, and success stories in our Green Insights Blog. Stay informed, inspired, and engaged as we share valuable insights and real-world applications of innovative solutions like NatureOffsets+.{" "}
-                </p>
+                <p>Discover the latest in eco-conscious business practices, sustainability trends, and success stories in our Green Insights Blog. Stay informed, inspired, and engaged as we share valuable insights and real-world applications of innovative solutions like NatureOffsets+. </p>
               </div>
             </div>
           </div>
 
           <div className="row">
-
             <div className="col-xxl-6 col-xl-6 col-lg-6">
               <article className="blog__item-3">
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog1}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog1}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog1} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog1} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -103,11 +88,11 @@ const DigitalMarketingBlog = () => {
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                    Beyond Carbon: Nurturing Green Futures with NatureOffsets+
+                      Beyond Carbon: Nurturing Green Futures with NatureOffsets+
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">
-                    Read More{" "}
+                    Read More
                     <span>
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
@@ -121,20 +106,8 @@ const DigitalMarketingBlog = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog2}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog2}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog2} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog2} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -144,7 +117,7 @@ const DigitalMarketingBlog = () => {
                   </h4>
                   <h5>
                     <Link href="/blog-details" className="blog__title-3">
-                    Tech-Infused Eco Responsibility: The QUDE™ Advantage
+                      Tech-Infused Eco Responsibility: The QUDE™ Advantage
                     </Link>
                   </h5>
                   <Link href="/blog-details" className="blog__btn">
@@ -156,7 +129,6 @@ const DigitalMarketingBlog = () => {
                 </div>
               </article>
             </div>
-
           </div>
         </div>
       </section>

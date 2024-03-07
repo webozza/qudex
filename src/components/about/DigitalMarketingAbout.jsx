@@ -23,6 +23,7 @@ const DigitalMarketingAbout = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="about__area-3">
@@ -30,35 +31,21 @@ const DigitalMarketingAbout = () => {
           <div className="row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="about__img-3">
-                <Image
-                  priority
-                  style={{ width: "auto", height: "auto" }}
-                  src={About31}
-                  alt="About Thumbnail"
-                  data-speed="auto"
-                  className="smootherReset768"
-                />
+                <Image priority style={{ width: "auto", height: "auto" }} src={About31} alt="About Thumbnail" data-speed="auto" className="smootherReset768" />
               </div>
             </div>
 
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="sec-title-wrapper">
                 <h2 className="sec-sub-title title-anim"></h2>
-                <h3 className="sec-title title-anim">
-                WHAT IS QUDE™ 
-                </h3>
+                <h3 className="sec-title title-anim">WHAT IS QUDE™</h3>
               </div>
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
-                  <p>
-                  QUDE, “Quantitative Environmental Data Evaluation”, is the core technology behind QUDEX’s offering. It represents a sophisticated method of collecting, analyzing, and presenting environmental data to provide actionable insights. QUDE technology transforms raw data into a valuable digital asset that can be used to assess environmental impact and provide meaningful, quantifiable metrics for sustainability.
-                  </p>
+                  <p>QUDE, “Quantitative Environmental Data Evaluation”, is the core technology behind QUDEX’s offering. It represents a sophisticated method of collecting, analyzing, and presenting environmental data to provide actionable insights. QUDE technology transforms raw data into a valuable digital asset that can be used to assess environmental impact and provide meaningful, quantifiable metrics for sustainability.</p>
                   <div className="btn_wrapper">
-                    <Link
-                      className="wc-btn-light btn-hover btn-item"
-                      href="/about"
-                    >
-                      <span></span> Explore Us{" "}
+                    <Link className="wc-btn-light btn-hover btn-item" href="/about">
+                      <span></span> Explore Us
                       <i className="fa-solid fa-arrow-right"></i>
                     </Link>
                   </div>

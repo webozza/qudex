@@ -396,6 +396,15 @@
       @extend .blog__title;
       padding-bottom: 50px;
     }
+
+    @media #{$sm} {
+      font-size: 20px;
+    }
+
+    &-3 {
+      @extend .blog__title;
+      padding-bottom: 10px;
+    }
   }
 
   &__btn {
