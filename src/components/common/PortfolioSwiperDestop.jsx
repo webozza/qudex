@@ -1,12 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import {
-  Mousewheel,
-  EffectFade,
-  Pagination,
-  Navigation,
-  Thumbs,
-  FreeMode,
-} from "swiper";
+import { Mousewheel, EffectFade, Pagination, Navigation, Thumbs, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import Portfolio1 from "../../../public/assets/imgs/portfolio/1.png";
@@ -44,17 +37,17 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
     let rootParent = menuAnim.current.children;
     for (let i = 0; i < rootParent.length; i++) {
       let firstParent = rootParent[i].children;
-      let arr = firstParent[0].textContent.split("")
-      let spanData = ''
+      let arr = firstParent[0].textContent.split("");
+      let spanData = "";
       for (let j = 0; j < arr.length; j++) {
-        if(arr[j] == ' ') {
+        if (arr[j] == " ") {
           spanData += `<span style='width:6px;'>${arr[j]}</span>`;
         } else {
           spanData += `<span>${arr[j]}</span>`;
         }
       }
-      let result = '<div class="menu-text">' + spanData + '</div>';
-      firstParent[0].innerHTML = result
+      let result = '<div class="menu-text">' + spanData + "</div>";
+      firstParent[0].innerHTML = result;
     }
   };
 
@@ -74,10 +67,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
           }}
         >
           <SwiperSlide>
-            <section
-              className="portfolio__hero-area portfolio-section"
-              ref={portfolioSection}
-            >
+            <section className="portfolio__hero-area portfolio-section" ref={portfolioSection}>
               <div className="container">
                 <div className="row">
                   <div className="col-xxl-12">
@@ -90,15 +80,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                           View all work
                         </Link>
                       </div>
-                      <Image
-                        priority
-                        width={921}
-                        style={{ height: "auto" }}
-                        src={Portfolio1}
-                        alt="Personal Portfolio"
-                        className="pp-thumb"
-                        ref={portfolioHeroImg}
-                      />
+                      <Image priority width={921} style={{ height: "auto" }} src={Portfolio1} alt="Personal Portfolio" className="pp-thumb" ref={portfolioHeroImg} />
                     </div>
                   </div>
                 </div>
@@ -113,29 +95,14 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="col-xxl-8 col-xxl-8 col-lg-8">
                     <div className="portfolio__about-left">
                       <h2 className="sec-title">
-                        I craft wonderful <span>digital experiences</span> for
-                        brands
+                        I craft wonderful <span>digital experiences</span> for brands
                       </h2>
-                      <Image
-                        priority
-                        width={274}
-                        height={106}
-                        src={Shape16}
-                        alt="Shape"
-                      />
+                      <Image priority width={274} height={106} src={Shape16} alt="Shape" />
                     </div>
                   </div>
                   <div className="col-xxl-4 col-xl-4 col-lg-4">
                     <div className="sec-text">
-                      <p>
-                        Based in Washington, DC, I work with experts from the
-                        Center for Strategic and International Studies (CSIS) to
-                        help them communicate their research more effectively on
-                        the web. Together we make websites, data visualizations,
-                        and long-forms that strengthen their networks and engage
-                        new audiences with thoughtful content and design
-                        strategies.
-                      </p>
+                      <p>Based in Washington, DC, I work with experts from the Center for Strategic and International Studies (CSIS) to help them communicate their research more effectively on the web. Together we make websites, data visualizations, and long-forms that strengthen their networks and engage new audiences with thoughtful content and design strategies.</p>
                       <Link href="/about" className="wc-btn-dark">
                         Explore Me
                       </Link>
@@ -147,48 +114,22 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="row">
                     <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
                       <div className="brand-title-wrap">
-                        <h3 className="brand-title">
-                          worked with global largest brands
-                        </h3>
+                        <h3 className="brand-title">worked with global largest brands</h3>
                       </div>
                     </div>
                     <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-8">
                       <div className="brand-list">
                         <div className="brand-logo">
-                          <Image
-                            priority
-                            width={97}
-                            height={67}
-                            src={Brand1}
-                            alt="Brand Logo"
-                          />
+                          <Image priority width={97} height={67} src={Brand1} alt="Brand Logo" />
                         </div>
                         <div className="brand-logo">
-                          <Image
-                            priority
-                            width={85}
-                            height={67}
-                            src={Brand2}
-                            alt="Brand Logo"
-                          />
+                          <Image priority width={85} height={67} src={Brand2} alt="Brand Logo" />
                         </div>
                         <div className="brand-logo">
-                          <Image
-                            priority
-                            width={114}
-                            height={64}
-                            src={Brand3}
-                            alt="Brand Logo"
-                          />
+                          <Image priority width={114} height={64} src={Brand3} alt="Brand Logo" />
                         </div>
                         <div className="brand-logo">
-                          <Image
-                            priority
-                            width={82}
-                            height={70}
-                            src={Brand4}
-                            alt="Brand Logo"
-                          />
+                          <Image priority width={82} height={70} src={Brand4} alt="Brand Logo" />
                         </div>
                       </div>
                     </div>
@@ -222,10 +163,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                           prevEl: ".pp-prev",
                         }}
                         thumbs={{
-                          swiper:
-                            thumbsSwiper && !thumbsSwiper.destroyed
-                              ? thumbsSwiper
-                              : null,
+                          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
                         }}
                       >
                         <div className="swiper-wrapper">
@@ -233,13 +171,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             <div className="pp-slide">
                               <div className="pp-slide-img">
                                 <Link href="/portfolio-details">
-                                  <Image
-                                    priority
-                                    width={520}
-                                    style={{ height: "auto" }}
-                                    src={Portfolio11}
-                                    alt="Portfolio Thumbnail"
-                                  />
+                                  <Image priority width={520} style={{ height: "auto" }} src={Portfolio11} alt="Portfolio Thumbnail" />
                                 </Link>
                               </div>
                             </div>
@@ -248,13 +180,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             <div className="pp-slide">
                               <div className="pp-slide-img">
                                 <Link href="/portfolio-details">
-                                  <Image
-                                    priority
-                                    width={520}
-                                    style={{ height: "auto" }}
-                                    src={Portfolio12}
-                                    alt="Portfolio Thumbnail"
-                                  />
+                                  <Image priority width={520} style={{ height: "auto" }} src={Portfolio12} alt="Portfolio Thumbnail" />
                                 </Link>
                               </div>
                             </div>
@@ -263,13 +189,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             <div className="pp-slide">
                               <div className="pp-slide-img">
                                 <Link href="/portfolio-details">
-                                  <Image
-                                    priority
-                                    width={520}
-                                    style={{ height: "auto" }}
-                                    src={Portfolio13}
-                                    alt="Portfolio Thumbnail"
-                                  />
+                                  <Image priority width={520} style={{ height: "auto" }} src={Portfolio13} alt="Portfolio Thumbnail" />
                                 </Link>
                               </div>
                             </div>
@@ -278,13 +198,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             <div className="pp-slide">
                               <div className="pp-slide-img">
                                 <Link href="/portfolio-details">
-                                  <Image
-                                    priority
-                                    width={520}
-                                    style={{ height: "auto" }}
-                                    src={Portfolio14}
-                                    alt="Portfolio Thumbnail"
-                                  />
+                                  <Image priority width={520} style={{ height: "auto" }} src={Portfolio14} alt="Portfolio Thumbnail" />
                                 </Link>
                               </div>
                             </div>
@@ -292,16 +206,10 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                         </div>
                       </Swiper>
 
-                      <div
-                        style={{ cursor: "pointer" }}
-                        className="pp-next swipper-btn"
-                      >
+                      <div style={{ cursor: "pointer" }} className="pp-next swipper-btn">
                         prev
                       </div>
-                      <div
-                        style={{ cursor: "pointer" }}
-                        className="pp-prev swipper-btn"
-                      >
+                      <div style={{ cursor: "pointer" }} className="pp-prev swipper-btn">
                         Next
                       </div>
                     </div>
@@ -359,11 +267,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   </div>
                   <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
                     <div className="sec-text">
-                      <p>
-                        Static and dynamic secure code review can prevent a 0day
-                        before your product is even released. We can integrate
-                        with your dev environment
-                      </p>
+                      <p>Static and dynamic secure code review can prevent a 0day before your product is even released. We can integrate with your dev environment</p>
                     </div>
                   </div>
                 </div>
@@ -419,8 +323,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                   <div className="col-xxl-12">
                     <div className="ps-btn">
                       <Link href="/contact">
-                        Call me to get more extra service{" "}
-                        <strong>call now</strong>
+                        Call me to get more extra service <strong>call now</strong>
                       </Link>
                     </div>
                   </div>
@@ -442,11 +345,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                       <div className="contact__text">
-                        <p>
-                          {
-                            "Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."
-                          }
-                        </p>
+                        <p>{"Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."}</p>
                       </div>
                     </div>
                   </div>
@@ -462,9 +361,7 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                             <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
                           </li>
                           <li>
-                            <a href="mailto:hello@example.com">
-                              hello@example.com
-                            </a>
+                            <a href="mailto:hello@example.com">hello@example.com</a>
                           </li>
                         </ul>
                       </div>
@@ -488,50 +385,29 @@ const PortfolioSwiperDestop = ({ portfolioSection, portfolioHeroImg }) => {
                         <form action="#">
                           <div className="row g-3">
                             <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="name"
-                                placeholder="Name *"
-                              />
+                              <input type="text" name="name" placeholder="Name *" />
                             </div>
                             <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="email"
-                                name="email"
-                                placeholder="Email *"
-                              />
+                              <input type="email" name="email" placeholder="Email *" />
                             </div>
                           </div>
                           <div className="row g-3">
                             <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Phone"
-                              />
+                              <input type="tel" name="phone" placeholder="Phone" />
                             </div>
                             <div className="col-xxl-6 col-xl-6 col-12">
-                              <input
-                                type="text"
-                                name="subject"
-                                placeholder="Subject *"
-                              />
+                              <input type="text" name="subject" placeholder="Subject *" />
                             </div>
                           </div>
                           <div className="row g-3">
                             <div className="col-12">
-                              <textarea
-                                name="message"
-                                placeholder="Messages *"
-                              ></textarea>
+                              <textarea name="message" placeholder="Messages *"></textarea>
                             </div>
                           </div>
                           <div className="row g-3">
                             <div className="col-12">
                               <div className="pc-btn">
-                                <button className="wc-btn-dark">
-                                  Send Me Quotes
-                                </button>
+                                <button className="wc-btn-dark">Send Me Quotes</button>
                               </div>
                             </div>
                           </div>

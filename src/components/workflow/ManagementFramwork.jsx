@@ -7,11 +7,14 @@ import Manage1 from "../../../public/assets/imgs/brand/QLENS-scaled.jpeg";
 import Tik from "../../../public/assets/imgs/brand/tik.png";
 import { useEffect, useRef } from "react";
 import animationCharCome from "@/lib/utils/animationCharCome";
+
 const ManagementFramwork = () => {
   const charAnim = useRef();
+
   useEffect(() => {
     animationCharCome(charAnim.current);
   }, []);
+
   return (
     <>
       <section className="workflow__area-6">
@@ -25,19 +28,12 @@ const ManagementFramwork = () => {
               <p>
                 Once the roadmap is developed and agreed upon, QUDEX can <br />
                 help you implement the necessary steps to regenerate your land.
-                <br /> This can include things like planting native species,
-                restoring wetlands, <br />
-                implementing sustainable farming practices, Forest fire
-                mitigation, Clean energy.
+                <br /> This can include things like planting native species, restoring wetlands, <br />
+                implementing sustainable farming practices, Forest fire mitigation, Clean energy.
               </p>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 pb-4">
-              <Image
-                width={648}
-                src={Manage1}
-                alt="Image"
-                className="img-fluid"
-              />
+              <Image width={648} src={Manage1} alt="manager Image" className="img-fluid" />
             </div>
           </div>
           <div className="line-3"></div>
@@ -48,9 +44,7 @@ const ManagementFramwork = () => {
                   <Image width={30} height={30} src={Tik} alt="Image" />
                 </div>
                 <div className="workflow__slide-6">
-                  <p>
-                    Land Attributes support better land use richness os soils
-                  </p>
+                  <p>Land Attributes support better land use richness os soils</p>
                 </div>
               </div>
 
@@ -68,9 +62,7 @@ const ManagementFramwork = () => {
                   <Image width={30} height={30} src={Tik} alt="Image" />
                 </div>
                 <div className="workflow__slide-6">
-                  <p>
-                    Water Attributes protect natural water sources and systems
-                  </p>
+                  <p>Water Attributes protect natural water sources and systems</p>
                 </div>
               </div>
 
@@ -79,10 +71,7 @@ const ManagementFramwork = () => {
                   <Image width={30} height={30} src={Tik} alt="Image" />
                 </div>
                 <div className="workflow__slide-6">
-                  <p>
-                    Carbon Attributes carbon equivalent offset and clean energy
-                    production
-                  </p>
+                  <p>Carbon Attributes carbon equivalent offset and clean energy production</p>
                 </div>
               </div>
             </div>

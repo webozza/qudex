@@ -49,27 +49,16 @@ const DesignStudioAbout = () => {
             <div className="col-xxl-12">
               <div className="sec-title-wrapper">
                 <h2 className="sec-title title-anim">
-                  We design and develop outstanding Digital <br /> Products and
-                  digital-first Brands.
+                  We design and develop outstanding Digital <br /> Products and digital-first Brands.
                 </h2>
               </div>
               <div className="sec-text-wrapper">
                 <div className="sec-text text-anim">
-                  <p>
-                    We help brands stand out through powerful, elegant visual
-                    design. Our design philosophy is shaped by our experience
-                    growing up at our father’s bookbindery. Surrounded by the
-                    highest-quality materials and turn-of-the-century machines,
-                    we observed the art of true craftsmanship firsthand.
-                  </p>
+                  <p>We help brands stand out through powerful, elegant visual design. Our design philosophy is shaped by our experience growing up at our father’s bookbindery. Surrounded by the highest-quality materials and turn-of-the-century machines, we observed the art of true craftsmanship firsthand.</p>
                 </div>
                 <div className="sec-btn btn_wrapper">
-                  <Link
-                    className="wc-btn-pink btn-hover btn-item"
-                    href="/about"
-                  >
-                    <span></span> Explore Us{" "}
-                    <i className="fa-solid fa-arrow-right"></i>
+                  <Link className="wc-btn-pink btn-hover btn-item" href="/about">
+                    <span></span> Explore Us <i className="fa-solid fa-arrow-right"></i>
                   </Link>
                 </div>
               </div>
@@ -78,76 +67,31 @@ const DesignStudioAbout = () => {
         </div>
 
         <div className="about__img-2 pb-130">
-          <Image
-            priority
-            width={1720}
-            style={{ height: "auto" }}
-            src={One}
-            alt="About Image"
-            data-speed="0.2"
-          />
+          <Image priority width={1720} style={{ height: "auto" }} src={One} alt="About Image" data-speed="0.2" />
         </div>
 
         <div className="container pb-140">
           <div className="row">
             <div className="col-xxl-12">
-              <h2 className="brand__title-2 title-anim">
-                We worked with global largest brands
-              </h2>
+              <h2 className="brand__title-2 title-anim">We worked with global largest brands</h2>
               <div className="brand__list-2">
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={97}
-                    height={67}
-                    src={Brand1}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={97} height={67} src={Brand1} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={85}
-                    height={67}
-                    src={Brand2}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={85} height={67} src={Brand2} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={114}
-                    height={64}
-                    src={Brand3}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={114} height={64} src={Brand3} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={82}
-                    height={70}
-                    src={Brand4}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={82} height={70} src={Brand4} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={115}
-                    height={67}
-                    src={Brand5}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={115} height={67} src={Brand5} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={121}
-                    height={63}
-                    src={Brand6}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={121} height={63} src={Brand6} alt="Brand Logo" />
                 </div>
               </div>
             </div>

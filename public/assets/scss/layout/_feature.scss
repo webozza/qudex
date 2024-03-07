@@ -2,7 +2,6 @@
 /*  33. FEATURE CSS START
 /*----------------------------------------*/
 
-
 .feature {
   &__area {
     &-2 {
@@ -11,7 +10,7 @@
   }
 
   &__top {
-    padding-bottom: 65px;
+    padding-bottom: 165px;
     border-bottom: 1px solid var(--black);
 
     @media #{$sm} {
@@ -23,7 +22,7 @@
     padding-bottom: 0;
     border-bottom: 1px solid var(--black);
   }
-  
+
   &__btm {
     @media #{$sm} {
       padding-bottom: 15px;
@@ -128,7 +127,4 @@
     color: var(--black-2);
     padding-bottom: 12px;
   }
-
-
-
 }

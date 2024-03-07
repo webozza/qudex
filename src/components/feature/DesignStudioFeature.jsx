@@ -13,11 +13,10 @@ const DesignStudioFeature = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
+
       setTimeout(() => {
         let tHero = gsap.context(() => {
-          let animation__feature2 = gsap.utils.toArray(
-            ".animation__feature2 .feature__item"
-          );
+          let animation__feature2 = gsap.utils.toArray(".animation__feature2 .feature__item");
           if (device_width < 1023) {
             animation__feature2.forEach((item, i) => {
               gsap.set(item, { opacity: 0, y: 60 });
@@ -56,6 +55,7 @@ const DesignStudioFeature = () => {
       }, 1000);
     }
   }, []);
+
   return (
     <>
       <section className="pt-130">
@@ -64,9 +64,7 @@ const DesignStudioFeature = () => {
             <div className="row">
               <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6">
                 <div className="sec-title-wrapper">
-                  <h2 className="sec-title title-anim">
-                  Your business + QUDE™ = ECO
-                  </h2>
+                  <h2 className="sec-title title-anim">Your business + QUDE™ = ECO</h2>
                 </div>
               </div>
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6">

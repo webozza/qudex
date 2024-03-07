@@ -58,10 +58,7 @@ const DigitalMarketingWorkflow = () => {
               index || tween.progress(1);
             });
 
-            function addSectionCallbacks(
-              timeline,
-              { start, end, param, onEnter, onLeave, onEnterBack, onLeaveBack }
-            ) {
+            function addSectionCallbacks(timeline, { start, end, param, onEnter, onLeave, onEnterBack, onLeaveBack }) {
               let trackDirection = (animation) => {
                   let onUpdate = animation.eventCallback("onUpdate"),
                     prevTime = animation.time();
@@ -77,22 +74,8 @@ const DigitalMarketingWorkflow = () => {
                 },
                 empty = (v) => v;
               timeline.direction || trackDirection(timeline);
-              start >= 0 &&
-                timeline.add(
-                  () =>
-                    ((timeline.direction < 0 ? onLeaveBack : onEnter) || empty)(
-                      param
-                    ),
-                  start
-                );
-              end <= timeline.duration() &&
-                timeline.add(
-                  () =>
-                    ((timeline.direction < 0 ? onEnterBack : onLeave) || empty)(
-                      param
-                    ),
-                  end
-                );
+              start >= 0 && timeline.add(() => ((timeline.direction < 0 ? onLeaveBack : onEnter) || empty)(param), start);
+              end <= timeline.duration() && timeline.add(() => ((timeline.direction < 0 ? onEnterBack : onLeave) || empty)(param), end);
             }
           }
           for (let i = 1; i < 5; i++) {
@@ -145,12 +128,7 @@ const DigitalMarketingWorkflow = () => {
                       Comprehensive offset reports + offset tools.
                     </h2>
                     <h3 className="sec-title">ECO-IMPACT BUSINESS PLATFORM</h3>
-                    <p>
-                      Unlock the power of environmental stewardship without
-                      compromising on business growth. With Qudex, witness an
-                      evolution in how companies can harmonize profits with the
-                      planet.
-                    </p>
+                    <p>Unlock the power of environmental stewardship without compromising on business growth. With Qudex, witness an evolution in how companies can harmonize profits with the planet.</p>
                   </div>
                   {/* <ul className="research__tools">
                     <li>
@@ -213,12 +191,7 @@ const DigitalMarketingWorkflow = () => {
 
                 <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
                   <div className="counter__img-3">
-                    <Image
-                      priority
-                      style={{ width: "100%", height: "auto" }}
-                      src={serviceImage1}
-                      alt="Counter Image"
-                    />
+                    <Image priority style={{ width: "100%", height: "auto" }} src={serviceImage1} alt="Counter Image" />
                   </div>
                 </div>
               </div>
@@ -234,17 +207,12 @@ const DigitalMarketingWorkflow = () => {
               <div className="row">
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
-                    <h2 className="sec-sub-title">
-                      We are here to ensure it is easy for businesses to take
-                      eco action with social responsibility, QUDE™ funds, and
-                      verify global impacts.
-                    </h2>
+                    <h2 className="sec-sub-title">We are here to ensure it is easy for businesses to take eco action with social responsibility, QUDE™ funds, and verify global impacts.</h2>
                     <h3 className="sec-title">
                       Ecological PROJECTS VERIFIED BY QUDE <sup>tm</sup>
                     </h3>
                     <p>
-                      Ecological Projects Verified by QUDE™ Connecting Vital
-                      Ecosystems with Cutting-Edge Verification.
+                      Ecological Projects Verified by QUDE™ Connecting Vital Ecosystems with Cutting-Edge Verification.
                       <a href="http://Natureoffsets.com"> Natureoffsets.com </a>
                     </p>
                   </div>
@@ -252,12 +220,7 @@ const DigitalMarketingWorkflow = () => {
                 </div>
                 <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
                   <div className="counter__img-3">
-                    <Image
-                      priority
-                      style={{ width: "100%", height: "auto" }}
-                      src={serviceImage2}
-                      alt="Counter Image"
-                    />
+                    <Image priority style={{ width: "100%", height: "auto" }} src={serviceImage2} alt="Counter Image" />
                   </div>
                 </div>
               </div>
@@ -273,12 +236,8 @@ const DigitalMarketingWorkflow = () => {
               <div className="row">
                 <div className="col-xxl-6 col-xl-6 col-lg-6">
                   <div className="sec-title-wrapper">
-                    <h2 className="sec-sub-title">
-                      Pioneering Next-Gen Eco Solutions
-                    </h2>
-                    <h3 className="sec-title">
-                      PLANET TECHNOLOGIES: beyond carbon.
-                    </h3>
+                    <h2 className="sec-sub-title">Pioneering Next-Gen Eco Solutions</h2>
+                    <h3 className="sec-title">PLANET TECHNOLOGIES: beyond carbon.</h3>
                     <p>
                       {`Venture beyond traditional carbon metrics. Embrace Planet
                       Technologies that offer holistic ecological insights,
@@ -290,12 +249,7 @@ const DigitalMarketingWorkflow = () => {
 
                 <div className="col-xxl-6 col-xl-7 col-lg-6 col-md-6">
                   <div className="counter__img-3">
-                    <Image
-                      priority
-                      style={{ width: "100%", height: "auto" }}
-                      src={serviceImage3}
-                      alt="Counter Image"
-                    />
+                    <Image priority style={{ width: "100%", height: "auto" }} src={serviceImage3} alt="Counter Image" />
                   </div>
                 </div>
               </div>
@@ -375,17 +329,10 @@ const DigitalMarketingWorkflow = () => {
               <div className="row">
                 <div className="col-xxl-12">
                   <div className="cta__content-3">
-                    <p className="cta__sub-title-2">
-                      Have you project in mind?
-                    </p>
-                    <h2 className="cta__title-2">
-                      Let’s make something great together!
-                    </h2>
+                    <p className="cta__sub-title-2">Have you project in mind?</p>
+                    <h2 className="cta__title-2">Let’s make something great together!</h2>
                     <div className="btn_wrapper">
-                      <Link
-                        href="/contact"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
+                      <Link href="/contact" className="wc-btn-black btn-hover btn-item">
                         <span></span>Contact <br />
                         with us <i className="fa-solid fa-arrow-right"></i>
                       </Link>

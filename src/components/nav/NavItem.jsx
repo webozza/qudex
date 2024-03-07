@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 
 export default function NavItem({ nav, navStyle = "" }) {
   const menuAnim = useRef();
+
   useEffect(() => {
     if (menuAnim.current) {
       menuAnimation();
@@ -12,6 +13,7 @@ export default function NavItem({ nav, navStyle = "" }) {
       }, 1000);
     }
   }, []);
+
   const menuAnimation = () => {
     let rootParent = menuAnim.current.children;
     for (let i = 0; i < rootParent.length; i++) {
@@ -29,15 +31,11 @@ export default function NavItem({ nav, navStyle = "" }) {
       firstParent[0].innerHTML = result;
     }
   };
+
   return (
     <>
       <div className="header__nav-2">
-        <ul
-          className={
-            navStyle ? `main-menu-${navStyle} menu-anim` : `main-menu menu-anim`
-          }
-          ref={menuAnim}
-        >
+        <ul className={navStyle ? `main-menu-${navStyle} menu-anim` : `main-menu menu-anim`} ref={menuAnim}>
           {nav.map((el, i) => {
             if (el.type === "megamenu") {
               return (
@@ -72,22 +70,17 @@ export default function NavItem({ nav, navStyle = "" }) {
                       return (
                         <li key={index}>
                           <Link href={subEl.link}>{subEl.name}</Link>
-                          {subEl.sub_dropdown_nav &&
-                            subEl.sub_dropdown_nav.length && (
-                              <ul className="sub-dropdown">
-                                {subEl.sub_dropdown_nav.map(
-                                  (subDrop, subIndex) => {
-                                    return (
-                                      <li key={subIndex}>
-                                        <Link href={subDrop.link}>
-                                          {subDrop.name}
-                                        </Link>
-                                      </li>
-                                    );
-                                  }
-                                )}
-                              </ul>
-                            )}
+                          {subEl.sub_dropdown_nav && subEl.sub_dropdown_nav.length && (
+                            <ul className="sub-dropdown">
+                              {subEl.sub_dropdown_nav.map((subDrop, subIndex) => {
+                                return (
+                                  <li key={subIndex}>
+                                    <Link href={subDrop.link}>{subDrop.name}</Link>
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          )}
                         </li>
                       );
                     })}

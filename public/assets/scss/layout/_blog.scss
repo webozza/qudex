@@ -2,8 +2,6 @@
 /*  24. BLOG CSS START
 /*----------------------------------------*/
 
-
-
 .blog {
   &__area {
     overflow: hidden;
@@ -41,7 +39,7 @@
 
       .pb-110 {
         @media #{$lg} {
-          padding-bottom: 65px;
+          padding-bottom: 165px;
         }
 
         @media #{$md} {
@@ -228,7 +226,6 @@
       }
 
       .sec-title-wrapper {
-
         @media #{$md} {
           padding-top: 90px;
         }
@@ -449,7 +446,6 @@
     }
   }
 
-
   &__text {
     display: flex;
     align-items: center;
@@ -464,7 +460,6 @@
       }
     }
   }
-
 
   // Blog Detail
   &__detail {
@@ -754,8 +749,7 @@
     }
   }
 
-
-  // 
+  //
   &-v3 {
     &.blog__area-3 .sec-title-wrapper::after {
       position: unset;
@@ -796,8 +790,6 @@
   }
 }
 
-
-
 // Image Animation
 .img-box {
   position: relative;
@@ -821,7 +813,7 @@
     height: auto;
   }
 
-  // update v0.2 
+  // update v0.2
   img {
     position: absolute;
     top: 0;
@@ -865,11 +857,9 @@
       filter: blur(0);
     }
   }
-
 }
 
-
-// 
+//
 .row.reset-grid {
   --bs-gutter-x: 60px;
 

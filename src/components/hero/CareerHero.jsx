@@ -6,6 +6,7 @@ const CareerHero = () => {
   useEffect(() => {
     animationCharCome(charAnim.current);
   }, []);
+
   return (
     <>
       <section className="career__top">
@@ -14,20 +15,14 @@ const CareerHero = () => {
             <div className="row pb-120">
               <div className="col-xxl-10 col-xl-9 col-lg-9 col-md-9">
                 <div className="sec-title-wrapper">
-                  <h2
-                    className="sec-title-2 animation__char_come"
-                    ref={charAnim}
-                  >
+                  <h2 className="sec-title-2 animation__char_come" ref={charAnim}>
                     Join our team & let’s work together
                   </h2>
                 </div>
               </div>
               <div className="col-xxl-2 col-xl-3 col-lg-3 col-md-3">
                 <div className="btn_wrapper">
-                  <a
-                    href="#job_list"
-                    className="wc-btn-secondary btn-hover btn-item"
-                  >
+                  <a href="#job_list" className="wc-btn-secondary btn-hover btn-item">
                     <span></span> Explore job
                     <br />
                     vacancies <i className="fa-solid fa-arrow-right"></i>

@@ -72,58 +72,22 @@ const StartupAgencyBrand = () => {
               </h2>
               <div className="brand__list-3">
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={97}
-                    height={67}
-                    src={Brand1}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={97} height={67} src={Brand1} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={85}
-                    height={67}
-                    src={Brand2}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={85} height={67} src={Brand2} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={114}
-                    height={64}
-                    src={Brand3}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={114} height={64} src={Brand3} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={82}
-                    height={70}
-                    src={Brand4}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={82} height={70} src={Brand4} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={115}
-                    height={67}
-                    src={Brand5}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={115} height={67} src={Brand5} alt="Brand Logo" />
                 </div>
                 <div className="brand__item-2 fade_bottom">
-                  <Image
-                    priority
-                    width={121}
-                    height={63}
-                    src={Brand6}
-                    alt="Brand Logo"
-                  />
+                  <Image priority width={121} height={63} src={Brand6} alt="Brand Logo" />
                 </div>
               </div>
             </div>

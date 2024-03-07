@@ -13,6 +13,7 @@ import { useEffect, useRef } from "react";
 export default function Footer5() {
   const menuAnim = useRef();
   const menuAnim2 = useRef();
+
   useEffect(() => {
     if (menuAnim.current) {
       menuAnimation(menuAnim);
@@ -21,23 +22,25 @@ export default function Footer5() {
       menuAnimation(menuAnim2);
     }
   }, []);
+
   const menuAnimation = (data) => {
     let rootParent = data.current.children;
     for (let i = 0; i < rootParent.length; i++) {
       let firstParent = rootParent[i].children;
-      let arr = firstParent[0].textContent.split("")
-      let spanData = ''
+      let arr = firstParent[0].textContent.split("");
+      let spanData = "";
       for (let j = 0; j < arr.length; j++) {
-        if(arr[j] == ' ') {
+        if (arr[j] == " ") {
           spanData += `<span style='width:6px;'>${arr[j]}</span>`;
         } else {
           spanData += `<span>${arr[j]}</span>`;
         }
       }
-      let result = '<div class="menu-text">' + spanData + '</div>';
-      firstParent[0].innerHTML = result
+      let result = '<div class="menu-text">' + spanData + "</div>";
+      firstParent[0].innerHTML = result;
     }
   };
+
   return (
     <>
       <footer className="footer__area-8 pt-120">
@@ -117,18 +120,9 @@ export default function Footer5() {
             <h4 className="cat_title">newsletter</h4>
             <div className="footer__subscribe-2">
               <form action="#">
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Enter your email"
-                />
+                <input type="text" name="email" placeholder="Enter your email" />
                 <button type="submit" className="submit">
-                  <Image
-                    priority
-                    style={{ width: "auto", height: "auto" }}
-                    src={ArrowRight}
-                    alt="Arrow Icon"
-                  />
+                  <Image priority style={{ width: "auto", height: "auto" }} src={ArrowRight} alt="Arrow Icon" />
                 </button>
               </form>
             </div>
