@@ -36,7 +36,6 @@ const HeaderContent = ({ header, navData }) => {
 };
 const FooterContent = ({ footer }) => {
   if (footer == "footer1") {
-    console.log(footer)
     return <Footer1 />;
   } else if (footer == "footer2") {
     return <Footer2 />;
@@ -53,12 +52,7 @@ const FooterContent = ({ footer }) => {
   }
 };
 
-export default function RootLayout({
-  children,
-  header = "",
-  footer = "",
-  defaultMode = "",
-}) {
+export default function RootLayout({ children, header = "", footer = "", defaultMode = "" }) {
   const [mode, setMode] = useState(defaultMode);
   const [navData, setNavData] = useState({});
 
@@ -84,12 +78,7 @@ export default function RootLayout({
         </div>
         <Preloader />
         <CursorAnimation cursor1={cursor1} cursor2={cursor2} />
-        <Switcher
-          setMode={setMode}
-          mode={mode}
-          cursor1={cursor1}
-          cursor2={cursor2}
-        />
+        <Switcher setMode={setMode} mode={mode} cursor1={cursor1} cursor2={cursor2} />
         <ScrollTop />
         <HeaderContent header={header} navData={navData} />
         <div id="smooth-wrapper">

@@ -40,7 +40,6 @@ const QudexHomeHero = () => {
           opacity: 0,
           y: 50,
         });
-       
 
         // let split_hero6_title = new SplitText(heroTitle.current, {
         //   type: "chars",
@@ -81,17 +80,16 @@ const QudexHomeHero = () => {
               <div className="hero__content-6 hero__six_anim">
                 <Image priority style={{ width: "auto", height: "auto" }} className="hero__arrow-icon" src={ArrowIcon} alt="Arrow Icon" />
                 <h1 className="hero__title-6 " ref={heroTitle}>
-                    Eco-Revolution: <br /> BeyondCarbon+ with <br />QUDE™, EcoScoreCard+, QBOT AI.
+                  Eco-Revolution: <br /> BeyondCarbon+ with <br />
+                  QUDE™, EcoScoreCard+, QBOT AI.
                 </h1>
-                <p ref={heroText}>
-                  Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
-                </p>
+                <p ref={heroText}>Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.</p>
                 <div className="d-flex justify-content-between align-items-center">
                   <Link className="btn-started btn-hover" href="#" ref={heroAnchor}>
-                      Explore Power Ups & Eco Score Card
+                    Explore Power Ups & Eco Score Card
                   </Link>
                   <Link className="btn-started btn-hover" href="#" ref={heroAnchor1}>
-                      Discover Land Management Solutions
+                    Discover Land Management Solutions
                   </Link>
                 </div>
               </div>

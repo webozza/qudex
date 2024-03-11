@@ -16,6 +16,8 @@ const DigitalMarketingHero = () => {
   const videoTitle = useRef();
   const heroArea = useRef();
   const wrapper = useRef();
+  const heroAnchor = useRef();
+  const heroAnchor1 = useRef();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -26,6 +28,16 @@ const DigitalMarketingHero = () => {
       let split_text_animation = new SplitText(heroTextAnim.current, {
         type: "chars words",
       });
+      gsap.set(heroAnchor.current, {
+        opacity: 0,
+        y: 50,
+      });
+      gsap.set(heroAnchor1.current, {
+        opacity: 0,
+        y: 50,
+      });
+      gsap.to(heroAnchor.current, { opacity: 1, y: 0, duration: 2, ease: "power2.out" }, "-=2");
+      gsap.to(heroAnchor1.current, { opacity: 1, y: 0, duration: 2, ease: "power2.out" }, "-=2");
       let tHero = gsap.context(() => {
         let HomeDigital = gsap.timeline();
 
@@ -82,18 +94,15 @@ const DigitalMarketingHero = () => {
                     Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
                   </p>
                 </div>
-                <div>
-                  <button className="hero-cta">
-                    <Link className="hero-cta-url" href="/the-platform">
-                      Discover Land Management Solutions
-                    </Link>
-                  </button>
+                <div className="">
+                  <Link className="btn-started btn-hover" href="#" ref={heroAnchor}>
+                    Explore Power Ups & Eco Score Card
+                  </Link>
                   <br />
-                  <button className="hero-cta">
-                    <Link className="hero-cta-url" href="/the-platform">
-                      Explore Power Ups & Eco Score Card
-                    </Link>
-                  </button>
+                  <br />
+                  <Link className="btn-started btn-hover" href="#" ref={heroAnchor1}>
+                    Discover Land Management Solutions
+                  </Link>
                 </div>
                 <div className="scroll-down">
                   <button>

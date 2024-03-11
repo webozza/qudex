@@ -21,7 +21,7 @@
     },
     {
       "nav_name": "Eco Score Card",
-      "link": "",
+      "link": "/eco-score-card",
       "type": "",
       "sub_nav": []
     },
@@ -37,6 +37,5 @@
       "type": "",
       "sub_nav": []
     }
-
   ]
 }

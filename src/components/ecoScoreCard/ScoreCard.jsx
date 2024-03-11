@@ -1,17 +1,16 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
-import Link from "next/link";
-import Service11 from "../../../public/assets/imgs/service/lake.webp";
-import Service12 from "../../../public/assets/imgs/service/windmill.webp";
-import Service13 from "../../../public/assets/imgs/service/eco-score.webp";
-import Service14 from "../../../public/assets/imgs/service/optimize.webp";
 import Image from "next/image";
-import ReadMore from "../readMore/readMore";
+import Link from "next/link";
+import LangManagement1 from "../../../public/assets/imgs/land-management/lang-management1.png";
+import LangManagement2 from "../../../public/assets/imgs/land-management/lang-management2.png";
+import LangManagement3 from "../../../public/assets/imgs/land-management/lang-management3.jpeg";
+import ReadMore from "@/components/readMore/readMore";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Service1 = () => {
+const ScoreCard = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       let device_width = window.innerWidth;
@@ -69,25 +68,25 @@ const Service1 = () => {
           }
 
           let navItems = gsap.utils.toArray(".service__list-6 li a");
-          if (navItems) {
-            navItems.forEach((nav) => {
-              nav.addEventListener("click", (e) => {
-                e.preventDefault();
-                const ids = nav.getAttribute("href");
-                gsap.to(window, {
-                  duration: 0.5,
-                  scrollTo: ids,
-                  ease: "power4.out",
-                });
-              });
+          navItems.forEach((nav) => {
+            nav.addEventListener("click", (e) => {
+              e.preventDefault();
+              const ids = nav.getAttribute("href");
+              const scrollToOptions = {
+                top: document.querySelector(ids).offsetTop, // Get the offsetTop of the target element
+                behavior: "smooth", // Optional: scroll behavior
+              };
+              window.scrollTo(scrollToOptions);
             });
-          }
+          });
         }
       });
       return () => tHero.revert();
     }
   }, []);
+
   const initialContent = "The world is demanding accountability, transparency, and more eco-responsible businesses. Simply log in to the QUDEX Eco-Platform fill out your ECO SCORECARD...";
+
   const expandedContent = "The world is demanding accountability, transparency, and more eco-responsible businesses. Simply log in to the QUDEX Eco-Platform fill out your ECO SCORECARD, and Choose a Power-Up solution to match your needs. In today's rapidly changing world, businesses face increasing demands for environmental responsibility and sustainability. Consumers, investors, and stakeholders are calling for greater transparency and a commitment to eco-friendly practices. The QUDEX Eco-Platform offers an innovative solution to meet these expectations and help businesses automate their eco-efforts while powerfully enhancing your brand.";
 
   return (
@@ -101,26 +100,20 @@ const Service1 = () => {
                   <ul className="service__list-6">
                     <li>
                       <a href="#service_1">
-                        Power <br />
-                        Ups
+                        Nature Based <br />
+                        OFFSETS
                       </a>
                     </li>
                     <li>
                       <a href="#service_2">
-                        AI ESG <br />
-                        Automation
+                        ECO-Impact <br />
+                        BUSINESS
                       </a>
                     </li>
                     <li>
                       <a href="#service_3">
-                        Eco Score <br />
-                        Card
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#service_4">
-                        Optimize & <br />
-                        Customize
+                        Ecological <br />
+                        PROJECTS
                       </a>
                     </li>
                   </ul>
@@ -128,47 +121,27 @@ const Service1 = () => {
 
                 <div className="mid-content">
                   <div className="service__image">
-                    <Image priority style={{ width: "auto", height: "auto" }} src={Service11} alt="Service Image" />
+                    <Image priority style={{ width: "auto", height: "50%" }} src={LangManagement1} alt="Service Image" />
                   </div>
                   <div className="service__image">
-                    <Image priority style={{ width: "auto", height: "auto" }} src={Service12} alt="Service Image" />
+                    <Image priority style={{ width: "auto", height: "auto" }} src={LangManagement2} alt="Service Image" />
                   </div>
                   <div className="service__image">
-                    <Image priority style={{ width: "auto", height: "auto" }} src={Service13} alt="Service Image" />
+                    <Image priority style={{ width: "auto", height: "auto" }} src={LangManagement3} alt="Service Image" />
                   </div>
-                  <div className="service__image">
-                    <Image priority style={{ width: "auto", height: "auto" }} src={Service14} alt="Service Image" />
-                  </div>
-                  {/* <div className="service__image">
-                    <Image
-                      priority
-                      style={{ width: "auto", height: "auto" }}
-                      src={Service15}
-                      alt="Service Image"
-                    />
-                  </div>
-                  <div className="service__image">
-                    <Image
-                      priority
-                      style={{ width: "auto", height: "auto" }}
-                      src={Service14}
-                      alt="Service Image"
-                    />
-                  </div> */}
                 </div>
 
                 <div className="right-content">
                   <div className="service__items-6">
                     <div className="service__item-6 has__service_animation" id="service_1" data-secid="1">
                       <div className="image-tab">
-                        <Image priority style={{ width: "auto", height: "auto" }} src={Service11} alt="Service Image" />
+                        <Image priority style={{ width: "auto", height: "auto" }} src={LangManagement1} alt="Service Image" />
                       </div>
 
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">Connecting real world impact</h2>
-                        <p>Digital worlds need a new standard to showcase the goodness and giveback of each business. QUDE helps implement this.</p>
-                        <h2 className="service__title-6">QUDE™ ECO data</h2>
-                        <p>Verified data to ensure transparency</p>
+                        <h2 className="service__title-6">Nature Based Offsets</h2>
+                        <h2 style={{ color: "gray", marginBottom: "20px" }}>BeyondCarbon+. QUDE™. + EcoScoreCard+ NatureOffsets+ QBOT AI+ </h2>
+                        <p>Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.</p>
                         <div className="btn_wrapper">
                           <Link href="/service-details" className="wc-btn-secondary btn-item btn-hover">
                             <span></span>Powered by
@@ -178,57 +151,43 @@ const Service1 = () => {
                         </div>
                       </div>
                     </div>
-
                     <div className="service__item-6" id="service_2" data-secid="2">
                       <div className="image-tab">
-                        <Image priority style={{ width: "auto", height: "auto" }} src={Service12} alt="Service Image" />
+                        <Image priority style={{ width: "auto", height: "auto" }} src={LangManagement2} alt="Service Image" />
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">Automate your ECO + Power-up your brand</h2>
+                        <h2 className="service__title-6">ECO-IMPACT</h2>
+                        <h2 className="service__title-6" style={{ color: "gray" }}>
+                          BUSINESS PLATFORM
+                        </h2>
+                        <h6 style={{ color: "#FAF9F6", marginBottom: "20px" }}>Lead with Qudex: Comprehensive offset reports + offset tools.</h6>
+                        <p>Unlock the power of environmental stewardship without compromising on business growth. With Qudex, witness an evolution in how companies can harmonize profits with the planet.</p>
                         <ReadMore initialContent={initialContent} expandedContent={expandedContent} />
                         <div className="btn_wrapper">
                           <Link href="/service-details" className="wc-btn-secondary btn-item btn-hover">
-                            <span></span>Powered by
+                            <span>Powered by</span>
                             <br />
                             QUDE <i className="fa-solid fa-arrow-right"></i>
                           </Link>
                         </div>
                       </div>
                     </div>
-
                     <div className="service__item-6" id="service_3" data-secid="3">
                       <div className="image-tab">
-                        <Image priority style={{ width: "auto", height: "auto" }} src={Service13} alt="Service Image" />
+                        <Image priority style={{ width: "auto", height: "auto" }} src={LangManagement3} alt="Service Image" />
                       </div>
-
                       <div className="animation__service_page">
-                        <h2 className="service__title-6">Customize ECO SCORE CARD & Send to customers</h2>
-                        <p>The world is demanding more eco-responsible businesses and we help businesses become that. Simply log in to the QUDEX Eco-Platform and access a library of thousands of BIO ASSETS and free eco calculators, customize and go live!</p>
+                        <h2 className="service__title-6">Nature Based Offsets</h2>
+                        <h2 className="service__title-6" style={{ textTransform: "uppercase" }}>
+                          Ecological <span style={{ color: "gray" }}>PROJECTS VERIFIED BY QUDE™</span>
+                        </h2>
+                        <p>Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.</p>
                         <div className="btn_wrapper">
-                          <Link href="/service-details" className="wc-btn-secondary btn-item btn-hover">
-                            <span></span>Powered by
+                          {/* <Link href="/service-details" className="wc-btn-secondary btn-item btn-hover">
+                            <span>Powered by</span>
                             <br />
                             QUDE <i className="fa-solid fa-arrow-right"></i>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="service__item-6" id="service_4" data-secid="4">
-                      <div className="image-tab">
-                        <Image priority style={{ width: "auto", height: "auto" }} src={Service14} alt="Service Image" />
-                      </div>
-
-                      <div className="animation__service_page">
-                        <h2 className="service__title-6">Nature offsets that Do the work</h2>
-                        <p>We are ever-evolving and building out solutions that meet the needs of regenerating our earth. and we want to give you the tools to save it, so let us join you and we will combine efforts to help our planet and all the critters that need your help!</p>
-                        <div className="btn_wrapper">
-                          <Link href="/service-details" className="wc-btn-secondary btn-item btn-hover">
-                            <span></span>Powered by
-                            <br />
-                            QUDE <i className="fa-solid fa-arrow-right"></i>
-                          </Link>
+                          </Link> */}
                         </div>
                       </div>
                     </div>
@@ -243,4 +202,4 @@ const Service1 = () => {
   );
 };
 
-export default Service1;
+export default ScoreCard;

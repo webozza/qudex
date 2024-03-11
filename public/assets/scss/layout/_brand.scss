@@ -24,8 +24,6 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
     background-color: var(--white);
     border-bottom: 1px solid var(--white-3);
     position: relative;
@@ -99,19 +97,27 @@
     }
 
     &-2 {
-      text-align: center;
+      gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      background-color: transparent;
+      border-bottom: none;
+      margin-left: 0;
 
       @media #{$md} {
         padding-bottom: 20px;
+        grid-template-columns: repeat(4, 1fr);
       }
 
       @media #{$sm} {
         padding-bottom: 20px;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
   }
 
   &__title {
+    display: flex;
     &-2 {
       font-weight: 400;
       font-size: 24px;

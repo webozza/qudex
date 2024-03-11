@@ -191,7 +191,7 @@ const Canvas = ({ bladeMode = "", ofCanvasArea }) => {
                   </li>
                   <li>
                     <div className="header_title">
-                      <Link href={""}>Eco Score Card</Link>
+                      <Link href={"/eco-score-card"}>Eco Score Card</Link>
                     </div>
                   </li>
                   <li>

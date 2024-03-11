@@ -26,7 +26,7 @@ const Index = () => {
           <DigitalMarketingAbout />
           <DigitalMarketingWorkflow />
           {/* <DigitalMarketingService /> */}
-          {/* <DigitalMarketingProtfolio /> */} {/* net fix */}
+          <DigitalMarketingProtfolio />
           {/* <DigitalMarketingTestimonial /> */}
           {/* <DigitalMarketingPrice /> */}
           <DigitalMarketingBlog />

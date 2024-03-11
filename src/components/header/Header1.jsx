@@ -33,6 +33,7 @@ export default function Header1({ navData }) {
       window.removeEventListener("scroll", handleTopScroll);
     };
   }, []);
+
   if (typeof window !== "undefined") {
     let header_bg_3 = headerArea.current;
     if (header_bg_3) {
@@ -62,6 +63,7 @@ export default function Header1({ navData }) {
     let inputData = document.getElementById("s");
     inputData.value = "";
   };
+
   useEffect(() => {
     if (searchData && Object.keys(searchData).length) {
       if (searchValue) {
@@ -87,12 +89,14 @@ export default function Header1({ navData }) {
       }
     }
   }, [searchValue, searchData]);
+
   const searchItem = (event) => {
     event.preventDefault();
     if (searchSlug && searchSlug.length) {
       router.push("/" + searchSlug[0]);
     }
   };
+
   return (
     <>
       {navData && Object.keys(navData).length && (
@@ -100,47 +104,23 @@ export default function Header1({ navData }) {
           <header className="header__area-3" ref={headerArea}>
             <div className="header__inner-3">
               <LogoItem />
-              {navData.nav && navData.nav.length && (
-                <NavItem nav={navData.nav} navStyle={3} />
-              )}
+              {navData.nav && navData.nav.length && <NavItem nav={navData.nav} navStyle={3} />}
               <div className="header__nav-icon-3">
-                <button
-                  className="search-icon"
-                  onClick={openSearch}
-                  id="search_icon"
-                  ref={searchIcon}
-                >
+                <button className="search-icon" onClick={openSearch} id="search_icon" ref={searchIcon}>
                   <i className="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button
-                  className="search-icon"
-                  onClick={closeSearch}
-                  id="search_close"
-                  ref={searchClose}
-                >
+                <button className="search-icon" onClick={closeSearch} id="search_close" ref={searchClose}>
                   <i className="fa-solid fa-xmark"></i>
                 </button>
                 <button onClick={openCanvas}>
-                  <Image
-                    priority
-                    width={21}
-                    height={15}
-                    src={MenuBlack}
-                    alt="Menubar Icon"
-                  />
+                  <Image priority width={21} height={15} src={MenuBlack} alt="Menubar Icon" />
                 </button>
               </div>
             </div>
           </header>
           <div className="header__search" ref={headerSearch}>
             <form onSubmit={(event) => searchItem(event)}>
-              <input
-                type="text"
-                name="s"
-                id="s"
-                placeholder="Search.."
-                onChange={(event) => setSearchValue(event.target.value)}
-              />
+              <input type="text" name="s" id="s" placeholder="Search.." onChange={(event) => setSearchValue(event.target.value)} />
               <div id="search-value" ref={searchContent}></div>
             </form>
           </div>

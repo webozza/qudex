@@ -249,13 +249,13 @@
       .sec-title {
         z-index: 2;
         font-weight: 600;
-        font-size: 260px;
+        font-size: 200px;
         line-height: 0.82;
         text-transform: uppercase;
         color: var(--black-2);
 
         @media #{$xxl} {
-          font-size: 260px;
+          // font-size: 260px;
         }
 
         @media #{$xl} {

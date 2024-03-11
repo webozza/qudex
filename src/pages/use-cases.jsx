@@ -23,6 +23,7 @@ const DigitalAgency = () => {
       playCursor();
     }
   }, []);
+
   function playCursor() {
     try {
       let client_cursor = document.getElementById("client_cursor");
@@ -69,6 +70,7 @@ const DigitalAgency = () => {
       console.log(err);
     }
   }
+
   return (
     <div>
       <Head>
@@ -84,69 +86,39 @@ const DigitalAgency = () => {
           <CreativeAgencyHero />
           <DigitalAgencyAbout />
           <DigitalAgencyWorkflow />
-          <DigitalAgencyTestimonial
-            modalTestimonial1={modalTestimonial1}
-            modalTestimonial2={modalTestimonial2}
-            modalTestimonial3={modalTestimonial3}
-            modalClose1={modalClose1}
-            modalClose2={modalClose2}
-            modalClose3={modalClose3}
-          />
+          <DigitalAgencyTestimonial modalTestimonial1={modalTestimonial1} modalTestimonial2={modalTestimonial2} modalTestimonial3={modalTestimonial3} modalClose1={modalClose1} modalClose2={modalClose2} modalClose3={modalClose3} />
           <QudexSolutions />
-          <BlogCase/>
+          <BlogCase />
         </RootLayout>
       </main>
 
       {/* Modal 1 */}
-      <div
-        className="modal__testimonial"
-        id="modal_testimonial"
-        ref={modalTestimonial1}
-      >
+      <div className="modal__testimonial" id="modal_testimonial" ref={modalTestimonial1}>
         <div className="modal__testimonial-content">
           <span className="modal__close" id="modal_close" ref={modalClose1}>
             <i className="fa-solid fa-xmark"></i>
           </span>
-          <iframe
-            src="https://www.youtube.com/embed/vZgyWfmw_Kw"
-            title="Testimonial Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-            allowFullScreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/vZgyWfmw_Kw" title="Testimonial Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowFullScreen></iframe>
         </div>
       </div>
 
       {/* Modal 2 */}
-      <div
-        className="modal__testimonial"
-        id="modal_testimonial2"
-        ref={modalTestimonial2}
-      >
+      <div className="modal__testimonial" id="modal_testimonial2" ref={modalTestimonial2}>
         <div className="modal__testimonial-content">
           <span className="modal__close" id="modal_close2" ref={modalClose2}>
             <i className="fa-solid fa-xmark"></i>
           </span>
-          <iframe
-            src="https://www.youtube.com/embed/JulIeG1V8T4"
-            allowFullScreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/JulIeG1V8T4" allowFullScreen></iframe>
         </div>
       </div>
 
       {/* Modal 3 */}
-      <div
-        className="modal__testimonial"
-        id="modal_testimonial3"
-        ref={modalTestimonial3}
-      >
+      <div className="modal__testimonial" id="modal_testimonial3" ref={modalTestimonial3}>
         <div className="modal__testimonial-content">
           <span className="modal__close" id="modal_close3" ref={modalClose3}>
             <i className="fa-solid fa-xmark"></i>
           </span>
-          <iframe
-            src="https://www.youtube.com/embed/7QkL-40FRfE"
-            allowFullScreen
-          ></iframe>
+          <iframe src="https://www.youtube.com/embed/7QkL-40FRfE" allowFullScreen></iframe>
         </div>
       </div>
     </div>
