@@ -51,7 +51,7 @@ const DigitalMarketingAbout = () => {
                     <li>5. AI</li>
                     <li>6. Metaverse</li>
                     <li>7. Qlens augmented reality</li>
-                  </ul>{" "}
+                  </ul>
                   <br />
                   <p>QUDE™ Is a global standard to open the world to planet technologies that create positive change. Opening the door for innovation for generations to come.</p>
                   <div className="btn_wrapper">

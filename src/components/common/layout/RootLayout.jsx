@@ -34,6 +34,7 @@ const HeaderContent = ({ header, navData }) => {
     return <Header3 />;
   }
 };
+
 const FooterContent = ({ footer }) => {
   if (footer == "footer1") {
     return <Footer1 />;
@@ -52,12 +53,13 @@ const FooterContent = ({ footer }) => {
   }
 };
 
-export default function RootLayout({ children, header = "", footer = "", defaultMode = "" }) {
+export default function RootLayout({ children, header = "1", footer = "1", defaultMode = "" }) {
   const [mode, setMode] = useState(defaultMode);
   const [navData, setNavData] = useState({});
 
   const cursor1 = useRef();
   const cursor2 = useRef();
+
   useEffect(() => {
     setNavData(allNavData);
     if (typeof window !== "undefined") {
@@ -68,6 +70,7 @@ export default function RootLayout({ children, header = "", footer = "", default
       }
     }
   }, [mode]);
+
   return (
     <>
       <CommonAnimation>

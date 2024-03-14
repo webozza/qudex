@@ -93,6 +93,7 @@ const DigitalMarketingHero = () => {
                   <p className="hero__text-animation" ref={heroTextAnim}>
                     Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
                   </p>
+                  <br />
                 </div>
                 <div className="">
                   <Link className="btn-started btn-hover" href="#" ref={heroAnchor}>
