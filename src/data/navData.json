@@ -8,6 +8,13 @@
       "sub_nav": []
     },
     {
+      "nav_name": "Core of QUDEX",
+      "link": "/core-of-qudex",
+      "type": "",
+      "full_width": false,
+      "sub_nav": []
+    },
+    {
       "nav_name": "The Platform",
       "link": "/the-platform",
       "type": "",

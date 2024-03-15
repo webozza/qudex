@@ -196,11 +196,7 @@ const DigitalMarketingWorkflow = () => {
               </div>
             </div>
           </div>
-
-          {/*
-           ~~~~~~~~~~    Second slide    ~~~~~~~~~~
-*/}
-
+          {/*~~~~~~~~~~    Second slide    ~~~~~~~~~~*/}
           <div className="research__area wf_panel pt-150 no-bg">
             <div className="container inner_content">
               <div className="row">
@@ -208,7 +204,7 @@ const DigitalMarketingWorkflow = () => {
                   <div className="sec-title-wrapper">
                     <h2 className="sec-sub-title">We are here to ensure it is easy for businesses to take eco action with social responsibility, QUDE™ funds, and verify global impacts.</h2>
                     <h3 className="sec-title">
-                      Ecological PROJECTS VERIFIED BY QUDE <sup>tm</sup>
+                      pical PROJECTS VERIFIED BY QUDE <sup>tm</sup>
                     </h3>
                     <p>
                       Ecological Projects Verified by QUDE™ Connecting Vital Ecosystems with Cutting-Edge Verification.

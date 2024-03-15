@@ -5,7 +5,7 @@ import DigitalMarketingBrand from "@/components/brand/DigitalMarketingBrand";
 import DigitalMarketingAbout from "@/components/about/DigitalMarketingAbout";
 import DigitalMarketingService from "@/components/service/DigitalMarketingService";
 import DigitalMarketingProtfolio from "@/components/portfolio/DigitalMarketingProtfolio";
-import LandManagement from "@/components/portfolio/LandManagement";
+import LandManagement from "@/components/hero/LandManagement";
 import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketingTestimonial";
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
 import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";

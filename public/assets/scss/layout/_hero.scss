@@ -132,7 +132,7 @@
     }
 
     &-3 {
-      padding-top: 190px;
+      padding-top: 120px;
       padding-bottom: 125px;
       position: relative;
       overflow: hidden;
@@ -216,6 +216,7 @@
       }
 
       .sec-title-wrapper {
+        margin-bottom: 150px;
         display: inline-block;
         position: unset;
       }
@@ -315,7 +316,7 @@
         height: 200px;
         position: relative;
         right: -41%;
-        top: 9%;
+        top: -4%;
 
         @media #{$lg} {
           left: 200px;

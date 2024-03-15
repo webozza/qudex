@@ -89,19 +89,15 @@ const DigitalMarketingHero = () => {
                     Offsets
                   </h3>
                 </div>
-                <div className="hero__text-3">
-                  <p className="hero__text-animation" ref={heroTextAnim}>
-                    Dive into a world where business and sustainability merge seamlessly. From enhancing carbon footprints going Beyond Carbon to unrivaled ecological analysis with QUDE™, elevate your corporate responsibility. Discover intuitive tools like EcoScoreCard+, NatureOffsets+, and QBOT+ tailored for impactful land management and funding.
-                  </p>
-                  <br />
-                </div>
-                <div className="">
-                  <Link className="btn-started btn-hover" href="#" ref={heroAnchor}>
+                <div>
+                  <Link style={{ padding: "20px ", border: "1px solid red", borderRadius: "8px" }} href="#">
                     Explore Power Ups & Eco Score Card
                   </Link>
                   <br />
                   <br />
-                  <Link className="btn-started btn-hover" href="#" ref={heroAnchor1}>
+                  <br />
+                  <br />
+                  <Link style={{ padding: "20px ", border: "1px solid red", borderRadius: "8px" }} href="#">
                     Discover Land Management Solutions
                   </Link>
                 </div>

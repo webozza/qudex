@@ -12,12 +12,8 @@ const DigitalMarketingService = () => {
       imageAnimation(serviceList.current.children);
       let tHero = gsap.context(() => {
         let service__items_3 = gsap.utils.toArray(".service_animation");
-        let service__items_heading = gsap.utils.toArray(
-          ".service_animation h3"
-        );
-        let service__items_content = gsap.utils.toArray(
-          ".service_animation .service__content-3"
-        );
+        let service__items_heading = gsap.utils.toArray(".service_animation h3");
+        let service__items_content = gsap.utils.toArray(".service_animation .service__content-3");
 
         service__items_3.forEach((service_item, i) => {
           gsap.set([service__items_heading[i], service__items_content[i]], {
@@ -85,11 +81,9 @@ const DigitalMarketingService = () => {
               <div className="sec-title-wrapper pt-130 text-anim">
                 <h2 className="sec-sub-title title-anim">Services</h2>
                 <h3 className="sec-title title-anim">
-                Leading the <br /> Green Revolution
+                  Leading the <br /> Green Revolution
                 </h3>
-                <p>
-                Embark on a sustainable journey with our cutting-edge EcoTech Solutions. From carbon innovation to ecological verification, our services redefine environmental stewardship. Elevate your corporate responsibility effortlessly with tools like BeyondCarbon+, QUDE™, and EcoScoreCard+. Dive into the future of eco-action
-                </p>
+                <p>Embark on a sustainable journey with our cutting-edge EcoTech Solutions. From carbon innovation to ecological verification, our services redefine environmental stewardship. Elevate your corporate responsibility effortlessly with tools like BeyondCarbon+, QUDE™, and EcoScoreCard+. Dive into the future of eco-action</p>
               </div>
             </div>
           </div>
@@ -100,23 +94,19 @@ const DigitalMarketingService = () => {
                 <div className="service__item-3 service_animation">
                   <h3>
                     <Link href="/service-details" className="service__title-3">
-                    ECO-IMPACT <br />
-                    BUSINESS PLATFORM
+                      ECO-IMPACT <br />
+                      BUSINESS PLATFORM
                     </Link>
                   </h3>
                   <div className="service__content-3">
-                    <p><strong>Lead with Qudex: Comprehensive offset reports + offset tools.</strong>
+                    <p>
+                      <strong>Lead with Qudex: Comprehensive offset reports + offset tools.</strong>
                     </p>
-                    <ul className="">
-                    Unlock the power of environmental stewardship without compromising on business growth. With Qudex, witness an evolution in how companies can harmonize profits with the planet.
-                    </ul>
+                    <ul>Unlock the power of environmental stewardship without compromising on business growth. With Qudex, witness an evolution in how companies can harmonize profits with the planet.</ul>
                   </div>
                   <div className="service__btn-3">
                     <div className="btn_wrapper">
-                      <Link
-                        href="/service-details"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
+                      <Link href="/service-details" className="wc-btn-black btn-hover btn-item">
                         <span></span> Details
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
@@ -139,10 +129,7 @@ const DigitalMarketingService = () => {
                     </Link>
                   </h3>
                   <div className="service__content-3">
-                    <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
-                    </p>
+                    <p>We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.</p>
                     <ul className="">
                       <li>+ Logo Design</li>
                       <li>+ Advertisement</li>
@@ -151,10 +138,7 @@ const DigitalMarketingService = () => {
                   </div>
                   <div className="service__btn-3">
                     <div className="btn_wrapper">
-                      <Link
-                        href="/service-details"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
+                      <Link href="/service-details" className="wc-btn-black btn-hover btn-item">
                         <span></span> Details
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
@@ -178,10 +162,7 @@ const DigitalMarketingService = () => {
                     </Link>
                   </h3>
                   <div className="service__content-3">
-                    <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
-                    </p>
+                    <p>We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.</p>
                     <ul className="">
                       <li>+ Logo Design</li>
                       <li>+ Advertisement</li>
@@ -190,10 +171,7 @@ const DigitalMarketingService = () => {
                   </div>
                   <div className="service__btn-3">
                     <div className="btn_wrapper">
-                      <Link
-                        href="/service-details"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
+                      <Link href="/service-details" className="wc-btn-black btn-hover btn-item">
                         <span></span> Details
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>
@@ -217,10 +195,7 @@ const DigitalMarketingService = () => {
                     </Link>
                   </h3>
                   <div className="service__content-3">
-                    <p>
-                      We help brands stand out through aweful, elegant visual
-                      design. Our design mainly philosophy.
-                    </p>
+                    <p>We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.</p>
                     <ul className="">
                       <li>+ Logo Design</li>
                       <li>+ Advertisement</li>
@@ -229,10 +204,7 @@ const DigitalMarketingService = () => {
                   </div>
                   <div className="service__btn-3">
                     <div className="btn_wrapper">
-                      <Link
-                        href="/service-details"
-                        className="wc-btn-black btn-hover btn-item"
-                      >
+                      <Link href="/service-details" className="wc-btn-black btn-hover btn-item">
                         <span></span> Details
                         <i className="fa-solid fa-arrow-right"></i>
                       </Link>

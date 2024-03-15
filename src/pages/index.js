@@ -9,6 +9,8 @@ import DigitalMarketingTestimonial from "@/components/testimonial/DigitalMarketi
 import DigitalMarketingWorkflow from "@/components/workflow/DigitalMarketingWorkflow";
 import DigitalMarketingPrice from "@/components/price/DigitalMarketingPrice";
 import DigitalMarketingBlog from "@/components/blog/DigitalMarketingBlog";
+import LandManagement from "@/components/hero/LandManagement";
+import ManagementFramwork from "@/components/workflow/ManagementFramwork";
 // testing auto deployment
 
 const Index = () => {
@@ -22,6 +24,10 @@ const Index = () => {
       <main>
         <RootLayout header="header1" footer="footer1">
           <DigitalMarketingHero />
+          {/* <LandManagement /> */}
+          <div style={{marginTop:"4rem"}}>
+          <ManagementFramwork />
+          </div>
           <DigitalMarketingBrand />
           <DigitalMarketingAbout />
           <DigitalMarketingWorkflow />
