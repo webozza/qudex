@@ -147,7 +147,6 @@ const FaqQ = () => {
                       </p>
                     </Accordion.Body>
                   </Accordion.Item>
-
                 </Accordion>
               </div>
             </div>

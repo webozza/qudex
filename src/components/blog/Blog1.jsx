@@ -15,6 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Blog1 = () => {
   const charAnim = useRef();
+
   useEffect(() => {
     animationCharCome(charAnim.current);
     if (typeof window !== "undefined") {
@@ -58,6 +59,7 @@ const Blog1 = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="blog__area-6 blog__animation">

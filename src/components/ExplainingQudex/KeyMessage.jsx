@@ -12,10 +12,6 @@ const KeyMessage = () => {
         <div className="container g-0 line pt-140">
           <span className="line-3"></span>
           <div className="sec-title-wrapper">
-            {/* <div className="from-text">
-              from <span>1990</span>
-            </div> */}
-
             <div className="row">
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                 <h2 className="sec-sub-title title-anim">Qudex</h2>

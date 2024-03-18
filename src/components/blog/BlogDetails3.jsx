@@ -11,10 +11,12 @@ import animationWordCome from "@/lib/utils/animationWordCome";
 const BlogDetail3 = () => {
   const wordAnim = useRef();
   const wordAnim2 = useRef();
+
   useEffect(() => {
     animationWordCome(wordAnim.current);
     animationWordCome(wordAnim2.current);
   }, []);
+  
   return (
     <>
       <section className="blog__detail">

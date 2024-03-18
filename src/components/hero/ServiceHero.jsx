@@ -14,6 +14,7 @@ import animationCharCome from "@/lib/utils/animationCharCome";
 const ServiceHero = () => {
   const charAnim = useRef();
   const solutionArea = useRef();
+  
   useEffect(() => {
     if (typeof window !== "undefined") {
       let image_list = [".solution__wrapper img"];

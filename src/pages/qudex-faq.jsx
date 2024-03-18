@@ -2,7 +2,7 @@ import Head from "next/head";
 import RootLayout from "@/components/common/layout/RootLayout";
 import Faq1 from "@/components/faq/Faq1";
 import FaqCTA from "@/components/cta/FaqCTA";
-import FaqQ from "@/components/faq/FaqQ";
+// import FaqQ from "@/components/faq/FaqQ";
 
 const Faq = () => {
   return (
@@ -14,7 +14,8 @@ const Faq = () => {
       </Head>
       <main>
         <RootLayout header="header1" footer="footer1">
-          <FaqQ />
+          {/* <FaqQ /> */}
+          <Faq1 />
           <FaqCTA />
         </RootLayout>
       </main>

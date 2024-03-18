@@ -58,12 +58,7 @@ export default function Footer1() {
         });
         let mySplitText = new SplitText(".end", { type: "words,chars" });
         let chars = mySplitText.chars;
-        let endGradient = chroma.scale([
-          "#F9D371",
-          "#F47340",
-          "#EF2F88",
-          "#8843F2",
-        ]);
+        let endGradient = chroma.scale(["#F9D371", "#F47340", "#EF2F88", "#8843F2"]);
         endTl.to(chars, {
           duration: 0.5,
           scaleY: 0.6,
@@ -128,12 +123,7 @@ export default function Footer1() {
         <div className="footer__top-3">
           <div className="footer__top-wrapper-3">
             <div className="footer__logo-3 pt-5">
-              <Image
-                priority
-                style={{ width: "auto", height: "auto" }}
-                src={SiteLogoWhite}
-                alt="Footer Logo"
-              />
+              <Image priority style={{ width: "auto", height: "auto" }} src={SiteLogoWhite} alt="Footer Logo" />
               <p>
                 {`Empowering a Sustainable Tomorrow | Innovating for Nature's
                 Harmony`}
@@ -142,13 +132,13 @@ export default function Footer1() {
             <div className="footer__social-3">
               <ul>
                 <li>
-                  <a href="#">facebook</a>
+                  <a href="https://www.facebook.com/sharer.php?u=https://linktr.ee/qudex?utm_source=linktree_profile_share&ltsid=f49bb28d-c298-4ce2-97fa-cc0bb57d67a7">facebook</a>
                 </li>
                 <li>
-                  <a href="#">Twitter</a>
+                  <a href="https://x.com/intent/tweet?text=Check%20out%20this%20Linktree! - https://linktr.ee/qudex?utm_source=linktree_profile_share&ltsid=f49bb28d-c298-4ce2-97fa-cc0bb57d67a7">Twitter</a>
                 </li>
                 <li>
-                  <a href="#">Linkedin</a>
+                  <a href="https://www.facebook.com/sharer.php?u=https://linktr.ee/qudex?utm_source=linktree_profile_share&ltsid=f49bb28d-c298-4ce2-97fa-cc0bb57d67a7">Linkedin</a>
                 </li>
                 <li>
                   <a href="https://www.instagram.com/qudexai/">Instagram</a>
@@ -174,17 +164,13 @@ export default function Footer1() {
               <div className="col-xxl-2 col-xl-2 col-lg-2 qudex-newslater">
                 <div className="footer__subscribe">
                   <p className="pb-4 text-white">Newsletter Signup</p>
-                      <form action="#">
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Enter your email"
-                        />
-                        <button type="submit" className="subs-btn">
-                          <i className="fa-solid fa-paper-plane"></i>
-                        </button>
-                      </form>
-                    </div>
+                  <form action="#">
+                    <input type="email" name="email" placeholder="Enter your email" />
+                    <button type="submit" className="subs-btn">
+                      <i className="fa-solid fa-paper-plane"></i>
+                    </button>
+                  </form>
+                </div>
               </div>
               <div className="col-xxl-8 col-xl-8 col-lg-8">
                 <div className="footer__nav-2">

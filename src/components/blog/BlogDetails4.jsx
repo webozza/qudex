@@ -80,7 +80,7 @@ const BlogDetail4 = () => {
                   <li>Objective Sustainability Evaluation: QUDE™ uses BioAssets and data tokens to objectively evaluate a company’s sustainable practices. This level of transparency provides a clearer picture of how a company’s practices align with sustainability goals.</li>
                   <li>Enhanced Investment Choices: QUDE™ enhances the EIR by providing a comprehensive understanding of a company’s environmental footprint, enabling investors to align their investment strategies with sustainability objectives.</li>
                 </ul>
-                <p>The unveiling of QUDE™ and the EIR marks a new chapter in our journey towards a more sustainable future. We believe QUDEX, powered by QUDE™ technology, will significantly democratize the ESG investing landscape by making it more transparent, accessible, and effective.</p>
+                <p>The unveiling of QUDE™ and the EIR marks a significant milestone in our journey towards a more sustainable future. We believe that QUDEX, powered by QUDE™ technology, will democratize the ESG investing landscape by making it more transparent, accessible, and effective. QUDE™ represents the evolution in ecology reporting and conservation funding, offering unprecedented clarity and objectivity in sustainable investing.</p>
                 <p>We eagerly anticipate your valuable feedback as we continue to enhance our offerings. Join us as we advance in our mission to foster sustainability, one QUDE™ at a time.</p>
                 <p>Sincerely,</p>
                 <p>The QUDEX Team</p>
