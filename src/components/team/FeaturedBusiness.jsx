@@ -1,7 +1,8 @@
-import { useEffect, useRef } from "react";
-import { FreeMode } from "swiper";
+import { useEffect, useRef, useState } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { gsap } from "gsap";
+import SwiperCore, { FreeMode } from "swiper";
 import Star from "../../../public/assets/imgs/qudex/star-color.png";
 import Star2 from "../../../public/assets/imgs/qudex/star-without-color.png";
 import Lock from "../../../public/assets/imgs/qudex/lock.png";
@@ -70,6 +71,62 @@ const FeaturedBusiness = () => {
     return () => tHero.revert();
   }
 
+  const [slides, setSlides] = useState([
+    {
+      id: 1,
+      title: "JJBEAN",
+      category: "Food & Beverage",
+      action: 9,
+      ecoInfluence: 90,
+      favorited: 99,
+      image: Brand1,
+      star: Star,
+    },
+    {
+      id: 2,
+      title: "WE AIR",
+      category: "MEDICAL",
+      action: 8,
+      ecoInfluence: 98,
+      favorited: 99,
+      image: Brand2,
+      star: Star,
+    },
+    {
+      id: 3,
+      title: "Myecodrop",
+      category: "Delivery",
+      action: 7,
+      ecoInfluence: 78,
+      favorited: 88,
+      image: Brand3,
+      star: Star,
+    },
+    {
+      id: 4,
+      title: "Yosemite Clean energy",
+      category: "Energy",
+      action: 88,
+      ecoInfluence: 99,
+      favorited: 78,
+      image: Brand4,
+      star: Star,
+    },
+    {
+      id: 5,
+      title: "BioStewards",
+      category: "Land management",
+      action: null,
+      ecoInfluence: null,
+      favorited: null,
+      image: Brand5,
+      star: Star2,
+      isLocked: true,
+    },
+  ]);
+
+  SwiperCore.use([FreeMode]);
+
   return (
     <>
       <section className="team__area-6 pb-100">
@@ -94,176 +151,58 @@ const FeaturedBusiness = () => {
             loop={true}
             speed={2000}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
-              },
-              1000: {
-                slidesPerView: 3,
-              },
-              1200: {
-                slidesPerView: 4,
-              },
+              640: { slidesPerView: 2 },
+              1000: { slidesPerView: 3 },
+              1200: { slidesPerView: 4 },
             }}
           >
-            <SwiperSlide>
-              <div className="featured-business-item">
-                <div className="top-content">
-                  <div className="star">
-                    <Image className="img-fluid" src={Star} alt="Qudex" />
+            {slides.map((slide) => (
+              <SwiperSlide key={slide.id}>
+                <div className="featured-business-item">
+                  <div className="top-content">
+                    <div className="star">
+                      <Image className="img-fluid" src={slide.star} alt="Qudex" />
+                    </div>
+                    <div className="image">
+                      <Image className="img-fluid" src={slide.image} alt="QUDEX platform" />
+                    </div>
+                    <div className="text text-center">
+                      <h3>{slide.title}</h3>
+                      <p>{slide.category}</p>
+                    </div>
                   </div>
-                  <div className="image">
-                    <Image className="img-fluid" src={Brand1} alt="QUDEX platform" />
-                  </div>
-                  <div className="text text-center">
-                    <h3>JJBEAN</h3>
-                    <p>Food & Beverage </p>
-                  </div>
+                  {slide.isLocked ? (
+                    <div className="background-black background-black-lock">
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div className="text">
+                          <h3>HELP UNLOCK</h3>
+                        </div>
+                        <div className="image">
+                          <Image className="img-fluid" src={Lock} alt="Lock" />
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="background-black">
+                      <div className="d-flex justify-content-between align-items-center">
+                        <div className="text">
+                          <p>Action</p>
+                          <h3>{slide.action}</h3>
+                        </div>
+                        <div className="text">
+                          <p>ECO-Influence</p>
+                          <h3>{slide.ecoInfluence}</h3>
+                        </div>
+                        <div className="text">
+                          <p>Favorited</p>
+                          <h3>{slide.favorited}</h3>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div class="background-black">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="text">
-                      <p>Action</p>
-                      <h3>9</h3>
-                    </div>
-                    <div class="text">
-                      <p>ECO-Influence</p>
-                      <h3>90</h3>
-                    </div>
-                    <div class="text">
-                      <p>Favorited</p>
-                      <h3>99</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="featured-business-item">
-                <div className="top-content">
-                  <div className="star">
-                    <Image className="img-fluid" src={Star} alt="Qudex" />
-                  </div>
-                  <div className="image">
-                    <Image className="img-fluid" src={Brand2} alt="QUDEX platform" />
-                  </div>
-                  <div className="text text-center">
-                    <h3>WE AIR</h3>
-                    <p>MEDICAL</p>
-                  </div>
-                </div>
-                <div class="background-black">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="text">
-                      <p>Action</p>
-                      <h3>8</h3>
-                    </div>
-                    <div class="text">
-                      <p>ECO-Influence</p>
-                      <h3>98</h3>
-                    </div>
-                    <div class="text">
-                      <p>Favorited</p>
-                      <h3>99</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="featured-business-item">
-                <div className="top-content">
-                  <div className="star">
-                    <Image className="img-fluid" src={Star2} alt="Qudex" />
-                  </div>
-                  <div className="image">
-                    <Image className="img-fluid" src={Brand3} alt="QUDEX platform" />
-                  </div>
-                  <div className="text text-center">
-                    <h3>Myecodrop</h3>
-                    <p>Delivery</p>
-                  </div>
-                </div>
-                <div class="background-black">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="text">
-                      <p>Action</p>
-                      <h3>7</h3>
-                    </div>
-                    <div class="text">
-                      <p>ECO-Influence</p>
-                      <h3>78</h3>
-                    </div>
-                    <div class="text">
-                      <p>Favorited</p>
-                      <h3>88</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="featured-business-item">
-                <div className="top-content">
-                  <div className="star">
-                    <Image className="img-fluid" src={Star} alt="Qudex" />
-                  </div>
-                  <div className="image">
-                    <Image className="img-fluid" src={Brand4} alt="QUDEX platform" />
-                  </div>
-                  <div className="text text-center">
-                    <h3>Yosemite Clean energy </h3>
-                    <p>Energy</p>
-                  </div>
-                </div>
-                <div class="background-black">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="text">
-                      <p>Action</p>
-                      <h3>88</h3>
-                    </div>
-                    <div class="text">
-                      <p>ECO-Influence</p>
-                      <h3>99</h3>
-                    </div>
-                    <div class="text">
-                      <p>Favorited</p>
-                      <h3>78</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="featured-business-item">
-                <div className="top-content">
-                  <div className="bg-lock"></div>
-                  <div className="star">
-                    <Image className="img-fluid" src={Star2} alt="Qudex" />
-                  </div>
-                  <div className="image">
-                    <Image className="img-fluid" src={Brand5} alt="QUDEX platform" />
-                  </div>
-                  <div className="text text-center">
-                    <h3>BioStewards</h3>
-                    <p>Land managment </p>
-                  </div>
-                </div>
-                <div class="background-black background-black-lock">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="text">
-                      <h3>HELP UNLOCK</h3>
-                    </div>
-                    <div class="image">
-                      <Image className="img-fluid" src={Lock} alt="Lock" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </section>
