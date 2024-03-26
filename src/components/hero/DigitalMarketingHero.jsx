@@ -90,17 +90,16 @@ const DigitalMarketingHero = () => {
                   </h3>
                 </div>
                 <div>
-                  <Link style={{ padding: "20px ", border: "1px solid red", borderRadius: "8px" }} href="#">
+                  <Link style={{ width: "310px", padding: "20px", border: "1px solid gray", color: "black", zIndex: "9999", borderRadius: "50px", display: "inline-block", textAlign: "center" }} href="#">
                     Explore Power Ups & Eco Score Card
                   </Link>
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <Link style={{ padding: "20px ", border: "1px solid red", borderRadius: "8px" }} href="#">
+                  <Link style={{ width: "310px", padding: "20px", border: "1px solid gray", color: "black", zIndex: "9999", borderRadius: "50px", display: "inline-block", textAlign: "center" }} href="#">
                     Discover Land Management Solutions
                   </Link>
                 </div>
+
                 <div className="scroll-down">
                   <button>
                     <Image priority style={{ width: "auto", height: "auto" }} src={ArrowDownSm} alt="arrow icon" />

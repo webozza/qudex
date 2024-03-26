@@ -19,12 +19,12 @@ const ManagementFramwork = () => {
     <>
       <section className="workflow__area-6">
         <div className="container g-0 line pb-130">
-          <h2 className="sec-title animation__char_come pb-5" ref={charAnim}>
-            Management <br />
-            Framwork
-          </h2>
           <div className="row">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 pb-4">
+              <h2 className="sec-title animation__char_come pb-5" ref={charAnim}>
+                Management <br />
+                Framwork
+              </h2>
               <p>
                 Once the roadmap is developed and agreed upon, QUDEX can <br />
                 help you implement the necessary steps to regenerate your land.

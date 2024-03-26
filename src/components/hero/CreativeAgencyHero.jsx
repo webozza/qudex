@@ -66,16 +66,8 @@ const CreativeAgencyHero = () => {
           autoAlpha: 0,
           stagger: 0.1,
         });
-        gsap.from(
-          split_solution.chars,
-          { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 },
-          "-=1.5"
-        );
-        gsap.from(
-          split_herocontent.words,
-          { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 },
-          "-=1"
-        );
+        gsap.from(split_solution.chars, { duration: 1, x: 70, autoAlpha: 0, stagger: 0.1 }, "-=1.5");
+        gsap.from(split_herocontent.words, { duration: 1, x: 50, autoAlpha: 0, stagger: 0.05 }, "-=1");
       });
       return () => tHero.revert();
     }
@@ -88,74 +80,29 @@ const CreativeAgencyHero = () => {
             <div className="col-xxl-12">
               <div className="service__hero-inner-2">
                 <div className="service__hero-left-2">
-                  <Image
-                    priority
-                    width={240}
-                    style={{ height: "auto" }}
-                    src={Home7sh1}
-                    alt="Image"
-                    className="image-1"
-                  />
-                  <Image
-                    priority
-                    width={240}
-                    style={{ height: "auto" }}
-                    src={Home7sh2}
-                    alt="Image"
-                    className="image-2"
-                  />
-                  <Image
-                    priority
-                    width={240}
-                    style={{ height: "auto" }}
-                    src={Home7sh3}
-                    alt="Image"
-                    className="image-3"
-                  />
-                  <Image
-                    priority
-                    width={240}
-                    style={{ height: "auto" }}
-                    src={Home7sh4}
-                    alt="Image"
-                    className="image-4"
-                  />
+                  <Image priority width={240} style={{ height: "auto" }} src={Home7sh1} alt="Image" className="image-1" />
+                  <Image priority width={240} style={{ height: "auto" }} src={Home7sh2} alt="Image" className="image-2" />
+                  <Image priority width={240} style={{ height: "auto" }} src={Home7sh3} alt="Image" className="image-3" />
+                  <Image priority width={240} style={{ height: "auto" }} src={Home7sh4} alt="Image" className="image-4" />
                 </div>
-                <div
-                  className="service__hero-right-2 hero7__thum-anim"
-                  ref={heroThumAnim}
-                >
+                <div className="service__hero-right-2 hero7__thum-anim" ref={heroThumAnim}>
                   <h1 className="title creative" ref={creativeSection}>
-                    Use {" "}
+                    Use{" "}
                     <span className="solution" ref={solutionSection}>
                       cases
                     </span>{" "}
                   </h1>
                   <p className="animate_content" ref={heroContentSection}>
-                    {" "}
-                      QUDEX simplifies the tasks of social responsibility
+                    QUDE's advanced statistical models enable comprehensive financial analysis. Its integration with real-time data streams allows for accurate forecasting of stock prices, currency fluctuations, and market trends. Additionally, QUDE's natural language processing capabilities facilitate the extraction of insights from financial reports and news articles, aiding in informed decision-making.
                   </p>
-                  <Image
-                    priority
-                    style={{ width: "auto", height: "auto" }}
-                    src={Home7scroll}
-                    alt="scroll Image"
-                    className="scroll"
-                  />
+                  <Image priority style={{ marginTop: "-2px", width: "auto", height: "auto" }} src={Home7scroll} alt="scroll Image" className="scroll" />
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <Image
-          priority
-          width={132}
-          height={132}
-          src={Home7shape6}
-          alt="Shape Image"
-          className="shape-1"
-        />
+        <Image priority width={132} height={132} src={Home7shape6} alt="Shape Image" className="shape-1" />
       </section>
     </>
   );
