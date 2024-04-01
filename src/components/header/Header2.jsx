@@ -45,18 +45,10 @@ export default function Header2({ navData }) {
           <header className="header__area-2" ref={headerArea}>
             <div className="header__inner-2">
               <DesignStudioLogo />
-              {navData.nav && navData.nav.length && (
-                <NavItem nav={navData.nav} />
-              )}
+              {navData.nav && navData.nav.length && <NavItem nav={navData.nav} />}
               <div className="header__nav-icon-2">
                 <button onClick={openCanvas}>
-                  <Image
-                    priority
-                    width={22}
-                    height={22}
-                    src={MenuWhite}
-                    alt="Menubar Icon"
-                  />
+                  <Image priority width={22} height={22} src={MenuWhite} alt="Menubar Icon" />
                 </button>
               </div>
             </div>

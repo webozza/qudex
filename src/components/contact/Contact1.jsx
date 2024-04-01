@@ -5,10 +5,12 @@ import { useEffect, useRef } from "react";
 const Contact1 = () => {
   const charAnim = useRef();
   const wordAnim = useRef();
+
   useEffect(() => {
     animationCharCome(charAnim.current);
     animationWordCome(wordAnim.current);
   }, []);
+
   return (
     <>
       <section className="contact__area-6">
@@ -24,21 +26,14 @@ const Contact1 = () => {
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="contact__text">
-                <p>
-                  {
-                    "Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."
-                  }
-                </p>
+                <p>{"Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."}</p>
               </div>
             </div>
           </div>
           <div className="row contact__btm">
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
               <div className="contact__info">
-                <h3
-                  className="sub-title-anim-top animation__word_come"
-                  ref={wordAnim}
-                >
+                <h3 className="sub-title-anim-top animation__word_come" ref={wordAnim}>
                   {"Don't be afraid man ! "}
                   <br />
                   say hello
@@ -74,19 +69,12 @@ const Contact1 = () => {
                       <input type="tel" name="phone" placeholder="Phone" />
                     </div>
                     <div className="col-xxl-6 col-xl-6 col-12">
-                      <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject *"
-                      />
+                      <input type="text" name="subject" placeholder="Subject *" />
                     </div>
                   </div>
                   <div className="row g-3">
                     <div className="col-12">
-                      <textarea
-                        name="message"
-                        placeholder="Messages *"
-                      ></textarea>
+                      <textarea name="message" placeholder="Messages *"></textarea>
                     </div>
                   </div>
                   <div className="row g-3">

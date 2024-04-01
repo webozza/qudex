@@ -90,7 +90,7 @@ const DigitalMarketingHero = () => {
                   </h3>
                 </div>
                 <div>
-                  <Link style={{ width: "310px", padding: "20px", border: "1px solid gray", color: "black", zIndex: "9999", borderRadius: "50px", display: "inline-block", textAlign: "center" }} href="#">
+                  <Link style={{ width: "310px", padding: "20px", border: "1px solid gray", color: "black", zIndex: "9999", borderRadius: "50px", display: "inline-block", textAlign: "center" }} href="/eco-score-card">
                     Explore Power Ups & Eco Score Card
                   </Link>
                   <br />

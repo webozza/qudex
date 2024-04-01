@@ -80,20 +80,8 @@ const BlogCase = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog31}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog31} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -103,8 +91,7 @@ const BlogCase = () => {
                   </h4> */}
                   <h5>
                     <Link href="/#" className="blog__title-3">
-                      Corporate Social Responsibility Sustainable business
-                      practices.
+                      Corporate Social Responsibility Sustainable business practices.
                     </Link>
                   </h5>
                   {/* <Link href="/blog-details" className="blog__btn">
@@ -113,11 +100,7 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p>
-                    {" "}
-                    Get an edge over your competition by showing how you
-                    contribute positive impacts on society and the planet.{" "}
-                  </p>
+                  <p> Get an edge over your competition by showing how you contribute positive impacts on society and the planet. </p>
                 </div>
               </article>
             </div>
@@ -127,20 +110,8 @@ const BlogCase = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog32}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog32} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -171,20 +142,8 @@ const BlogCase = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog33}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog33}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog33} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog33} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -203,12 +162,7 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p>
-                    {" "}
-                    People love transparency. People love numbers. Now you can
-                    do both by adding living impact data to your email
-                    campaigns.{" "}
-                  </p>
+                  <p> People love transparency. People love numbers. Now you can do both by adding living impact data to your email campaigns. </p>
                 </div>
               </article>
             </div>
@@ -218,20 +172,8 @@ const BlogCase = () => {
                 <div className="blog__img-wrapper-3">
                   <Link href="/blog-details">
                     <div className="img-box">
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog34}
-                        alt="Blog Thumbnail"
-                      />
-                      <Image
-                        priority
-                        style={{ width: "auto", height: "auto" }}
-                        className="image-box__item"
-                        src={Blog34}
-                        alt="Blog Thumbnail"
-                      />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog34} alt="Blog Thumbnail" />
+                      <Image priority style={{ width: "auto", height: "auto" }} className="image-box__item" src={Blog34} alt="Blog Thumbnail" />
                     </div>
                   </Link>
                 </div>
@@ -250,11 +192,7 @@ const BlogCase = () => {
                       <i className="fa-solid fa-arrow-right"></i>
                     </span>
                   </Link> */}
-                  <p>
-                    {" "}
-                    Take your digital content to another level by engaging
-                    directly with their values.{" "}
-                  </p>
+                  <p> Take your digital content to another level by engaging directly with their values. </p>
                 </div>
               </article>
             </div>

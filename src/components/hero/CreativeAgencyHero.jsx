@@ -87,10 +87,10 @@ const CreativeAgencyHero = () => {
                 </div>
                 <div className="service__hero-right-2 hero7__thum-anim" ref={heroThumAnim}>
                   <h1 className="title creative" ref={creativeSection}>
-                    Use{" "}
+                    Use
                     <span className="solution" ref={solutionSection}>
                       cases
-                    </span>{" "}
+                    </span>
                   </h1>
                   <p className="animate_content" ref={heroContentSection}>
                     QUDE's advanced statistical models enable comprehensive financial analysis. Its integration with real-time data streams allows for accurate forecasting of stock prices, currency fluctuations, and market trends. Additionally, QUDE's natural language processing capabilities facilitate the extraction of insights from financial reports and news articles, aiding in informed decision-making.
