@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
-import Link from "next/link.js";
+import Image from "next/image.js";
 import Planet from "../../../public/assets/imgs/thumb/earth.png";
 import HeroImg from "../../../public/assets/imgs/thumb/green.jpg";
-import Image from "next/image.js";
 import animationWordCome from "@/lib/utils/animationWordCome";
 
 const AboutHero = () => {

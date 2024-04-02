@@ -26,7 +26,7 @@ const Contact1 = () => {
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="contact__text">
-                <p>{"Great! We're excited to hear from you and let's start something special togerter. call us for any inquery."}</p>
+                <p>We’re here to help you navigate your sustainability journey. Contact us for more information about NatureBasedOffsets.com, QUDE™ technology, or how we can assist you in achieving your ecological and business goals.</p>
               </div>
             </div>
           </div>

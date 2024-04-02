@@ -1,5 +1,6 @@
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
 
@@ -38,40 +39,46 @@ const SignUp = () => {
               <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row g-3">
                   <div className="col-12">
-                    <Controller name="name" control={control} rules={{ required: "Full Name is required" }} render={({ field }) => <input {...field} type="text" placeholder="Full Name" />} />
+                    <Controller name="name" control={control} defaultValue="" rules={{ required: "Full Name is required" }} render={({ field }) => <input {...field} type="text" placeholder="Full Name" />} />
                     {errors.name && <span>{errors.name.message}</span>}
                   </div>
                 </div>
 
                 <div className="row g-3">
                   <div className="col-xxl-6 col-xl-6 col-12">
-                    <Controller name="email" control={control} rules={{ required: "Email is required" }} render={({ field }) => <input {...field} type="email" placeholder="Email" />} />
+                    <Controller name="email" control={control} defaultValue="" rules={{ required: "Email is required" }} render={({ field }) => <input {...field} type="email" placeholder="Email" />} />
                     {errors.email && <span>{errors.email.message}</span>}
                   </div>
                   <div className="col-xxl-6 col-xl-6 col-12">
-                    <Controller name="phone" control={control} render={({ field }) => <input {...field} type="tel" placeholder="Phone" />} />
+                    <Controller name="phone" control={control} defaultValue="" render={({ field }) => <input {...field} type="tel" placeholder="Phone" />} />
                   </div>
                 </div>
 
                 <div className="row g-3">
                   <div className="col-xxl-6 col-xl-6 col-12">
                     <Controller name="password" control={control} rules={{ required: "Password is required" }} render={({ field }) => <input {...field} type="password" placeholder="Password" />} />
+
                     {errors.password && <span>{errors.password.message}</span>}
                   </div>
                   <div className="col-xxl-6 col-xl-6 col-12">
                     <Controller
                       name="confirmPassword"
                       control={control}
+                      // defaultValue=""
                       rules={{
                         required: "Confirm Password is required",
                         validate: (value) => value === getValues("password") || "Passwords do not match",
                       }}
-                      render={({ field }) => <input {...field} type="password" placeholder="Confirm Password" />}
+                      render={({ field }) => <input {...field} type="password" defaultValue="" placeholder="Confirm Password" />}
                     />
                     {errors.confirmPassword && <span>{errors.confirmPassword.message}</span>}
                   </div>
                 </div>
-
+                <div>
+                  <small>
+                    Already have an account? Please <Link href="/login">Sign In</Link>
+                  </small>
+                </div>
                 <div className="row g-3">
                   <div className="col-12">
                     <div className="btn_wrapper">

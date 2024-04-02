@@ -64,8 +64,11 @@ const AboutTeam = () => {
     <>
       <section className="team__area pt-140 pb-140">
         <div className="sec-title-wrapper">
-          <h2 className="sec-sub-title title-anim">Qudex</h2>
           <h3 className="sec-title title-anim">One Team One Vision</h3>
+          {/* <h2 className="sec-sub-title title-anim">Qudex</h2> */}
+          <h2 className="sec-sub-title title-anim" style={{ marginTop: "20px", width: "40%", textAlign: "center", marginLeft: "auto", marginRight: "auto" }}>
+            Meet the passionate individuals behind NatureBasedOffsets.com, each dedicated to making a significant impact in the field of ecological conservation.
+          </h2>
         </div>
 
         <div className="team__slider">
@@ -90,92 +93,60 @@ const AboutTeam = () => {
           >
             <SwiperSlide>
               <div className="team__slide">
-
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team1}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Jesse Harris</h4>
-                    <h5 className="team__member-role"> Qude vision  </h5>
-                  </div>
-
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team1} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Jesse Harris</h4>
+                  <h5 className="team__member-role"> Qude vision </h5>
+                </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team2}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Tom Hobby </h4>
-                    <h5 className="team__member-role"> The lorex </h5>
-                  </div>
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team2} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Tom Hobby </h4>
+                  <h5 className="team__member-role"> The lorex </h5>
+                </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team3}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Vinh </h4>
-                    <h5 className="team__member-role"> Planet tech Master </h5>
-                  </div>
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team3} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Vinh </h4>
+                  <h5 className="team__member-role"> Planet tech Master </h5>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="team__slide">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team1}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Jesse Harris</h4>
-                    <h5 className="team__member-role"> Qude vision  </h5>
-                  </div>
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team1} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Jesse Harris</h4>
+                  <h5 className="team__member-role"> Qude vision </h5>
+                </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team2}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Tom Hobby </h4>
-                    <h5 className="team__member-role"> The lorex </h5>
-                  </div>
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team2} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Tom Hobby </h4>
+                  <h5 className="team__member-role"> The lorex </h5>
+                </div>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className="team__slide">
-                  <Image
-                    priority
-                    style={{ width: "100%", height: "auto" }}
-                    src={Team3}
-                    alt="Team Member"
-                  />
-                  <div className="team__info">
-                    <h4 className="team__member-name">Vinh </h4>
-                    <h5 className="team__member-role"> Planet tech Master </h5>
-                  </div>
+                <Image priority style={{ width: "100%", height: "auto" }} src={Team3} alt="Team Member" />
+                <div className="team__info">
+                  <h4 className="team__member-name">Vinh </h4>
+                  <h5 className="team__member-role"> Planet tech Master </h5>
+                </div>
               </div>
             </SwiperSlide>
 

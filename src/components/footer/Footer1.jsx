@@ -176,7 +176,7 @@ export default function Footer1() {
                 <div className="footer__nav-2">
                   <ul className="footer-menu-2 menu-anim" ref={menuAnim}>
                     <li>
-                      <Link href="/#">Register</Link>
+                      <Link href="/register">Register</Link>
                     </li>
                     <li>
                       <Link href="/about">About Us</Link>

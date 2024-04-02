@@ -19,11 +19,12 @@ const AboutStory = () => {
             <div className="row">
               <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
                 <h2 className="sec-sub-title title-anim">Qudex</h2>
-                <h3 className="sec-title title-anim">About Us</h3>
+                <h3 className="sec-title title-anim">Our Mission</h3>
               </div>
               <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                 <div className="story__text">
-                  <p>
+                  <p style={{ margin: "0 0 40px 0" }}>At NatureBasedOffsets.com, we strive to revolutionize the way ecological assets are valued and conserved. Our mission is to connect landowners and businesses, leveraging the power of QUDE™ technology to create a sustainable future for all.</p>
+                  {/* <p>
                     QUDEX provides businesses the means to actively contribute
                     to the restoration and preservation of our natural
                     environment. By sponsoring QUDEs, which represent
@@ -34,27 +35,9 @@ const AboutStory = () => {
                     tangible and lasting impact, benefiting not just the
                     environment, but also their reputation and relationships
                     with customers and investors.
-                  </p>
-                  <p>
-                    Moreover, QUDEX’s innovative approach to utilizing advanced
-                    technology and extensive field data transforms environmental
-                    conservation into a viable, quantifiable business strategy.
-                    Businesses can now view their contributions to environmental
-                    sustainability not as an intangible, unquantifiable effort,
-                    but as a real investment in bioassets that have both
-                    environmental and economic value.
-                  </p>
-                  <p>
-                    Through their engagement with QUDEX, companies also gain a
-                    powerful means of customer engagement. As consumer focus
-                    shifts increasingly towards supporting businesses that
-                    prioritize sustainability, the transparent and measurable
-                    efforts facilitated by QUDEX can provide a compelling
-                    narrative for companies to share with their customers. This
-                    not only enhances their brand image but also fosters a
-                    deeper connection with their audience based on shared values
-                    and objectives.
-                  </p>
+                  </p> */}
+                  {/* <p>Moreover, QUDEX’s innovative approach to utilizing advanced technology and extensive field data transforms environmental conservation into a viable, quantifiable business strategy. Businesses can now view their contributions to environmental sustainability not as an intangible, unquantifiable effort, but as a real investment in bioassets that have both environmental and economic value.</p>
+                  <p>Through their engagement with QUDEX, companies also gain a powerful means of customer engagement. As consumer focus shifts increasingly towards supporting businesses that prioritize sustainability, the transparent and measurable efforts facilitated by QUDEX can provide a compelling narrative for companies to share with their customers. This not only enhances their brand image but also fosters a deeper connection with their audience based on shared values and objectives.</p> */}
                 </div>
               </div>
             </div>
@@ -62,65 +45,31 @@ const AboutStory = () => {
           <div className="row">
             <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3">
               <div className="story__img-wrapper">
-                <Image
-                  priority
-                  width={300}
-                  style={{ height: "auto" }}
-                  src={Story1}
-                  alt="Story Thumbnail"
-                  className="w-100"
-                />
+                <Image priority width={300} style={{ height: "auto" }} src={Story1} alt="Story Thumbnail" className="w-100" />
               </div>
             </div>
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
               <div className="story__img-wrapper img-anim">
-                <Image
-                  priority
-                  width={520}
-                  style={{ height: "auto" }}
-                  src={Story2}
-                  alt="Story Thumbnail"
-                  data-speed="auto"
-                />
+                <Image priority width={520} style={{ height: "auto" }} src={Story2} alt="Story Thumbnail" data-speed="auto" />
               </div>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
               <div className="story__img-wrapper">
-                <Image
-                  priority
-                  width={230}
-                  style={{ height: "auto" }}
-                  src={Story3}
-                  alt="Story Thumbnail"
-                />
-                <Image
-                  priority
-                  width={410}
-                  style={{ height: "auto" }}
-                  src={Story4}
-                  alt="Story Thumbnail"
-                />
+                <Image priority width={230} style={{ height: "auto" }} src={Story3} alt="Story Thumbnail" />
+                <Image priority width={410} style={{ height: "auto" }} src={Story4} alt="Story Thumbnail" />
               </div>
             </div>
           </div>
           <div className="row pt-100 pb-5">
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-              <h3 className="pb-3">The VISION</h3>
-              <p className="pb-5">
-                The Vision of QUDEX is to offer a straightforward and
-                transparent solution to address the environmental impact of our
-                past and ongoing commercial activities. Through QUDEX, we hand
-                businesses, investors, and individuals the proverbial shovel,
-                providing them with an accessible and effective means to help
-                fill in the ecological deficit we have created over the years.
-              </p>
+              <h3 className="pb-3 sec-title title-anim">The VISION</h3>
+              <p className="pb-5">We envision a world where every piece of land is recognized for its true ecological value, contributing to a global economy that prioritizes environmental health and sustainability.</p>
+              {/* <p className="pb-5">The Vision of QUDEX is to offer a straightforward and transparent solution to address the environmental impact of our past and ongoing commercial activities. Through QUDEX, we hand businesses, investors, and individuals the proverbial shovel, providing them with an accessible and effective means to help fill in the ecological deficit we have created over the years.</p> */}
               <Image src={Icon} alt="Icon" className="img-fluid" />
             </div>
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2"></div>
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5 pt-lg-0 pt-5">
-              <h3 className="pb-3">
-                The Mission Is to Regenerate the earth using QUDE™
-              </h3>
+              <h3 className="pb-3">The Mission Is to Regenerate the earth using QUDE™</h3>
               <p>
                 {`More than 75 percent of Earth's land areas are substantially
                 degraded, undermining the well-being of 3.2 billion people,
