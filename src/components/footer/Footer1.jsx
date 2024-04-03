@@ -1,19 +1,24 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger, SplitText, chroma } from "@/plugins";
 import Link from "next/link.js";
 import SiteLogoWhite from "../../../public/assets/imgs/logo/site-logo-white-2.png";
 import Image from "next/image.js";
+import toast from "react-hot-toast";
+// import { sendEmail } from "../../../public/utils/sendEmail";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer1() {
   const menuAnim = useRef();
+  const [email, setEmail] = useState("");
+
   useEffect(() => {
     if (menuAnim.current) {
       menuAnimation();
     }
   }, []);
+
   const menuAnimation = () => {
     let rootParent = menuAnim.current.children;
     for (let i = 0; i < rootParent.length; i++) {
@@ -117,13 +122,30 @@ export default function Footer1() {
       return () => tHero.revert();
     }
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const success = await sendEmail(email);
+    if (success) {
+      setEmail("");
+      toast("Thank you for subscribing to our newsletter!");
+    } else {
+      toast("Oops! Something went wrong. Please try again later.");
+    }
+  };
+
+  const subscribeNewsletter = () => toast.success("Successfully subscribe newsletter!");
+
   return (
     <>
       <footer className="footer__area-3 qudex-footer">
         <div className="footer__top-3">
           <div className="footer__top-wrapper-3">
             <div className="footer__logo-3 pt-5">
-              <Image priority style={{ width: "auto", height: "auto" }} src={SiteLogoWhite} alt="Footer Logo" />
+              <Link href="/">
+                <Image priority src={SiteLogoWhite} alt="Footer Logo" />
+              </Link>
               <p>
                 {`Empowering a Sustainable Tomorrow | Innovating for Nature's
                 Harmony`}
@@ -164,9 +186,10 @@ export default function Footer1() {
               <div className="col-xxl-2 col-xl-2 col-lg-2 qudex-newslater">
                 <div className="footer__subscribe">
                   <p className="pb-4 text-white">Newsletter Signup</p>
-                  <form action="#">
-                    <input type="email" name="email" placeholder="Enter your email" />
-                    <button type="submit" className="subs-btn">
+
+                  <form /* onSubmit={handleSubmit} */>
+                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} name="email" placeholder="Enter your email" />
+                    <button type="submit" className="subs-btn" onClick={subscribeNewsletter}>
                       <i className="fa-solid fa-paper-plane"></i>
                     </button>
                   </form>

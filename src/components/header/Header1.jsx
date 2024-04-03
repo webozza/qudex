@@ -6,6 +6,7 @@ import SearchData from "../../data/searchData.json";
 import { useRouter } from "next/router";
 import NavItem from "../nav/NavItem";
 import LogoItem from "../logo/LogoItem";
+import { Toaster } from "react-hot-toast";
 
 export default function Header1({ navData }) {
   const [topScroll, setTopScroll] = useState(0);
@@ -104,6 +105,7 @@ export default function Header1({ navData }) {
           <header className="header__area-3" ref={headerArea}>
             <div className="header__inner-3">
               <LogoItem />
+              <Toaster />
               {navData.nav && navData.nav.length && <NavItem nav={navData.nav} navStyle={3} />}
               <div className="header__nav-icon-3">
                 <button className="search-icon" onClick={openSearch} id="search_icon" ref={searchIcon}>

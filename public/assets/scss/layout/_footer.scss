@@ -5,7 +5,7 @@
 .footer {
   &__area {
     overflow: hidden;
-    // update v0.2 
+    // update v0.2
     &-2 {
       background-image: url(/assets/imgs/shape/4.png);
       background-repeat: no-repeat;
@@ -145,9 +145,7 @@
     }
   }
 
-
   &__btm {
-
     @media #{$xl} {
       padding-left: 55px;
     }
@@ -241,6 +239,8 @@
 
     &-3 {
       img {
+        height: 100px;
+        width: 250px;
         margin-bottom: 30px;
       }
 
@@ -267,7 +267,6 @@
       font-size: 24px;
     }
   }
-
 
   // Widget
   &__widget {
@@ -723,7 +722,6 @@
         }
       }
     }
-
   }
 
   &__nav {
@@ -856,7 +854,6 @@
         }
       }
 
-
       input {
         width: 100%;
         border: none;
@@ -903,9 +900,7 @@
   }
 }
 
-
 footer {
-
   #btn_wrapper,
   .btn_wrapper {
     margin: 0 auto;
@@ -957,8 +952,6 @@ footer {
     width: 100%;
     height: 1px;
     background-color: var(--gray-11);
-
-
 
     @media #{$sm} {
       top: 14%;
