@@ -1,7 +1,13 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; // Correct import path for ScrollTrigger
 import Image from "next/image";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Brand1 from "../../../public/assets/imgs/brand/1.png";
 import Brand2 from "../../../public/assets/imgs/brand/2.png";
@@ -12,8 +18,6 @@ import Brand6 from "../../../public/assets/imgs/brand/6.png";
 import Brand7 from "../../../public/assets/imgs/brand/7.png";
 import Brand8 from "../../../public/assets/imgs/brand/8.png";
 import Brand9 from "../../../public/assets/imgs/brand/9.png";
-
-const brandImages = [Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8, Brand9];
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +63,8 @@ const DigitalMarketingBrand = () => {
     return () => timeline.kill(); // Properly dispose the timeline
   }, []);
 
+  const brandImages = [Brand1, Brand2, Brand3, Brand4, Brand5, Brand6, Brand7, Brand8, Brand9];
+
   return (
     <section className="brand__area">
       <div className="container pt-140 pb-140">
@@ -66,11 +72,40 @@ const DigitalMarketingBrand = () => {
           <div className="col-xxl-12">
             <h2 className="brand__title-3 title-anim">We worked with global largest brands</h2>
             <div className="brand__list-3">
-              <div className="brand__item-2 fade_bottom">
+              <Swiper
+                slidesPerView={1}
+                spaceBetween={10}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                  },
+                }}
+                // modules={[Autoplay, Navigation]}
+                className="mySwiper"
+              >
                 {brandImages.map((img, index) => (
-                  <Image key={index} width={120} src={img} alt="Brand Logo" />
+                  <SwiperSlide key={index}>
+                    <Image src={img} alt="Brand Logo" className="fade_bottom" style={{ textAlign: "center", width: "170px", height: "120px" }} />
+                  </SwiperSlide>
                 ))}
-              </div>
+              </Swiper>
             </div>
           </div>
         </div>
