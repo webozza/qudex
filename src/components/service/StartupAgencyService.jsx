@@ -50,6 +50,7 @@ const StartupAgencyService = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="service__area-4">
@@ -73,9 +74,7 @@ const StartupAgencyService = () => {
             <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
               <div className="service__right-4">
                 <p>
-                  We are constantly rethinking the future by creating the next
-                  generation of products,{" "}
-                  <span>brands and services from a hybrid perspective.</span>
+                  We are constantly rethinking the future by creating the next generation of products, <span>brands and services from a hybrid perspective.</span>
                 </p>
                 <Link className="btn-view" href="/service">
                   View All Service <i className="fa-solid fa-arrow-right"></i>
@@ -87,13 +86,7 @@ const StartupAgencyService = () => {
             <div className="row">
               <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-6">
                 <div className="service__img-left">
-                  <Image
-                    priority
-                    width={430}
-                    style={{ height: "auto" }}
-                    src={service1}
-                    alt="Service"
-                  />
+                  <Image priority width={430} style={{ height: "auto" }} src={service1} alt="Service" />
                 </div>
               </div>
               <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-6">
@@ -104,10 +97,7 @@ const StartupAgencyService = () => {
                     </div>
                     <div className="service__title-wrapper-4">
                       <h4>
-                        <Link
-                          className="service__item-title"
-                          href="/service-details"
-                        >
+                        <Link className="service__item-title" href="/service-details">
                           Brand Strategy
                         </Link>
                       </h4>
@@ -124,10 +114,7 @@ const StartupAgencyService = () => {
                     </div>
                     <div className="service__title-wrapper-4">
                       <h4>
-                        <Link
-                          className="service__item-title"
-                          href="/service-details"
-                        >
+                        <Link className="service__item-title" href="/service-details">
                           Development
                         </Link>
                       </h4>
@@ -144,10 +131,7 @@ const StartupAgencyService = () => {
                     </div>
                     <div className="service__title-wrapper-4">
                       <h4>
-                        <Link
-                          className="service__item-title"
-                          href="/service-details"
-                        >
+                        <Link className="service__item-title" href="/service-details">
                           UI/UX Design
                         </Link>
                       </h4>
@@ -164,10 +148,7 @@ const StartupAgencyService = () => {
                     </div>
                     <div className="service__title-wrapper-4">
                       <h4>
-                        <Link
-                          className="service__item-title"
-                          href="/service-details"
-                        >
+                        <Link className="service__item-title" href="/service-details">
                           Digital marketing
                         </Link>
                       </h4>

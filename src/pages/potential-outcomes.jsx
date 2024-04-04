@@ -7,7 +7,7 @@ const potentialOutcomes = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Potential Outcomes</title>
         <meta name="description" content="Contact Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

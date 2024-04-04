@@ -54,6 +54,7 @@ const StartupAgencyFeature = () => {
       return () => tHero.revert();
     }
   }, []);
+
   return (
     <>
       <section className="feature__area-6">
@@ -78,75 +79,30 @@ const StartupAgencyFeature = () => {
               <div className="feature__content-right">
                 <h4 className="feature__title-6">Creativity</h4>
                 <p>
-                  We are constantly rethinking the future by creating the next
-                  generation of products,{" "}
-                  <span>brands and design features</span> from a hybrid
-                  perspective.
+                  We are constantly rethinking the future by creating the next generation of products, <span>brands and design features</span> from a hybrid perspective.
                 </p>
-                <p>
-                  Regulatory oneven an enterprises such she and the got the did
-                  attributing and pushed.
-                </p>
-                <Image
-                  priority
-                  width={130}
-                  height={97}
-                  className="feature__img-1"
-                  src={Feature41}
-                  alt="Icon"
-                />
-                <Image
-                  priority
-                  width={99}
-                  height={131}
-                  className="feature__img-2"
-                  src={Feature42}
-                  alt="Icon"
-                />
-                <Image
-                  priority
-                  width={38}
-                  height={38}
-                  className="feature__img-3"
-                  src={Feature43}
-                  alt="Icon"
-                />
+                <p>Regulatory oneven an enterprises such she and the got the did attributing and pushed.</p>
+                <Image priority width={130} height={97} className="feature__img-1" src={Feature41} alt="Icon" />
+                <Image priority width={99} height={131} className="feature__img-2" src={Feature42} alt="Icon" />
+                <Image priority width={38} height={38} className="feature__img-3" src={Feature43} alt="Icon" />
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="feature__content">
-                <Image
-                  priority
-                  width={630}
-                  style={{ height: "auto" }}
-                  src={Feature}
-                  alt="Features Image"
-                />
+                <Image priority width={630} style={{ height: "auto" }} src={Feature} alt="Features Image" />
               </div>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
               <div className="feature__content-btm">
                 <div className="feature__content-item fade_bottom_4">
-                  <Image
-                    priority
-                    width={50}
-                    height={50}
-                    src={Icon1}
-                    alt="Features Image"
-                  />
+                  <Image priority width={50} height={50} src={Icon1} alt="Features Image" />
                   <h5>
                     Unique Header & <br /> Sidebar
                   </h5>
                   <p>Unique digital header widget metaverse wearables</p>
                 </div>
                 <div className="feature__content-item fade_bottom_4">
-                  <Image
-                    priority
-                    width={50}
-                    height={50}
-                    src={Icon2}
-                    alt="Features Image"
-                  />
+                  <Image priority width={50} height={50} src={Icon2} alt="Features Image" />
                   <h5>
                     5+ Navigation <br /> Bars
                   </h5>

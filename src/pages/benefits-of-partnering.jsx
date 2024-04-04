@@ -7,7 +7,7 @@ const benefitsOfPartnering = () => {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Benefits Partnering</title>
         <meta name="description" content="Contact Description" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
