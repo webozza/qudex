@@ -12,20 +12,7 @@
       "link": "/core-of-qudex",
       "type": "",
       "full_width": false,
-      "sub_nav": [
-        {
-          "nav_name": "Step 1",
-          "link": "/how-it-works/step-1"
-        },
-        {
-          "nav_name": "Step 2",
-          "link": "/how-it-works/step-2"
-        },
-        {
-          "nav_name": "Step 3",
-          "link": "/how-it-works/step-3"
-        }
-      ]
+      "sub_nav": []
     },
     {
       "nav_name": "The Platform",
@@ -57,12 +44,16 @@
       "type": "",
       "sub_nav": [
         {
-          "nav_name": "Step 1",
-          "link": "/how-it-works/step-1"
+          "nav_name": "Benefits of Partnering",
+          "link": "/benefits-of-partnering"
         },
         {
-          "nav_name": "Step 2",
-          "link": "/how-it-works/step-2"
+          "nav_name": "Process Involved",
+          "link": "/process-involved"
+        },
+        {
+          "nav_name": "Potential Outcomes",
+          "link": "/potential-outcomes"
         }
       ]
     }

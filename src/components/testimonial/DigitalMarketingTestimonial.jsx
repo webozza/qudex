@@ -5,18 +5,19 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "@/plugins";
 import { Navigation, FreeMode } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Testimonial31 from "../../../public/assets/imgs/testimonial/3/1.jpg";
-import Testimonial32 from "../../../public/assets/imgs/testimonial/3/2.jpg";
-import Testimonial33 from "../../../public/assets/imgs/testimonial/3/3.jpg";
-import Testimonial34 from "../../../public/assets/imgs/testimonial/3/4.jpg";
-import Testimonial35 from "../../../public/assets/imgs/testimonial/3/5.jpg";
-import Testimonial36 from "../../../public/assets/imgs/testimonial/3/6.jpg";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/free-mode";
 import Image from "next/image";
+
+import Testimonial31 from "../../../public/assets/imgs/testimonial/3/1.jpg";
+import Testimonial32 from "../../../public/assets/imgs/testimonial/3/2.jpg";
+import Testimonial33 from "../../../public/assets/imgs/testimonial/3/3.jpg";
+import Testimonial34 from "../../../public/assets/imgs/testimonial/3/4.jpg";
+import Testimonial35 from "../../../public/assets/imgs/testimonial/3/5.jpg";
+import Testimonial36 from "../../../public/assets/imgs/testimonial/3/6.jpg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,80 +116,44 @@ const DigitalMarketingTestimonial = () => {
                   <div className="swiper-wrapper">
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
-                        <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
-                        </p>
+                        <p>When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!</p>
                         <h2 className="client__name-3">Maria D. Halk</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
-                        <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
-                        </p>
+                        <p>When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!</p>
                         <h2 className="client__name-3">Maria D. Halk</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
-                        <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
-                        </p>
+                        <p>When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!</p>
                         <h2 className="client__name-3">Maria D. Halk</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
-                        <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
-                        </p>
+                        <p>When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!</p>
                         <h2 className="client__name-3">Maria D. Halk</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="testimonial__slide-3">
-                        <p>
-                          When we talk about Alts, we do not mean a typical
-                          business partner, but rather a team that collaborates
-                          with us daily, always there for us when we encounter
-                          difficulties and celebrate achievements. We see in
-                          Alts our best ally for success!
-                        </p>
+                        <p>When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!</p>
                         <h2 className="client__name-3">Maria D. Halk</h2>
                         <h3 className="client__role-3">Managing Director</h3>
                       </div>
                     </SwiperSlide>
                   </div>
-                  <div
-                    style={{ cursor: "pointer" }}
-                    className="next-button swipper-btn"
-                  >
+                  <div style={{ cursor: "pointer" }} className="next-button swipper-btn">
                     <FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon>
                   </div>
-                  <div
-                    style={{ cursor: "pointer" }}
-                    className="prev-button swipper-btn"
-                  >
+                  <div style={{ cursor: "pointer" }} className="prev-button swipper-btn">
                     <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
                   </div>
                 </Swiper>
@@ -197,54 +162,12 @@ const DigitalMarketingTestimonial = () => {
           </div>
         </div>
         <div className="testimonial__images-3 animation_image_zoom">
-          <Image
-            priority
-            width={170}
-            height={200}
-            src={Testimonial31}
-            alt="testimonial Image"
-            className="testimonial3__img"
-          />
-          <Image
-            priority
-            width={90}
-            height={100}
-            src={Testimonial32}
-            alt="testimonial Image"
-            className="testimonial3__img-2"
-          />
-          <Image
-            priority
-            width={110}
-            height={130}
-            src={Testimonial33}
-            alt="testimonial Image"
-            className="testimonial3__img-3"
-          />
-          <Image
-            priority
-            width={330}
-            height={430}
-            src={Testimonial34}
-            alt="testimonial Image"
-            className="testimonial3__img-4"
-          />
-          <Image
-            priority
-            width={245}
-            height={278}
-            src={Testimonial35}
-            alt="testimonial Image"
-            className="testimonial3__img-5"
-          />
-          <Image
-            priority
-            width={140}
-            height={160}
-            src={Testimonial36}
-            alt="testimonial Image"
-            className="testimonial3__img-6"
-          />
+          <Image priority width={170} height={200} src={Testimonial31} alt="testimonial Image" className="testimonial3__img" />
+          <Image priority width={90} height={100} src={Testimonial32} alt="testimonial Image" className="testimonial3__img-2" />
+          <Image priority width={110} height={130} src={Testimonial33} alt="testimonial Image" className="testimonial3__img-3" />
+          <Image priority width={330} height={430} src={Testimonial34} alt="testimonial Image" className="testimonial3__img-4" />
+          <Image priority width={245} height={278} src={Testimonial35} alt="testimonial Image" className="testimonial3__img-5" />
+          <Image priority width={140} height={160} src={Testimonial36} alt="testimonial Image" className="testimonial3__img-6" />
         </div>
       </section>
     </>

@@ -3,6 +3,7 @@ import { useEffect, useRef } from "react";
 import ThumbDev1 from "../../../public/assets/imgs/bg/map.jpg";
 import ThumbDev2 from "../../../public/assets/imgs/bg/road-map.jpg";
 import animationCharCome from "@/lib/utils/animationCharCome";
+import ButtonCTA from "../button/ButtonCTA";
 
 const LandPartnerOne = () => {
   const charAnim = useRef();
@@ -22,6 +23,7 @@ const LandPartnerOne = () => {
                   QUDEX mapping and Land Management tools can bring maximum potential .
                 </h2>
               </div>
+              <ButtonCTA href="/contact">Join as Partner</ButtonCTA>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 pb-5">
               <div className="development__wrapper">

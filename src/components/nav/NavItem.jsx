@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function NavItem({ nav, navStyle = "" }) {
   const menuAnim = useRef();
@@ -32,68 +32,57 @@ export default function NavItem({ nav, navStyle = "" }) {
     }
   };
 
+  const handleMouseEnter = (index) => {
+    const dropdown = document.querySelector(`#dropdown-${index}`);
+    if (dropdown) {
+      dropdown.style.visibility = "visible";
+    }
+  };
+
+  const handleMouseLeave = (index) => {
+    const dropdown = document.querySelector(`#dropdown-${index}`);
+    if (dropdown) {
+      dropdown.style.visibility = "hidden";
+    }
+  };
+
   return (
     <>
       <div className="header__nav-2">
         <ul className={navStyle ? `main-menu-${navStyle} menu-anim` : `main-menu menu-anim`} ref={menuAnim}>
           {nav.map((el, i) => {
-            if (el.type === "megamenu") {
-              return (
-                <li className="has-megamenu" key={i}>
-                  <Link href={el.link}>{el.nav_name}</Link>
-                  <ul className={el.full_width ? "mega-menu" : "mega-menu-2"}>
-                    {el.sub_nav.map((subEl, index) => {
-                      return (
-                        <li key={index}>
-                          <div className="menu-heading">{subEl.title}</div>
-                          <ul>
-                            {subEl.data.map((elData, elIndex) => {
-                              return (
-                                <li key={elIndex}>
-                                  <Link href={elData.link}>{elData.name}</Link>
-                                </li>
-                              );
-                            })}
-                          </ul>
-                        </li>
-                      );
-                    })}
+            return (
+              <li key={i} style={{ position: "relative" }} onMouseEnter={() => handleMouseEnter(i)} onMouseLeave={() => handleMouseLeave(i)}>
+                <Link href={el.link}>{el.nav_name}</Link>
+                {el.sub_nav && el.sub_nav.length > 0 && (
+                  <ul
+                    className="dropdown"
+                    id={`dropdown-${i}`}
+                    style={{
+                      position: "absolute",
+                      top: "100%",
+                      left: "20%",
+                      backgroundColor: "black",
+                      padding: "10px 10%",
+                      width: "100%",
+                      textAlign: "left",
+                      animationDuration: "3s",
+                      visibility: "hidden",
+                      zIndex: "999",
+                      color: "white",
+                    }}
+                  >
+                    {el.sub_nav.map((subEl, index) => (
+                      <li key={index} style={{ padding: "10px 0" }}>
+                        <Link href={subEl.link} style={{ color: "white" }}>
+                          {subEl.nav_name}
+                        </Link>
+                      </li>
+                    ))}
                   </ul>
-                </li>
-              );
-            } else if (el.type === "dropdown") {
-              return (
-                <li key={i}>
-                  <Link href={el.link}>{el.nav_name}</Link>
-                  <ul className="main-dropdown">
-                    {el.sub_nav.map((subEl, index) => {
-                      return (
-                        <li key={index}>
-                          <Link href={subEl.link}>{subEl.name}</Link>
-                          {subEl.sub_dropdown_nav && subEl.sub_dropdown_nav.length && (
-                            <ul className="sub-dropdown">
-                              {subEl.sub_dropdown_nav.map((subDrop, subIndex) => {
-                                return (
-                                  <li key={subIndex}>
-                                    <Link href={subDrop.link}>{subDrop.name}</Link>
-                                  </li>
-                                );
-                              })}
-                            </ul>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-              );
-            } else {
-              return (
-                <li key={i}>
-                  <Link href={el.link}>{el.nav_name}</Link>
-                </li>
-              );
-            }
+                )}
+              </li>
+            );
           })}
         </ul>
       </div>
