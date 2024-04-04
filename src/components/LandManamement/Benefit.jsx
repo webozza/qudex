@@ -1,16 +1,16 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { SplitText } from "@/plugins";
 import Link from "next/link.js";
+import Image from "next/image.js";
 import ArrowIcon from "../../../public/assets/imgs/hero/4/arrow-icon.png";
 import Hero4 from "../../../public/assets/imgs/hero/4/hero-4.png";
 import HeroShape from "../../../public/assets/imgs/hero/4/hero-shape.png";
 import HeroShape2 from "../../../public/assets/imgs/hero/4/hero-shape-2.png";
 import HeroShape3 from "../../../public/assets/imgs/hero/4/hero-shape-3.png";
 import Shape20 from "../../../public/assets/imgs/shape/20.png";
-import Image from "next/image.js";
 
-const StartupAgencyHero = () => {
+const Benefit = () => {
   const heroTitle = useRef();
   const heroText = useRef();
   const heroAnchor = useRef();
@@ -65,7 +65,7 @@ const StartupAgencyHero = () => {
               <div className="hero__content-6 hero__six_anim">
                 <Image priority style={{ width: "auto", height: "auto" }} className="hero__arrow-icon" src={ArrowIcon} alt="Arrow Icon" />
                 <h1 className="hero__title-6 " ref={heroTitle}>
-                  Magical <br /> qudex Startup Solution{" "}
+                  Magical <br /> qudex with benefit Solution
                 </h1>
                 <p ref={heroText}>
                   Our team always reviews all previous methods with <br /> models, and processes to determined
@@ -91,4 +91,4 @@ const StartupAgencyHero = () => {
   );
 };
 
-export default StartupAgencyHero;
+export default Benefit;

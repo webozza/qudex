@@ -23,17 +23,25 @@ const LandPartnerOne = () => {
                   QUDEX mapping and Land Management tools can bring maximum potential .
                 </h2>
               </div>
-              <ButtonCTA href="/contact">Join as Partner</ButtonCTA>
             </div>
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 pb-5">
               <div className="development__wrapper">
                 <p className="pb-5">As a landowner or organization , QUDEX can provide you with valuable resources and support to help you maintain and regenerate your land in a sustainable way.</p>
-
                 <p className="pb-5">Firstly, QUDEX can conduct a pre-assessment of your land and develop a regeneration roadmap, which outlines the steps needed to restore and maintain the land’s ecological balance. This roadmap is based on advanced technology such as satellite imagery, lidar, AI apps, as well as field data collected by experts.</p>
-
                 <p>Overall, QUDEX can be a valuable partner for landowners or Organizations looking to maintain and regenerate their land in a sustainable way, while also contributing to larger conservation efforts.</p>
               </div>
             </div>
+
+            <div className="contact__btn">
+              <div className="container line pb-130">
+                <div className="col-xxl-12" style={{ textAlign: "center" }}>
+                  <h2 className="sec-title title-anim">Landowner to join as partners</h2>
+                  <p className="sub-title-anim">Well, we are opened, so open vacancies now</p>
+                  <ButtonCTA href="/contact">Join as Partner</ButtonCTA>
+                </div>
+              </div>
+            </div>
+
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8">
               <div className="development__img">
                 <Image priority style={{ width: "800", height: "auto" }} src={ThumbDev1} alt="Development Image" data-speed="auto" />
