@@ -80,7 +80,7 @@ const LandManagement = () => {
           </div>
           <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4">
             <div className="development__img">
-              <Image priority style={{ width: "100%", height: "auto" }} src={ThumbDev2} alt="Development Image"data-speed="auto" />
+              <Image priority style={{ width: "100%", height: "auto" }} src={ThumbDev2} alt="Development Image" data-speed="auto" />
             </div>
           </div>
         </div>

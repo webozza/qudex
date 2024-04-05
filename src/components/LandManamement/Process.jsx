@@ -1,9 +1,10 @@
 import React from "react";
+import Funding from "../service/Funding";
 
 const Process = () => {
   return (
-    <div>
-      <h1>asdgsadghsdhasdh</h1>
+    <div style={{ margin: "100px 0" }}>
+      <Funding />
     </div>
   );
 };

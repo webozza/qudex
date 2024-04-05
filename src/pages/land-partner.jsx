@@ -7,7 +7,6 @@ import ServiceDetailsFaq from "@/components/faq/ServiceDetailsFaq";
 import DigitalAgencyCTA from "@/components/cta/DigitalAgencyCTA";
 import LandPartnerOne from "@/components/development/LandPartnerOne";
 import ManagementFramwork from "@/components/workflow/ManagementFramwork";
-import Funding from "@/components/service/Funding";
 
 const ServiceDetails = () => {
   return (
@@ -21,7 +20,6 @@ const ServiceDetails = () => {
         <RootLayout header="header1" footer="footer1">
           <LandPartnerOne />
           <ManagementFramwork />
-          <Funding />
         </RootLayout>
       </main>
     </>
