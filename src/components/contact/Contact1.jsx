@@ -30,7 +30,7 @@ const Contact1 = () => {
                 {/* <p>We’re here to help you navigate your sustainability journey. Contact us for more information about NatureBasedOffsets.com, QUDE™ technology, or how we can assist you in achieving your ecological and business goals.</p> */}
                 <div className="contact__info">
                   <h3 ref={wordAnim}>
-                    Don't be afraid man ! <br />
+                    Don’t be afraid man ! <br />
                     Say Hello
                   </h3>
                   <ul>

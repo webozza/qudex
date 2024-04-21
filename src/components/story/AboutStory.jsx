@@ -4,7 +4,7 @@ import Story3 from "../../../public/assets/imgs/story/earth.png";
 import Story4 from "../../../public/assets/imgs/story/the-platform.jpg";
 import Icon from "../../../public/assets/imgs/story/icon-take-5.png";
 import Image from "next/image";
-// Comment
+
 const AboutStory = () => {
   return (
     <>

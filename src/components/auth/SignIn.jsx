@@ -1,8 +1,8 @@
-import animationCharCome from "@/lib/utils/animationCharCome";
-import animationWordCome from "@/lib/utils/animationWordCome";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { useForm, Controller } from "react-hook-form";
+import animationCharCome from "@/lib/utils/animationCharCome";
+import animationWordCome from "@/lib/utils/animationWordCome";
 
 const SignIn = () => {
   const charAnim = useRef();
@@ -51,7 +51,7 @@ const SignIn = () => {
                 </div>
                 <div>
                   <small>
-                    Don't have an account? Please <Link href="/register">SignUp</Link>
+                    Don’t have an account? Please <Link href="/register">SignUp</Link>
                   </small>
                 </div>
                 <div className="row g-3">

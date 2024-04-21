@@ -93,7 +93,7 @@ const CreativeAgencyHero = () => {
                     </span>
                   </h1>
                   <p className="animate_content" ref={heroContentSection}>
-                    QUDE's advanced statistical models enable comprehensive financial analysis. Its integration with real-time data streams allows for accurate forecasting of stock prices, currency fluctuations, and market trends. Additionally, QUDE's natural language processing capabilities facilitate the extraction of insights from financial reports and news articles, aiding in informed decision-making.
+                    QUDE’s advanced statistical models enable comprehensive financial analysis. Its integration with real-time data streams allows for accurate forecasting of stock prices, currency fluctuations, and market trends. Additionally, QUDE’s natural language processing capabilities facilitate the extraction of insights from financial reports and news articles, aiding in informed decision-making.
                   </p>
                   <Image priority style={{ marginTop: "-2px", width: "auto", height: "auto" }} src={Home7scroll} alt="scroll Image" className="scroll" />
                 </div>
