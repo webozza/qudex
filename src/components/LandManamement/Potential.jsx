@@ -68,7 +68,7 @@ const Potential = () => {
 
           <div className="row">
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6">
-              <div className="feature__content-left">
+              <div className="feature__content-left" style={{ paddingTop: "70px" }}>
                 <h2 className="sec-subtile-6">Features</h2>
                 <h3 className="sec-title-6 title-anim">
                   We address visual potential outcome

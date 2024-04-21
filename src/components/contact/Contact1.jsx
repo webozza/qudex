@@ -1,6 +1,7 @@
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
 import { useEffect, useRef } from "react";
+import Map from "../LandManamement/Map";
 
 const Contact1 = () => {
   const charAnim = useRef();
@@ -24,34 +25,34 @@ const Contact1 = () => {
                 </h2>
               </div>
             </div>
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+            <div className="col-md-6">
               <div className="contact__text">
-                <p>We’re here to help you navigate your sustainability journey. Contact us for more information about NatureBasedOffsets.com, QUDE™ technology, or how we can assist you in achieving your ecological and business goals.</p>
+                {/* <p>We’re here to help you navigate your sustainability journey. Contact us for more information about NatureBasedOffsets.com, QUDE™ technology, or how we can assist you in achieving your ecological and business goals.</p> */}
+                <div className="contact__info">
+                  <h3 ref={wordAnim}>
+                    Don't be afraid man ! <br />
+                    Say Hello
+                  </h3>
+                  <ul>
+                    <li>
+                      <a href="tel:+(2)578365379">Contact: +(2) 578 - 365 - 379</a>
+                    </li>
+                    <li>
+                      <a href="mailto:hello@qudex.ai">Email address: hello@qudex.ai</a>
+                    </li>
+                    <li>
+                      <span>
+                        example address here, <br /> QC (USA) H8R 1A1
+                      </span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div className="row contact__btm">
             <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-5">
-              <div className="contact__info">
-                <h3 className="sub-title-anim-top animation__word_come" ref={wordAnim}>
-                  {"Don't be afraid man ! "}
-                  <br />
-                  say hello
-                </h3>
-                <ul>
-                  <li>
-                    <a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a>
-                  </li>
-                  <li>
-                    <a href="mailto:hello@qudex.ai">hello@qudex.ai</a>
-                  </li>
-                  <li>
-                    <span>
-                      example address here, <br /> QC (USA) H8R 1A1
-                    </span>
-                  </li>
-                </ul>
-              </div>
+              <Map />
             </div>
             <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
               <div className="contact__form">

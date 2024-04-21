@@ -8,6 +8,8 @@ import DigitalAgencyTestimonial from "@/components/testimonial/DigitalAgencyTest
 import CreativeAgencyHero from "@/components/hero/CreativeAgencyHero";
 import QudexSolutions from "@/components/faq/QudexSolutions";
 import BlogCase from "@/components/blog/BlogCase";
+import InteractiveStories from "@/components/LandManamement/InteractiveStories";
+import InteractiveDemo from "@/components/LandManamement/InteractiveDemo";
 
 const DigitalAgency = () => {
   const modalTestimonial1 = useRef();
@@ -85,6 +87,8 @@ const DigitalAgency = () => {
         <RootLayout header="header1" footer="footer1">
           <CreativeAgencyHero />
           <DigitalAgencyAbout />
+          <InteractiveStories />
+          <InteractiveDemo />
           <DigitalAgencyWorkflow />
           <DigitalAgencyTestimonial modalTestimonial1={modalTestimonial1} modalTestimonial2={modalTestimonial2} modalTestimonial3={modalTestimonial3} modalClose1={modalClose1} modalClose2={modalClose2} modalClose3={modalClose3} />
           <QudexSolutions />
