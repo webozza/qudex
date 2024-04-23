@@ -565,6 +565,7 @@
       position: relative;
 
       .scroll-down {
+        z-index: 99999;
         margin-top: 100px;
 
         @media #{$lg} {

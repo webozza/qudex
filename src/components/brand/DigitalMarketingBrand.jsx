@@ -70,7 +70,7 @@ const DigitalMarketingBrand = () => {
       <div className="container pt-140 pb-140">
         <div className="row">
           <div className="col-xxl-12">
-            <h2 className="brand__title-3 title-anim">We worked with global largest brands</h2>
+            <h2 className="sec-title animation__char_come brand__title-3 title-anim">We worked with global largest brands</h2>
             <div className="brand__list-3">
               <Swiper
                 slidesPerView={1}
@@ -97,12 +97,11 @@ const DigitalMarketingBrand = () => {
                     spaceBetween: 50,
                   },
                 }}
-                // modules={[Autoplay, Navigation]}
                 className="mySwiper"
               >
                 {brandImages.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <Image src={img} alt="Brand Logo" className="fade_bottom" style={{ textAlign: "center", width: "170px", height: "120px" }} />
+                    <Image src={img} alt="Brand Logo" className="fade_bottom" style={{ textAlign: "center", width: "190px", height: "100px" }} />
                   </SwiperSlide>
                 ))}
               </Swiper>

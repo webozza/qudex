@@ -1,10 +1,22 @@
+"use client";
 import animationCharCome from "@/lib/utils/animationCharCome";
 import animationWordCome from "@/lib/utils/animationWordCome";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 
 const SignUp = () => {
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const {
+    handleSubmit,
+    reset,
+    control,
+    formState: { errors, isDirty },
+    getValues,
+  } = useForm();
+
   const charAnim = useRef();
   const wordAnim = useRef();
 
@@ -13,14 +25,39 @@ const SignUp = () => {
     animationWordCome(wordAnim.current);
   }, []);
 
-  const {
-    handleSubmit,
-    control,
-    formState: { errors, isDirty },
-    getValues, // Access getValues from useForm
-  } = useForm();
+  const handleSignUp = async (data) => {
+    const userData = {
+      name: data.username,
+      email: data.email,
+      password: data.password,
+    };
 
-  const onSubmit = (data) => console.log(data);
+    if (!data.username || !data.email || !data.password) {
+      setError("Must be provide all credential.");
+    }
+
+    try {
+      setLoading(true);
+      const res = await fetch("api/auth/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(userData),
+      });
+
+      if (res.ok) {
+        setLoading(false);
+        reset();
+        console.log("Uer registered");
+      } else {
+        console.log("Something Went wrong!");
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log("Something was wrong!", error);
+    }
+  };
 
   return (
     <div className="container">
@@ -36,11 +73,11 @@ const SignUp = () => {
           </div>
           <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
             <div className="register__form">
-              <form onSubmit={handleSubmit(onSubmit)}>
+              <form onSubmit={handleSubmit(handleSignUp)}>
                 <div className="row g-3">
                   <div className="col-12">
-                    <Controller name="name" control={control} defaultValue="" rules={{ required: "Full Name is required" }} render={({ field }) => <input {...field} type="text" placeholder="Full Name" />} />
-                    {errors.name && <span>{errors.name.message}</span>}
+                    <Controller name="username" control={control} defaultValue="" rules={{ required: "Full Name is required" }} render={({ field }) => <input {...field} type="text" placeholder="Full Name" />} />
+                    {errors.username && <span>{errors.username.message}</span>}
                   </div>
                 </div>
 
@@ -79,6 +116,7 @@ const SignUp = () => {
                     Already have an account? Please <Link href="/login">Sign In</Link>
                   </small>
                 </div>
+                {error && <span>Fiels are require.</span>}
                 <div className="row g-3">
                   <div className="col-12">
                     <div className="btn_wrapper">
